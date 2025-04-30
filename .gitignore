@@ -1,27 +1,39 @@
-node_modules
-*.log
-.nuxt
-nuxt.d.ts
+# Nuxt dev/build outputs
 .output
-.env
-package-lock.json
-framework
+.data
+.nuxt
+.nitro
+.cache
 dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
 .DS_Store
+.fleet
+.idea
+.eslintcache
 
-# Local History
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Template
+template/pnpm-lock.yaml
+
+# npm pack
+*.tgz
+
+# Temp files
+.tmp
+.profile
+*.0x
+
+#VSC
 .history
-
-# VSCode
-.vscode/
-
-# Unlighthouse
-.unlighthouse
-
-# Starters lockfiles
-.starters/**/yarn.lock
-.starters/**/package-lock.json
-.starters/**/pnpm-lock.yaml
-
-test-results
-.pnpm-store
