@@ -18,6 +18,13 @@ export default defineNuxtConfig({
     enabled: dev,
   },
   css: ['../assets/css/main.css'],
+  nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
 
   // app: {
   //   head: {
@@ -55,12 +62,6 @@ export default defineNuxtConfig({
   // ui: {},
   // routeRules: {
   //   '/api/search.json': { prerender: true },
-  // },
-  // nitro: {
-  //   prerender: {
-  //     autoSubfolderIndex: false,
-  //     failOnError: false,
-  //   },
   // },
   // typescript: {
   //   strict: false,

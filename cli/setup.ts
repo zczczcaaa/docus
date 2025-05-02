@@ -72,14 +72,17 @@ export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
         url: docsconfig.url,
       },
     },
-    nitro: {
-      // static: true,
-      publicAssets: [{ baseURL: '/', dir: resolve(docsDir, 'public'), maxAge: 0 }],
-      // serverAssets: [{
-      //   baseName: 'public',
-      //   dir: resolve(docsDir, '.docs/public'),
-      // }],
-    },
+    // nitro: {
+    //   // publicAssets: [{ baseURL: '/', dir: resolve(docsDir, 'public'), maxAge: 0 }],
+    //   // prerender: {
+    //   //   routes: ['/'],
+    //   //   crawlLinks: true,
+    //   // },
+    //   // serverAssets: [{
+    //   //   baseName: 'public',
+    //   //   dir: resolve(docsDir, 'public'),
+    //   // }],
+    // },
   } as NuxtConfig
 
   return {

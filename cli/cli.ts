@@ -1,6 +1,3 @@
-import { readFile } from 'node:fs/promises'
-import { resolve } from 'node:path'
-
 import { type ArgsDef, defineCommand, runMain } from 'citty'
 import { setupDocs } from './setup'
 import type { CLIOptions } from './types'
@@ -34,21 +31,21 @@ export function createCLI(opts: CLIOptions) {
     },
   })
 
-  // const build = defineCommand({
-  //   meta: {
-  //     name: 'build',
-  //     description: 'Build static docs for production',
-  //   },
-  //   args: { ...sharedArgs },
-  //   async setup({ args }) {
-  //     const { appDir, nuxtConfig } = await setupDocs(args.dir, opts.setup)
+  const build = defineCommand({
+    meta: {
+      name: 'build',
+      description: 'Build docs for production',
+    },
+    args: { ...sharedArgs },
+    async setup({ args }) {
+      const { appDir, nuxtConfig } = await setupDocs(args.dir as string, opts.setup)
 
-  //     process.chdir(appDir)
+      process.chdir(appDir)
 
-  //     const { runCommand } = await import('nuxi')
-  //     await runCommand('generate', [appDir], { overrides: nuxtConfig })
-  //   },
-  // })
+      const { runCommand } = await import('nuxi')
+      await runCommand('build', [appDir], { overrides: nuxtConfig })
+    },
+  })
 
   const main = defineCommand({
     meta: {
@@ -57,7 +54,7 @@ export function createCLI(opts: CLIOptions) {
     },
     subCommands: {
       dev,
-      // build,
+      build,
     },
   })
 
