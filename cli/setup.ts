@@ -37,17 +37,18 @@ export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
     throw new Error('`url` config is required for production build!')
   }
 
-  const docsSrcDir = resolve(docsDir, '.docus')
-  // Module to fix layers (force add .docs as first)
-  // const fixLayers = (_, nuxt: NuxtConfig) => {
-  //   nuxt.options._layers.unshift({
-  //     cwd: docsSrcDir,
-  //     config: {
-  //       rootDir: docsSrcDir,
-  //       srcDir: docsSrcDir,
-  //     },
-  //   })
-  // }
+  const docsSrcDir = resolve(docsDir)
+
+  // Module to move docs layer to the top of the layers
+  const fixLayers = (_, nuxt) => {
+    nuxt.options._layers.unshift({
+      cwd: docsSrcDir,
+      config: {
+        rootDir: docsSrcDir,
+        srcDir: docsSrcDir,
+      },
+    })
+  }
 
   // Prepare loadNuxt overrides
   const nuxtConfig: NuxtConfig = {
@@ -56,7 +57,7 @@ export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
     srcDir: docsSrcDir,
     extends: [appDir],
     modulesDir: [resolve(pkgDir, 'node_modules'), resolve(docsDir, 'node_modules')],
-    modules: [],
+    modules: [fixLayers],
     docs: docsconfig,
     appConfig: {
       header: {
