@@ -36,7 +36,6 @@ const headline = computed(() => findPageHeadline(navigation?.value, page.value))
 defineOgImageComponent('Docs', {
   headline: headline.value,
 })
-// to: `${toc.bottom.edit}/${page?.value?.stem}.${page?.value?.extension}`,
 
 const links = computed(() => [
   github.url && {
@@ -45,7 +44,13 @@ const links = computed(() => [
     to: `${github.url}/edit/${github.branch}/content/${page?.value?.stem}.${page?.value?.extension}`,
     target: '_blank',
   },
-  ...(toc?.links || []),
+  github.url && {
+    icon: 'i-lucide-star',
+    label: 'Star on GitHub',
+    to: github.url,
+    target: '_blank',
+  },
+  ...(toc.links || []),
 ].filter(Boolean))
 </script>
 

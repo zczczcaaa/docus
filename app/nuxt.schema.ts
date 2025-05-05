@@ -190,7 +190,10 @@ declare module '@nuxt/schema' {
       links: string[]
     }
     github: {
+      owner: string
+      name: string
       url: string
+      branch: string
     }
   }
 }
