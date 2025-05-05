@@ -7,6 +7,6 @@
     "dev": "docus dev"
   },
   "devDependencies": {
-    "@nuxt-theme/docus": "latest"
+    "@larbish/docus": "latest"
   }
 }
