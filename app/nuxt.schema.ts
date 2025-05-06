@@ -163,7 +163,7 @@ export default defineNuxtSchema({
 
 declare module '@nuxt/schema' {
   interface AppConfig {
-    site: {
+    seo: {
       title: string
       description: string
     }

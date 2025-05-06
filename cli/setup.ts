@@ -71,10 +71,9 @@ export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
         url: gitInfo?.url,
         branch: getGitBranch(),
       },
-      site: {
-        name: docsconfig.name || '',
+      seo: {
+        title: docsconfig.name || '',
         description: docsconfig.description || '',
-        url: docsconfig.url,
       },
     },
   } as NuxtConfig
