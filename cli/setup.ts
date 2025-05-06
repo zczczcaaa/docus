@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises'
 import { loadConfig } from 'c12'
 import type { NuxtConfig } from 'nuxt/config'
 import type { DocsOptions } from './types'
-import { getGitBranch, getLocalGitInfo } from './git'
+import { getGitBranch, getGitEnv, getLocalGitInfo } from './git'
 
 declare global {
   const __DOCS_CWD__: string
@@ -50,6 +50,8 @@ export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
     })
   }
 
+  const gitInfo = await getLocalGitInfo(docsDir) || getGitEnv()
+
   // Prepare loadNuxt overrides
   const nuxtConfig: NuxtConfig = {
     compatibilityDate: '2025-04-24',
@@ -64,7 +66,9 @@ export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
         title: docsconfig.name || '',
       },
       github: {
-        ...(await getLocalGitInfo(docsDir)),
+        owner: gitInfo?.owner,
+        name: gitInfo?.name,
+        url: gitInfo?.url,
         branch: getGitBranch(),
       },
       site: {
