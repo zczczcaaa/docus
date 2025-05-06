@@ -41,7 +41,7 @@ const links = computed(() => [
   github.url && {
     icon: 'i-lucide-external-link',
     label: 'Edit this page',
-    to: `${github.url}/edit/${github.branch}/content/${page?.value?.stem}.${page?.value?.extension}`,
+    to: toc.edit ? `${toc.edit}/${page?.value?.stem}.${page?.value?.extension}` : `${github.url}/edit/${github.branch}/content/${page?.value?.stem}.${page?.value?.extension}`,
     target: '_blank',
   },
   github.url && {

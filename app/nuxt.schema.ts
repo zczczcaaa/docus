@@ -142,6 +142,13 @@ export default defineNuxtSchema({
           icon: 'i-lucide-link',
           default: [],
         }),
+        edit: field({
+          type: 'string',
+          title: 'Edit Page Link',
+          description: 'URL of your repository content folder.',
+          icon: 'i-heroicons-pencil-square',
+          default: '',
+        }),
       },
     }),
     github: group({
@@ -191,6 +198,7 @@ declare module '@nuxt/schema' {
     }
     socials: Record<string, string>
     toc: {
+      edit: string
       links: string[]
     }
     github: {
