@@ -163,6 +163,10 @@ export default defineNuxtSchema({
 
 declare module '@nuxt/schema' {
   interface AppConfig {
+    site: {
+      title: string
+      description: string
+    }
     ui: {
       colors: {
         primary: string

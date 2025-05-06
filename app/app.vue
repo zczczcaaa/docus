@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { site, title } = useAppConfig()
+const { site } = useAppConfig()
 
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'))
 const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('docs'), {
@@ -19,8 +19,8 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: `%s - ${title || site.name}`,
-  ogSiteName: title || site.name,
+  titleTemplate: `%s - ${site.title}`,
+  ogSiteName: site.title,
   twitterCard: 'summary_large_image',
 })
 
