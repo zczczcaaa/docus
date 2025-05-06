@@ -14,11 +14,6 @@ export default defineAppConfig({
   },
   toc: {
     links: [{
-      icon: 'i-lucide-star',
-      label: 'Star on GitHub',
-      to: 'https://github.com/nuxt/ui',
-      target: '_blank',
-    }, {
       icon: 'i-lucide-book-open',
       label: 'Nuxt UI Pro docs',
       to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt',

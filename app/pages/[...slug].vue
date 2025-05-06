@@ -50,7 +50,7 @@ const links = computed(() => [
     to: github.url,
     target: '_blank',
   },
-  ...(toc.links || []),
+  ...(toc?.links || []),
 ].filter(Boolean))
 </script>
 
