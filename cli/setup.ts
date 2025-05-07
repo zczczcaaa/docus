@@ -1,69 +1,44 @@
 import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
 import { readFile } from 'node:fs/promises'
-import { loadConfig } from 'c12'
 import type { NuxtConfig } from 'nuxt/config'
 import type { DocsOptions } from './types'
 import { getGitBranch, getGitEnv, getLocalGitInfo } from './git'
 
 declare global {
-  const __DOCS_CWD__: string
+  const __DOCS_DIR__: string
 }
 
 const appDir = fileURLToPath(new URL('../app', import.meta.url))
 
 const pkgDir = fileURLToPath(new URL('..', import.meta.url))
 
-export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
-  const meta = await getPackageJsonMetadata(docsDir)
+export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
+  const meta = await getPackageJsonMetadata(dir)
 
-  const { config: docsconfig } = await loadConfig({
-    name: 'docs',
-    cwd: docsDir,
-    defaults: {
-      url: inferSiteURL(),
-      ...opts.defaults,
-      ...meta,
-    },
-  })
-
-  // Normalize dir
-  docsconfig.dir = docsDir = resolve(docsconfig.dir || docsDir)
-
-  // @ts-expect-error __DOCS_CWD__ is not defined
-  global.__DOCS_CWD__ = resolve(docsconfig.dir, 'content')
-
-  if (!docsconfig.url && !opts.dev) {
-    throw new Error('`url` config is required for production build!')
-  }
-
-  const docsSrcDir = resolve(docsDir)
-
-  // Module to move docs layer to the top of the layers
   const fixLayers = (_, nuxt) => {
     nuxt.options._layers.unshift({
-      cwd: docsSrcDir,
+      cwd: dir,
       config: {
-        rootDir: docsSrcDir,
-        srcDir: docsSrcDir,
+        rootDir: dir,
+        srcDir: dir,
       },
     })
   }
+  // @ts-expect-error __DOCS_DIR__ is not defined
+  global.__DOCS_DIR__ = resolve(dir, 'content')
 
-  const gitInfo = await getLocalGitInfo(docsDir) || getGitEnv()
+  const gitInfo = await getLocalGitInfo(dir) || getGitEnv()
 
   // Prepare loadNuxt overrides
-  const nuxtConfig: NuxtConfig = {
+  return {
     compatibilityDate: '2025-04-24',
-    rootDir: docsSrcDir,
-    srcDir: docsSrcDir,
     extends: [appDir],
-    modulesDir: [resolve(pkgDir, 'node_modules'), resolve(docsDir, 'node_modules')],
+    modulesDir: [resolve(pkgDir, 'node_modules'), resolve(appDir, 'node_modules')],
     modules: [fixLayers],
-    docs: docsconfig,
     appConfig: {
       header: {
-        title: docsconfig.name || '',
+        title: meta.name || '',
       },
       github: {
         owner: gitInfo?.owner,
@@ -72,17 +47,16 @@ export async function setupDocs(docsDir: string, opts: DocsOptions = {}) {
         branch: getGitBranch(),
       },
       seo: {
-        title: docsconfig.name || '',
-        description: docsconfig.description || '',
+        title: meta.name || '',
+        description: meta.description || '',
       },
+      site: {
+        url: inferSiteURL(),
+        name: meta.name || '',
+      },
+      toc: {},
     },
   } as NuxtConfig
-
-  return {
-    docsDir,
-    appDir,
-    nuxtConfig,
-  }
 }
 
 function inferSiteURL() {
@@ -96,9 +70,9 @@ function inferSiteURL() {
   )
 }
 
-async function getPackageJsonMetadata(docsDir: string) {
+async function getPackageJsonMetadata(dir: string) {
   try {
-    const packageJson = await readFile(resolve(docsDir as string, 'package.json'), 'utf-8')
+    const packageJson = await readFile(resolve(dir, 'package.json'), 'utf-8')
     const parsed = JSON.parse(packageJson)
     return {
       name: parsed.name,

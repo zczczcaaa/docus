@@ -5,16 +5,16 @@ export default defineContentConfig({
     landing: defineCollection({
       type: 'page',
       source: {
-        // @ts-expect-error __DOCS_CWD__ is not defined
-        cwd: globalThis.__DOCS_CWD__,
+        // @ts-expect-error __DOCS_DIR__ is not defined
+        cwd: globalThis.__DOCS_DIR__,
         include: 'index.md',
       },
     }),
     docs: defineCollection({
       type: 'page',
       source: {
-        // @ts-expect-error __DOCS_CWD__ is not defined
-        cwd: globalThis.__DOCS_CWD__,
+        // @ts-expect-error __DOCS_DIR__ is not defined
+        cwd: globalThis.__DOCS_DIR__,
         include: '**',
         exclude: ['index.md'],
       },

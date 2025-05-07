@@ -1,5 +1,6 @@
+import { resolve } from 'node:path'
 import { type ArgsDef, defineCommand, runMain } from 'citty'
-import { setupDocs } from './setup'
+import { getNuxtConfig } from './setup'
 import type { CLIOptions } from './types'
 
 export function createCLI(opts: CLIOptions) {
@@ -19,15 +20,14 @@ export function createCLI(opts: CLIOptions) {
     },
     args: { ...sharedArgs },
     async setup({ args }) {
-      const { appDir, nuxtConfig } = await setupDocs(args.dir as string, {
+      const dir = resolve(args.dir as string)
+      const nuxtConfig = await getNuxtConfig(dir, {
         ...opts.setup,
         dev: true,
       })
 
-      process.chdir(appDir)
-
       const { runCommand } = await import('nuxi')
-      await runCommand('dev', [appDir, '--no-fork', '--port', process.env.PORT || '4000'], { overrides: nuxtConfig })
+      await runCommand('dev', [dir, '--no-fork', '--port', process.env.PORT || '4000'], { overrides: nuxtConfig })
     },
   })
 
@@ -38,12 +38,11 @@ export function createCLI(opts: CLIOptions) {
     },
     args: { ...sharedArgs },
     async setup({ args }) {
-      const { appDir, nuxtConfig } = await setupDocs(args.dir as string, opts.setup)
-
-      process.chdir(appDir)
+      const dir = resolve(args.dir as string)
+      const nuxtConfig = await getNuxtConfig(dir, opts.setup)
 
       const { runCommand } = await import('nuxi')
-      await runCommand('build', [appDir], { overrides: nuxtConfig })
+      await runCommand('build', [dir], { overrides: nuxtConfig })
     },
   })
 
