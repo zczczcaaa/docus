@@ -17,13 +17,16 @@ export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
   const meta = await getPackageJsonMetadata(dir)
 
   const fixLayers = (_, nuxt) => {
-    nuxt.options._layers.unshift({
-      cwd: dir,
-      config: {
-        rootDir: dir,
-        srcDir: dir,
-      },
-    })
+    const hasDocsDir = nuxt.options._layers.some(layer => layer.cwd === dir)
+    if (!hasDocsDir) {
+      nuxt.options._layers.unshift({
+        cwd: dir,
+        config: {
+          rootDir: dir,
+          srcDir: dir,
+        },
+      })
+    }
   }
   // @ts-expect-error __DOCS_DIR__ is not defined
   global.__DOCS_DIR__ = resolve(dir, 'content')
