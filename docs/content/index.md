@@ -18,7 +18,7 @@ orientation: horizontal
   :::
 
 #title
-Docus by [Nuxt UI Pro]{.text-primary}
+Docus by :br [Nuxt UI Pro]{.text-primary}
 
 #description
 A fully featured documentation theme powered by **Nuxt UI Pro**. Only focus on writing content in Markdown and let us take care of the boilerplate. Deploy in a second with the `docus` CLI command.
