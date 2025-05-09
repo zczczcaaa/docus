@@ -1,27 +1,27 @@
 ---
 seo:
   title: Docus by Nuxt UI Pro - Docs theme
-  description: Nuxt documentation theme and CLI to create beautiful documentation based on Nuxt UI Pro. Stay focus on your content with Markdown syntax.
+  description: A Nuxt UI Pro powered documentation theme and CLI to help you
+    create beautiful, performant, and customizable docs. Comes with a ready
+    visual out of the box, just focus on writing content using the Markdown
+    syntax.
 ---
 
 ::u-page-hero
 ---
 orientation: horizontal
 ---
-  :::prose-pre
-  ---
-  filename: Terminal
-  ---
+  :::prose-pre{filename="Terminal"}
   ```bash
   npx docus my-super-docs
   ```
   :::
 
 #title
-Docus
+Docus by [Nuxt UI Pro]{.text-primary}
 
 #description
-Nuxt documentation theme and CLI to create beautiful documentation based on Nuxt UI Pro. Stay focus on your content with Markdown syntax.
+A fully featured documentation theme powered by **Nuxt UI Pro**. Only focus on writing content in Markdown and let us take care of the boilerplate. Deploy in a second with the `docus` CLI command.
 
 #links
   :::u-button
@@ -36,7 +36,7 @@ Nuxt documentation theme and CLI to create beautiful documentation based on Nuxt
   :::u-button
   ---
   color: neutral
-  icon: i-simple-icons-github
+  icon: i-simple-icons-nuxt
   size: xl
   target: _blank
   to: https://github.com/nuxt-ui-pro/docs
@@ -48,20 +48,7 @@ Nuxt documentation theme and CLI to create beautiful documentation based on Nuxt
 
 ::u-page-section
 #title
-All-in-one documentation template
-
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: lg
-  target: _blank
-  to: https://ui.nuxt.com/getting-started/installation/pro/nuxt
-  trailingIcon: i-lucide-arrow-right
-  variant: subtle
-  ---
-  Discover Nuxt UI Pro v3
-  :::
+The fastest way to write your documentation
 
 #features
   :::u-page-feature
@@ -100,33 +87,32 @@ All-in-one documentation template
   Nuxt UI v3
   
   #description
-  Offers a very large set of full customizable components.
+  Integrate a very large set of components into your documentation.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-typescript
+  icon: i-lucide-settings
   target: _blank
-  to: https://www.typescriptlang.org
   ---
   #title
-  TypeScript
+  Configuration
   
   #description
-  A fully typed development experience.
+  Customize everything from design to social links.
   :::
 
   :::u-page-feature
   ---
   icon: i-simple-icons-nuxtdotjs
   target: _blank
-  to: https://content.nuxt.com
+  to: https://content.nuxt.com/studio
   ---
   #title
-  Nuxt Content
+  Nuxt Studio
   
   #description
-  Powered by Nuxt Content for content driven focus development.
+  Write and manage your content visually, with zero Markdown knowledge required
   :::
 
   :::u-page-feature
@@ -140,28 +126,5 @@ All-in-one documentation template
   
   #description
   A full-text search modal powered by Fuse.js.
-  :::
-::
-
-::u-page-section
-  :::u-page-c-t-a
-  ---
-  links:
-    - label: Buy now
-      to: https://ui.nuxt.com/pro/purchase
-      target: _blank
-      icon: i-lucide-shopping-cart
-      color: neutral
-    - label: License
-      to: https://ui.nuxt.com/getting-started/license
-      trailingIcon: i-lucide-circle-help
-      target: _blank
-      color: neutral
-      variant: subtle
-  description: Nuxt UI Pro is free in development, but you need a license to use
-    it in production.
-  title: Start with Nuxt UI Pro today!
-  variant: subtle
-  ---
   :::
 ::
