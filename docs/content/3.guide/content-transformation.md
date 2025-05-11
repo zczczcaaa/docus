@@ -9,16 +9,14 @@ icon: bi:stars
 <!-- automd:file src="../.partials/warn.md" -->
 
 > [!IMPORTANT]
-> Undocs is currently intended for UnJS docs only and is not fully customizable yet. <br>
-> Contributions are more than welcome but please consider that this project is not ready yet to be used. <br>
-> Make sure to use [Bun](https://bun.sh/) and [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) for Windows.
+> Undocs is currently intended for UnJS docs only and is not fully customizable yet.:brContributions are more than welcome but please consider that this project is not ready yet to be used.:brMake sure to use [Bun](https://bun.sh/) and [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) for Windows.
 > We don't guarantee stability yet and it is expected that it doesn't work time to time.
 
 <!-- /automd -->
 
 ## Github Notes
 
-https://github.com/orgs/community/discussions/16925
+<https://github.com/orgs/community/discussions/16925>
 
 ```md
 > [!NOTE]
@@ -134,17 +132,10 @@ Generate steps by useing standard markdown numbered lists!
 ```
 
 1. Install Package
-
-   ::note
-   Please note that steps only work with numbered lists and is not within children.
-   ::
-
+   :note[Please note that steps only work with numbered lists and is not within children.]
    :pm-install{name="undocs"}
-
 2. Run development server
-
    :pm-run{script="undocs"}
-
 3. Done ✅
 
 ## Config References
@@ -152,7 +143,7 @@ Generate steps by useing standard markdown numbered lists!
 Generate beautiful references for your configuration files by just using markdown!
 
 > [!TIP]
-> If you use [automd:jsdocs](https://automd.unjs.io/generators/jsdocs), you can reference the schema file directly! Check out this example from the [config](/config) page.
+> If you use [automd\:jsdocs](https://automd.unjs.io/generators/jsdocs), you can reference the schema file directly! Check out this example from the [config](/config) page.
 
 ```md
 ### `$schema`
@@ -186,7 +177,7 @@ The description of the documentation site.
 
 - **Type**: `boolean`
 
-Enable integration with https://automd.unjs.io
+Enable integration with <https://automd.unjs.io>
 
 ### `buildCache`
 
@@ -201,4 +192,4 @@ Enable build cache (experimental)
 The description of the documentation site.
 
 > [!TIP]
-> Do you have an idea for a new content transformation, feel free to [open an issue](https://github.com/unjs/undocs/issues/new?assignees=&labels=pending+triage&projects=&template=feature-request.yml)!
+> Do you have an idea for a new content transformation, feel free to [open an issue](https://github.com/unjs/undocs/issues/new?assignees=\&labels=pending+triage\&projects=\&template=feature-request.yml)!
