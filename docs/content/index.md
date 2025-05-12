@@ -27,7 +27,7 @@ A fully featured documentation theme powered by **Nuxt UI Pro**. Only focus on w
   :::u-button
   ---
   size: xl
-  to: /getting-started
+  to: /getting-started/introduction
   trailing-icon: i-lucide-arrow-right
   ---
   Get started
