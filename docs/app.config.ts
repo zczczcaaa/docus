@@ -1,4 +1,12 @@
 export default defineAppConfig({
+  uiPro: {
+    pageHero: {
+      slots: {
+        title: 'font-semibold sm:text-6xl',
+        headline: 'text-primary font-semibold',
+      },
+    },
+  },
   title: 'Docus by Nuxt UI Pro',
   header: {
     logo: {
