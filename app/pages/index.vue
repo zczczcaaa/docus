@@ -8,10 +8,9 @@ const title = page.value.seo?.title || page.value.title
 const description = page.value.seo?.description || page.value.description
 
 useSeoMeta({
-  titleTemplate: '',
   title,
-  ogTitle: title,
   description,
+  ogTitle: title,
   ogDescription: description,
   ogImage: '/social-card.png',
   twitterImage: '/social-card.png',
