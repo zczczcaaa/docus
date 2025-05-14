@@ -6,13 +6,19 @@ export default defineAppConfig({
         headline: 'text-primary font-semibold',
       },
     },
+    pageCard: {
+      slots: {
+        container: 'lg:flex',
+        wrapper: 'flex-none',
+      },
+    },
   },
   title: 'Docus by Nuxt UI Pro',
   header: {
     logo: {
       alt: 'Nuxt logo',
-      light: '/nuxt-ui-pro-light.svg',
-      dark: '/nuxt-ui-pro-dark.svg',
+      light: '/docus-light.svg',
+      dark: '/docus-dark.svg',
     },
   },
   socials: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center">
+  <div class="flex-1 flex items-end justify-center">
     <NuxtImg
       src="/landing/nuxt-logo-3D.svg"
       class="h-42 floating-logo"

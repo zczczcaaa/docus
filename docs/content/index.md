@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Docus by Nuxt UI Pro - Docs theme
+  title: Docus by Nuxt UI Pro - Documentation builder
   description: A Nuxt UI Pro powered documentation theme and CLI to help you
     create beautiful, performant, and customizable docs. Comes with a ready
     visual out of the box, just focus on writing content using the Markdown
@@ -8,15 +8,6 @@ seo:
 ---
 
 ::u-page-hero
----
-orientation: horizontal
----
-  :::prose-pre{filename="Terminal"}
-  ```bash
-  npx docus my-super-docs
-  ```
-  :::
-
 #headline
 Powered by Nuxt UI Pro
 
@@ -59,7 +50,7 @@ Docus brings together the best of the Nuxt ecosystem to help you build beautiful
   Built with [Nuxt 3]{.text-primary}
   
   #description
-  Optimized by the most famous Vue framework. Docus provides everything you need to build website with optimal performances and SEO.
+  Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
   :::
 
   :::u-page-card
@@ -137,7 +128,7 @@ Docus brings together the best of the Nuxt ecosystem to help you build beautiful
   Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
   
   #description
-  The only thing you need to take care about is writing your content. Write your pages in Markdown and integrate any UI Pro components with the MDC syntax.
+  The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
   :::
 
   :::u-page-card
@@ -151,10 +142,12 @@ Docus brings together the best of the Nuxt ecosystem to help you build beautiful
       ui: {
         colors: {
           primary: 'green',
+          secondary: 'sky',
         },
       },
       socials: {
         x: 'https://x.com/nuxt_js',
+        nuxt: 'https://nuxt.com'
       }
     })
     ```
@@ -164,7 +157,7 @@ Docus brings together the best of the Nuxt ecosystem to help you build beautiful
   Customize with [Nuxt App Config]{.text-primary}
   
   #description
-  Modify the appearance of your website including socials, logo or any visual components globally through `app.config.ts`, no direct code modifications required.
+  Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
   :::
 
   :::u-page-card
@@ -188,15 +181,14 @@ Docus brings together the best of the Nuxt ecosystem to help you build beautiful
   class: col-span-2
   target: _blank
   ---
-    ::::browser-frame
-    :video{.rounded-md controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
+    ::::command-search
     ::::
   
   #title
   Built-in navigation and [full-text search]{.text-primary}
   
   #description
-  Only focus on ordering your content, we take care of the search modal for you thanks to `fuse.js`. We're also generating the side navigation for you.
+  Only focus on ordering your content, we take care of the search modal. We're also generating the side navigation for you.
   :::
 
   :::u-page-card
@@ -220,8 +212,16 @@ Docus brings together the best of the Nuxt ecosystem to help you build beautiful
   ---
   spotlight: true
   target: _blank
+  to: https://image.nuxt.com/
   ---
-    ::::color-mode-switch
+    ::::div{class="flex-1 flex items-center justify-center"}
+      :::::u-color-mode-image
+      ---
+      alt: Nuxt Image visual
+      dark: /landing/dark/nuxt-image.svg
+      light: /landing/dark/nuxt-image.svg
+      ---
+      :::::
     ::::
   
   #title
