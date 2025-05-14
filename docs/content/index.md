@@ -24,7 +24,7 @@ Powered by Nuxt UI Pro
 The modern way to write docs
 
 #description
-Built on Nuxt’s best tools, Docus helps to ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
+Built on Nuxt's best tools, Docus helps to ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
 
 #links
   :::u-button
@@ -48,10 +48,9 @@ Docus brings together the best of the Nuxt ecosystem to help you build beautiful
 :::u-page-card
 ---
 target: _blank
-to: https://nuxt.com
+to: https://ui.nuxt.com
 spotlight: true
 class: group
-reverse: true
 ---
 #title
 Built with [Nuxt 3]{.text-primary}
@@ -60,9 +59,7 @@ Built with [Nuxt 3]{.text-primary}
 Optimized by the most famous Vue framework. Docus provides everything you need to build website with optimal performances and SEO.
 
 #default
-::div{class="flex items-center justify-center"}
-:img{src="/landing/nuxt-logo-3D.svg" class="h-42"}
-::
+:floating-nuxt
 :::
 
 :::u-page-card
@@ -79,30 +76,14 @@ Powered by [Nuxt UI Pro]{.text-primary}
 Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI Pro to give you the best docs writing experience with zero boilerplate, just focus on your content. 
 
 #default
-::div{class="grid grid-cols-2"}
-
 :::u-color-mode-image
 ---
-dark: /landing/dark/container-ui-pro.png
-light: /landing/light/container-ui-pro.png
+dark: /landing/dark/templates-ui-pro.png
+light: /landing/dark/templates-ui-pro.png
 alt: Beautiful visual powered by UI Pro
 class: w-full h-80 object-cover rounded-lg
 ---
 :::
-
-:::u-card
----
-target: _blank
-to: https://ui.nuxt.com/components/content-search
----
-#header
-Built-in navigation and search
-
-#default
-Only focus on ordering your content, we take care of the search modal for you thanks to `fuse.js`. We're also generating the side navigation for you. 
-:::
-
-::
 :::
 
 :::u-page-card
@@ -117,8 +98,8 @@ Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
 The only thing you need to take care about is writing your content. Write your pages in Markdown and integrate any UI Pro components with the MDC syntax.
 
 #default
-::tabs
-  :::tabs-item{.my-5 icon="i-lucide-eye" label="Preview"}
+::tabs{class="!my-0"}
+  :::tabs-item{.mt-5 icon="i-lucide-eye" label="Preview"}
     ::::div{.flex.flex-col.gap-4.w-full}
       :::::note{.w-full.my-0}
       Here's some additional information for you.
@@ -138,7 +119,7 @@ The only thing you need to take care about is writing your content. Write your p
     ::::
   :::
 
-  :::tabs-item{icon="i-lucide-code" label="Code"}
+  :::tabs-item{.mt-5 .mb-2 .text-xs icon="i-lucide-code" label="Code"}
   ```mdc
   ::note
   Here's some additional information.
@@ -169,7 +150,23 @@ spotlight: true
 Customize with [Nuxt App Config]{.text-primary}
 
 #description
-Modify the appearance of any components globally through `app.config.ts`, no direct code modifications required.
+Modify the appearance of your website including socials, logo or any visual components globally through `app.config.ts`, no direct code modifications required.
+
+#default
+::div{class="truncate bg-elevated rounded-lg p-3"}
+```ts [app.config.ts]
+export default defineAppConfig({
+  ui: {
+    colors: {
+      primary: 'green',
+    },
+  },
+  socials: {
+    x: 'https://x.com/nuxt_js',
+  }
+})
+```
+::
 :::
 
 :::u-page-card
@@ -178,18 +175,20 @@ target: _blank
 spotlight: true
 ---
 #title
-[Nuxt Color]{.text-primary} mode configured
+[Nuxt Color]{.text-primary} mode
 
 #description
 Built-in dark mode provided, no configuration required.
+
+#default
+:color-mode-switch
 :::
 
 :::u-page-card
 ---
 target: _blank
-to: https://content.nuxt.com/studio
-spotlight: true
 class: col-span-2
+spotlight: true
 ---
 #title
 Collaborate on [Nuxt Studio]{.text-primary}
@@ -198,7 +197,9 @@ Collaborate on [Nuxt Studio]{.text-primary}
 Write and manage your content visually, with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation. 
 
 #default
-:video{autoplay controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1747063307/docus/docus_mzwktl.mp4" class="rounded-lg"}
+::browser-frame
+:video{controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1747063307/docus/docus_mzwktl.mp4" class="rounded-md"}
+::
 :::
 
 ::
