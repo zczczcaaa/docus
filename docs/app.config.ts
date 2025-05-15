@@ -1,14 +1,26 @@
 export default defineAppConfig({
+  ui: {
+    colors: {
+      secondary: 'green',
+    },
+  },
   uiPro: {
+    prose: {
+      a: {
+        base: [
+          'text-secondary hover:border-secondary focus-visible:outline-secondary hover:[&>code]:border-secondary hover:[&>code]:text-secondary',
+        ],
+      },
+    },
     pageHero: {
       slots: {
         title: 'font-semibold sm:text-6xl',
-        headline: 'text-primary font-semibold',
+        container: '!pb-0',
       },
     },
     pageCard: {
       slots: {
-        container: 'lg:flex',
+        container: 'lg:flex min-w-0',
         wrapper: 'flex-none',
       },
     },
