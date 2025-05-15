@@ -18,9 +18,14 @@ export default defineAppConfig({
         container: '!pb-0',
       },
     },
+    pageSection: {
+      slots: {
+        features: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+      },
+    },
     pageCard: {
       slots: {
-        container: 'lg:flex min-w-0',
+        container: 'min-w-0',
         wrapper: 'flex-none',
       },
     },

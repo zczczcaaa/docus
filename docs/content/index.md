@@ -97,7 +97,7 @@ Built on Nuxt's best tools, Docus helps to ship fast, flexible, and SEO-optimize
         ::::::
       :::::
     
-      :::::tabs-item{.mt-5.mb-2.text-xs icon="i-lucide-code" label="Code"}
+      :::::tabs-item{.mt-5.mb-2.text-xs.overflow-x-auto icon="i-lucide-code" label="Code"}
       ```mdc
       ::note
       Here's some additional information.
@@ -131,7 +131,7 @@ Built on Nuxt's best tools, Docus helps to ship fast, flexible, and SEO-optimize
   target: _blank
   class: col-span-2 md:col-span-1
   ---
-    ::::div{.truncate.bg-elevated.rounded-lg.p-3}
+    ::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
     ```ts [app.config.ts]
     export default defineAppConfig({
       ui: {
