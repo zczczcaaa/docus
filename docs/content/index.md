@@ -1,22 +1,19 @@
 ---
 seo:
-  title: Docus by Nuxt UI Pro - Documentation builder
+  title: Write beautiful docs with Markdown
   description: Ship fast, flexible, and SEO-optimized documentation with beautiful
     design out of the box. Docus brings together the best of the Nuxt ecosystem.
     Powered by Nuxt UI Pro.
 ---
 
 ::u-page-hero
-#headline
-Docus
-
 #title
 Write beautiful docs with Markdown
 
 #description
 Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
 
-Docus brings together the best of the Nuxt ecosystem.
+Docus brings the best of the Nuxt ecosystem into one CLI.
 
 #links
   :::u-button
@@ -26,6 +23,16 @@ Docus brings together the best of the Nuxt ecosystem.
   trailing-icon: i-lucide-arrow-right
   ---
   Get started
+  :::
+  :::u-button
+  ---
+  size: xl
+  color: neutral
+  variant: outline
+  to: https://github.com/nuxt-ui-pro/docus
+  icon: simple-icons-github
+  ---
+  Star on GitHub
   :::
 ::
 
@@ -42,7 +49,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  Built with [Nuxt 3]{.text-secondary}
+  Built with [Nuxt 3]{.text-primary}
   
   #description
   Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
@@ -65,7 +72,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  Powered by [Nuxt UI Pro]{.text-secondary}
+  Powered by [Nuxt UI Pro]{.text-primary}
   
   #description
   Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI Pro to give you the best docs writing experience with zero boilerplate, just focus on your content.
@@ -125,7 +132,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  Enhanced Markdown syntax by [Nuxt Content]{.text-secondary}
+  Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
   
   #description
   The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
@@ -155,7 +162,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  Customize with [Nuxt App Config]{.text-secondary}
+  Customize with [Nuxt App Config]{.text-primary}
   
   #description
   Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
@@ -171,7 +178,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  [Nuxt Color]{.text-secondary} mode
+  [Nuxt Color]{.text-primary} mode
   
   #description
   Built-in dark mode provided, no configuration required.
@@ -187,7 +194,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  Built-in navigation and [full-text search]{.text-secondary}
+  Built-in navigation and [full-text search]{.text-primary}
   
   #description
   Only focus on ordering your content, Docus handles the search modal and auto-generates the side navigation for you.
@@ -204,7 +211,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  Collaborate on [Nuxt Studio]{.text-secondary}
+  Collaborate on [Nuxt Studio]{.text-primary}
   
   #description
   Write and manage your content visually, with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
@@ -229,7 +236,7 @@ Docus brings together the best of the Nuxt ecosystem.
     ::::
   
   #title
-  [Nuxt Image]{.text-secondary} optimization
+  [Nuxt Image]{.text-primary} optimization
   
   #description
   Docus automatically converts Markdown images to use `<NuxtImg>` .

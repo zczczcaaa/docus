@@ -1,22 +1,15 @@
 export default defineAppConfig({
   site: {
     url: 'https://docus-v2.vercel.app',
-    name: 'Docus by Nuxt UI Pro',
+    name: 'Docus',
   },
   ui: {
     colors: {
-      secondary: 'zinc',
+      primary: 'emerald',
       neutral: 'zinc',
     },
   },
   uiPro: {
-    prose: {
-      a: {
-        base: [
-          'text-secondary hover:border-secondary focus-visible:outline-secondary hover:[&>code]:border-secondary hover:[&>code]:text-secondary',
-        ],
-      },
-    },
     pageHero: {
       slots: {
         title: 'font-semibold sm:text-6xl',
@@ -35,7 +28,6 @@ export default defineAppConfig({
       },
     },
   },
-  title: 'Docus by Nuxt UI Pro',
   header: {
     logo: {
       alt: 'Nuxt logo',
