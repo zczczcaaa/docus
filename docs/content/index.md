@@ -1,10 +1,7 @@
 ---
 seo:
   title: Docus by Nuxt UI Pro - Documentation builder
-  description: A Nuxt UI Pro powered documentation theme and CLI to help you
-    create beautiful, performant, and customizable docs. Comes with a ready
-    visual out of the box, just focus on writing content using the Markdown
-    syntax.
+  description: Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. Docus brings together the best of the Nuxt ecosystem. Powered by Nuxt UI Pro.
 ---
 
 ::u-page-hero
@@ -15,7 +12,10 @@ Docus
 The best of [Nuxt]{.text-secondary} for your docs
 
 #description
-Built on Nuxt's best tools, Docus helps to ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
+
+Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
+
+Docus brings together the best of the Nuxt ecosystem. 
 
 #links
   :::u-button

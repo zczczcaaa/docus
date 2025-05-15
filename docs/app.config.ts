@@ -25,7 +25,7 @@ export default defineAppConfig({
     },
     pageCard: {
       slots: {
-        container: 'min-w-0',
+        container: 'lg:flex min-w-0',
         wrapper: 'flex-none',
       },
     },
