@@ -76,22 +76,22 @@ Built on Nuxt's best tools, Docus helps to ship fast, flexible, and SEO-optimize
   class: col-span-2
   target: _blank
   ---
-    ::::tabs{.!my-0}
+    ::::tabs
       :::::tabs-item{.mt-5 icon="i-lucide-eye" label="Preview"}
-        ::::::div{.flex.flex-col.gap-4.w-full.truncate}
-          :::::::note{.w-full.my-0}
+        ::::::div{.flex.flex-col.gap-4}
+          :::::::note{.my-0}
           Here's some additional information for you.
           :::::::
         
-          :::::::tip{.w-full.my-0}
+          :::::::tip{.my-0}
           Here's a helpful suggestion.
           :::::::
         
-          :::::::warning{.w-full.my-0}
+          :::::::warning{.my-0}
           Be careful with this action as it might have unexpected results.
           :::::::
         
-          :::::::caution{.w-full.my-0}
+          :::::::caution{.my-0}
           This action cannot be undone.
           :::::::
         ::::::
