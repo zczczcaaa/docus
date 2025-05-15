@@ -1,4 +1,8 @@
 export default defineAppConfig({
+  site: {
+    url: 'https://docus-v2.vercel.app',
+    name: 'Docus by Nuxt UI Pro',
+  },
   ui: {
     colors: {
       secondary: 'green',
