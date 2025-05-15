@@ -1,7 +1,9 @@
 ---
 seo:
   title: Docus by Nuxt UI Pro - Documentation builder
-  description: Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. Docus brings together the best of the Nuxt ecosystem. Powered by Nuxt UI Pro.
+  description: Ship fast, flexible, and SEO-optimized documentation with beautiful
+    design out of the box. Docus brings together the best of the Nuxt ecosystem.
+    Powered by Nuxt UI Pro.
 ---
 
 ::u-page-hero
@@ -12,10 +14,9 @@ Docus
 Write beautiful docs with Markdown
 
 #description
-
 Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
 
-Docus brings together the best of the Nuxt ecosystem. 
+Docus brings together the best of the Nuxt ecosystem.
 
 #links
   :::u-button
@@ -97,7 +98,12 @@ Docus brings together the best of the Nuxt ecosystem.
         ::::::
       :::::
     
-      :::::tabs-item{.mt-5.mb-2.text-xs.overflow-x-auto icon="i-lucide-code" label="Code"}
+      :::::tabs-item
+      ---
+      class: mt-5 mb-2 text-xs overflow-x-auto
+      icon: i-lucide-code
+      label: Code
+      ---
       ```mdc
       ::note
       Here's some additional information.
@@ -128,8 +134,8 @@ Docus brings together the best of the Nuxt ecosystem.
   :::u-page-card
   ---
   spotlight: true
-  target: _blank
   class: col-span-2 md:col-span-1
+  target: _blank
   ---
     ::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
     ```ts [app.config.ts]
@@ -158,8 +164,8 @@ Docus brings together the best of the Nuxt ecosystem.
   :::u-page-card
   ---
   spotlight: true
-  target: _blank
   class: col-span-2 md:col-span-1 min-h-[450px]
+  target: _blank
   ---
     ::::color-mode-switch
     ::::
@@ -194,7 +200,7 @@ Docus brings together the best of the Nuxt ecosystem.
   target: _blank
   ---
     ::::browser-frame
-    :video{.rounded-md playsinline controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
+    :video{.rounded-md controls loop playsinline src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
     ::::
   
   #title
@@ -207,17 +213,17 @@ Docus brings together the best of the Nuxt ecosystem.
   :::u-page-card
   ---
   spotlight: true
+  class: col-span-2 lg:col-span-1
   target: _blank
   to: https://image.nuxt.com/
-  class: col-span-2 lg:col-span-1
   ---
-    ::::div{class="flex-1 flex items-center justify-center"}
+    ::::div{.flex-1.flex.items-center.justify-center}
       :::::u-color-mode-image
       ---
       alt: Nuxt Image visual
+      class: w-[30%] lg:w-[70%] my-12 lg:my-0
       dark: /landing/dark/nuxt-image.svg
       light: /landing/light/nuxt-image.svg
-      class: w-[30%] lg:w-[70%] my-12 lg:my-0
       ---
       :::::
     ::::
