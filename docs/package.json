@@ -1,5 +1,5 @@
 {
-  "name": "@nuxt-theme/docus-docs",
+  "name": "@nuxt-ui-pro/docus-docs",
   "description": "Official documentation for Docus, also used as playground.",
   "type": "module",
   "scripts": {

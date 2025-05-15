@@ -9,7 +9,7 @@ seo:
 Docus
 
 #title
-The best of [Nuxt]{.text-secondary} for your docs
+Write beautiful docs with Markdown
 
 #description
 
