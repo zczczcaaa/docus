@@ -194,7 +194,7 @@ Docus brings together the best of the Nuxt ecosystem.
   target: _blank
   ---
     ::::browser-frame
-    :video{.rounded-md controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
+    :video{.rounded-md playsinline controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
     ::::
   
   #title
