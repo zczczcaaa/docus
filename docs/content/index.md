@@ -18,20 +18,21 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
 #links
   :::u-button
   ---
+  color: neutral
   size: xl
   to: /getting-started/introduction
   trailing-icon: i-lucide-arrow-right
-  color: neutral
   ---
   Get started
   :::
+
   :::u-button
   ---
-  size: xl
   color: neutral
-  variant: outline
-  to: https://github.com/nuxt-ui-pro/docus
   icon: simple-icons-github
+  size: xl
+  to: https://github.com/nuxt-ui-pro/docus
+  variant: outline
   ---
   Star on GitHub
   :::
