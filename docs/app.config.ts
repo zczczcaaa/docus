@@ -1,6 +1,6 @@
 export default defineAppConfig({
   header: {
-    title: 'Docus'
+    title: 'Docus',
   },
   ui: {
     colors: {
@@ -24,6 +24,11 @@ export default defineAppConfig({
       slots: {
         container: 'lg:flex min-w-0',
         wrapper: 'flex-none',
+      },
+    },
+    contentNavigation: {
+      slots: {
+        linkLeadingIcon: 'size-4',
       },
     },
   },

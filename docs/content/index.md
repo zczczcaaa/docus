@@ -44,7 +44,7 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   spotlight: true
   class: group col-span-2 lg:col-span-1
   target: _blank
-  to: https://ui.nuxt.com
+  to: https://nuxt.com
   ---
     ::::floating-nuxt
     ::::
@@ -61,7 +61,7 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   spotlight: true
   class: col-span-2
   target: _blank
-  to: https://ui.nuxt.com
+  to: https://ui.nuxt.com/pro
   ---
     ::::u-color-mode-image
     ---
