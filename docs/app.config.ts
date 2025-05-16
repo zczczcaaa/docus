@@ -28,7 +28,16 @@ export default defineAppConfig({
     },
     contentNavigation: {
       slots: {
-        linkLeadingIcon: 'size-4',
+        linkLeadingIcon: 'size-4 mr-1',
+        listWithChildren: 'border-(--ui-bg-elevated)',
+        linkTrailing: 'hidden',
+      },
+      variants: {
+        active: {
+          false: {
+            link: 'text-toned hover:after:bg-accented',
+          },
+        },
       },
     },
   },

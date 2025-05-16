@@ -51,6 +51,7 @@ const links = computed(() => appConfig.github?.url
     <template #body>
       <UContentNavigation
         highlight
+        variant="link"
         :navigation="navigation"
       />
     </template>

@@ -30,7 +30,10 @@ provide('navigation', navigation)
 
 <template>
   <UApp>
-    <NuxtLoadingIndicator />
+    <NuxtLoadingIndicator
+      color="var(--ui-primary)"
+      height="2px"
+    />
 
     <AppHeader />
 
