@@ -40,9 +40,6 @@ export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
     modulesDir: [resolve(pkgDir, 'node_modules'), resolve(appDir, 'node_modules')],
     modules: [fixLayers],
     appConfig: {
-      header: {
-        title: meta.name || '',
-      },
       github: {
         owner: gitInfo?.owner,
         name: gitInfo?.name,
@@ -53,11 +50,11 @@ export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
         title: meta.name || '',
         description: meta.description || '',
       },
-      site: {
-        url: inferSiteURL(),
-        name: meta.name || '',
-      },
       toc: {},
+    },
+    site: {
+      url: inferSiteURL(),
+      name: meta.name || '',
     },
   } as NuxtConfig
 }

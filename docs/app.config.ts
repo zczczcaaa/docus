@@ -1,7 +1,6 @@
 export default defineAppConfig({
-  site: {
-    url: 'https://docus-v2.vercel.app',
-    name: 'Docus',
+  header: {
+    title: 'Docus'
   },
   ui: {
     colors: {
@@ -26,13 +25,6 @@ export default defineAppConfig({
         container: 'lg:flex min-w-0',
         wrapper: 'flex-none',
       },
-    },
-  },
-  header: {
-    logo: {
-      alt: 'Nuxt logo',
-      light: '/docus-light.svg',
-      dark: '/docus-dark.svg',
     },
   },
   socials: {

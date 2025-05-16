@@ -3,13 +3,13 @@ import type { ContentNavigationItem } from '@nuxt/content'
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
-const { header, github } = useAppConfig()
+const appConfig = useAppConfig()
 
-const links = computed(() => github.url
+const links = computed(() => appConfig.github?.url
   ? [
       {
         'icon': 'i-simple-icons-github',
-        'to': github.url,
+        'to': appConfig.github.url,
         'target': '_blank',
         'aria-label': 'GitHub',
       },
@@ -21,31 +21,20 @@ const links = computed(() => github.url
   <UHeader
     :ui="{ center: 'flex-1' }"
     to="/"
-    :title="header.title"
+    :title="appConfig.header?.title || appConfig.seo?.title"
   >
     <UContentSearchButton
       :collapsed="false"
       class="w-full"
     />
 
-    <template
-      v-if="header?.logo?.dark || header?.logo?.light || header?.title"
-      #title
-    >
-      <UColorModeImage
-        v-if="header?.logo?.dark || header?.logo?.light"
-        :light="header?.logo?.light || header?.logo?.dark"
-        :dark="header?.logo?.dark || header?.logo?.light"
-        :alt="header?.logo?.alt"
-        class="h-6 w-auto shrink-0"
-      />
-
-      <span v-else-if="header?.title">
-        {{ header.title }}
-      </span>
+    <template #title>
+      <AppHeaderLogo class="h-6 w-auto shrink-0" />
     </template>
 
     <template #right>
+      <AppHeaderCTA />
+
       <UContentSearchButton class="lg:hidden" />
 
       <UColorModeButton />
