@@ -7,7 +7,7 @@ definePageMeta({
 })
 
 const route = useRoute()
-const { toc, github } = useAppConfig()
+const appConfig = useAppConfig()
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
 const { data: page } = await useAsyncData(route.path, () => queryCollection('docs').path(route.path).first())
@@ -37,21 +37,9 @@ defineOgImageComponent('Docs', {
   headline: headline.value,
 })
 
-const links = computed(() => [
-  github.url && {
-    icon: 'i-lucide-external-link',
-    label: 'Edit this page',
-    to: toc.edit ? `${toc.edit}/${page?.value?.stem}.${page?.value?.extension}` : `${github.url}/edit/${github.branch}/content/${page?.value?.stem}.${page?.value?.extension}`,
-    target: '_blank',
-  },
-  github.url && {
-    icon: 'i-lucide-star',
-    label: 'Star on GitHub',
-    to: github.url,
-    target: '_blank',
-  },
-  ...(toc?.links || []),
-].filter(Boolean))
+const editLink = computed(() => {
+  return appConfig.github && `${appConfig.github.url}/edit/${appConfig.github.branch}/content/${page.value?.stem}.${page.value?.extension}`
+})
 </script>
 
 <template>
@@ -69,8 +57,34 @@ const links = computed(() => [
         :value="page"
       />
 
-      <USeparator v-if="surround?.length" />
-
+      <USeparator>
+        <div
+          v-if="editLink"
+          class="flex items-center gap-2 text-sm text-muted"
+        >
+          <UButton
+            variant="link"
+            color="neutral"
+            :to="editLink"
+            target="_blank"
+            icon="i-lucide-pen"
+            :ui="{ leadingIcon: 'size-4' }"
+          >
+            Edit this page on GitHub
+          </UButton>
+          or
+          <UButton
+            variant="link"
+            color="neutral"
+            :to="`${appConfig.github.url}/issues/new/choose`"
+            target="_blank"
+            icon="i-lucide-alert-circle"
+            :ui="{ leadingIcon: 'size-4' }"
+          >
+            Report an issue
+          </UButton>
+        </div>
+      </USeparator>
       <UContentSurround :surround="surround" />
     </UPageBody>
 
@@ -79,11 +93,11 @@ const links = computed(() => [
       #right
     >
       <UContentToc
-        title="Table of Contents"
+        :title="appConfig.toc?.title || 'Table of Contents'"
         :links="page.body?.toc?.links"
       >
         <template
-          v-if="links.length"
+          v-if="appConfig.toc?.bottom?.links?.length"
           #bottom
         >
           <div
@@ -96,8 +110,8 @@ const links = computed(() => [
             />
 
             <UPageLinks
-              title="Community"
-              :links="links"
+              :title="appConfig.toc?.bottom?.title || 'Links'"
+              :links="appConfig.toc?.bottom?.links"
             />
           </div>
         </template>

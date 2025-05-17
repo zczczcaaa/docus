@@ -40,6 +40,12 @@ export default defineAppConfig({
         },
       },
     },
+    pageLinks: {
+      slots: {
+        linkLeadingIcon: 'size-4',
+        linkLabelExternalIcon: 'size-2.5',
+      },
+    },
   },
   socials: {
     x: 'https://x.com/nuxt_js',
@@ -47,16 +53,20 @@ export default defineAppConfig({
     nuxt: 'https://nuxt.com',
   },
   toc: {
-    links: [{
-      icon: 'i-lucide-book-open',
-      label: 'Nuxt UI Pro docs',
-      to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt',
-      target: '_blank',
-    }, {
-      icon: 'i-simple-icons-nuxtdotjs',
-      label: 'Purchase a license',
-      to: 'https://ui.nuxt.com/pro/purchase',
-      target: '_blank',
-    }],
+    title: 'On this page',
+    bottom: {
+      title: 'Community',
+      links: [{
+        icon: 'i-lucide-book-open',
+        label: 'Nuxt UI Pro docs',
+        to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt',
+        target: '_blank',
+      }, {
+        icon: 'i-lucide-credit-card',
+        label: 'Purchase a license',
+        to: 'https://ui.nuxt.com/pro/purchase',
+        target: '_blank',
+      }],
+    },
   },
 })
