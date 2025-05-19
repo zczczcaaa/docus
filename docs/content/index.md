@@ -68,8 +68,8 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
     ---
     alt: Beautiful visual powered by UI Pro
     class: w-full h-80 object-cover rounded-lg
-    dark: /landing/dark/templates-ui-pro.png
-    light: /landing/dark/templates-ui-pro.png
+    dark: /landing/dark/templates-ui-pro.webp
+    light: /landing/light/templates-ui-pro.webp
     ---
     ::::
   
