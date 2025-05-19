@@ -1,0 +1,6 @@
+{
+  "name": "docus-starter",
+  "devDependencies": {
+    "@larbish/docus": "latest"
+  }
+}
