@@ -198,8 +198,16 @@ declare module '@nuxt/schema' {
     }
     socials: Record<string, string>
     toc: {
-      edit: string
-      links: string[]
+      title: string
+      bottom: {
+        title: string
+        links: {
+          icon: string
+          label: string
+          to: string
+          target: string
+        }[]
+      }
     }
     github: {
       owner: string
