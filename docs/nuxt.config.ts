@@ -5,4 +5,8 @@ export default defineNuxtConfig({
     },
   },
   css: ['./assets/css/main.css'],
+  site: {
+    url: 'https://docus-v2.vercel.app',
+    name: 'Docus',
+  },
 })
