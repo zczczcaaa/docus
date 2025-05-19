@@ -1,4 +1,8 @@
 export default defineAppConfig({
+  site: {
+    url: 'https://docus-v2.vercel.app',
+    name: 'Docus',
+  },
   header: {
     title: 'Docus',
   },
