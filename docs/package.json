@@ -7,6 +7,6 @@
     "dev": "docus dev"
   },
   "devDependencies": {
-    "@larbish/docus": "latest"
+    "@larbish/docus": "^1.1.3"
   }
 }
