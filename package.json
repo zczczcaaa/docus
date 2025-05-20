@@ -6,7 +6,7 @@
   "keywords": [],
   "license": "MIT",
   "bin": {
-    "docus": "dist/main.mjs"
+    "docus": "./dist/main.mjs"
   },
   "files": [
     "app",

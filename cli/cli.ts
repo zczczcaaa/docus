@@ -16,14 +16,14 @@ export function createCLI(opts: CLIOptions) {
   const init = defineCommand({
     meta: {
       name: 'init',
-      description: 'Initialize a fresh Docus project, alias of `nuxi init -t hub`.',
+      description: 'Initialize a fresh Docus project',
     },
     args: { ...sharedArgs },
     async setup({ args }) {
       const dir = resolve(args.dir as string)
 
       const { runCommand } = await import('nuxi')
-      await runCommand('init', [dir, '-t', 'gh:nuxt-themes/docus#feat/docus-v2/.starter', dir])
+      await runCommand('init', [dir, '-t', 'gh:nuxt-themes/docus/.starter#feat/docus-v2', dir])
     },
   })
 
