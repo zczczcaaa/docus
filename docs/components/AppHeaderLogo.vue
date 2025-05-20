@@ -1,8 +1,16 @@
 <script setup lang="ts">
+const props = defineProps<{
+  white?: boolean
+}>()
+
 const isBlinking = ref(false)
 const isHovering = ref(false)
 const isTouchDevice = ref(false)
 let cleanup: (() => void) | undefined
+
+const color = computed(() => {
+  return props.white ? 'text-white' : 'text-black dark:text-white'
+})
 
 function setupBlinking() {
   const blinkDelay = Math.random() * 5000 + 2000
@@ -36,7 +44,7 @@ onBeforeUnmount(() => {
     viewBox="0 0 139 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    class="text-black dark:text-white"
+    :class="color"
     alt="Docus logo"
     @mouseenter="isHovering = true"
     @mouseleave="isHovering = false"

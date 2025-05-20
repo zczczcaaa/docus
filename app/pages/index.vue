@@ -12,9 +12,20 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: '/social-card.png',
-  twitterImage: '/social-card.png',
 })
+
+if (page.value?.seo?.ogImage) {
+  useSeoMeta({
+    ogImage: page.value.seo.ogImage,
+    twitterImage: page.value.seo.ogImage,
+  })
+}
+else {
+  defineOgImageComponent('Landing', {
+    title,
+    description,
+  })
+}
 </script>
 
 <template>

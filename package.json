@@ -1,5 +1,5 @@
 {
-  "name": "docus",
+  "name": "@larbish/docus",
   "description": "Minimal Documentation theme and CLI for shared usage across Nuxt modules",
   "private": false,
   "version": "1.1.5",
@@ -28,6 +28,7 @@
   "dependencies": {
     "@iconify-json/lucide": "^1.2.44",
     "@iconify-json/simple-icons": "^1.2.35",
+    "@iconify-json/vscode-icons": "^1.2.21",
     "@nuxt/content": "^3.5.1",
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui-pro": "^3.1.2",
