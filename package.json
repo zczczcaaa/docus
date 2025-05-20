@@ -1,8 +1,8 @@
 {
-  "name": "@larbish/docus",
+  "name": "docus",
   "description": "Minimal Documentation theme and CLI for shared usage across Nuxt modules",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.1.5",
   "keywords": [],
   "license": "MIT",
   "bin": {
