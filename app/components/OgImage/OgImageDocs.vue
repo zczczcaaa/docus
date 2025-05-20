@@ -9,7 +9,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col justify-center bg-[#020420]">
+  <div class="w-full h-full flex flex-col justify-center bg-neutral-900">
     <svg
       class="absolute right-0 top-0"
       width="629"
@@ -55,7 +55,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
     <div class="pl-[100px]">
       <p
         v-if="headline"
-        class="uppercase text-[24px] text-white mb-4 font-semibold"
+        class="uppercase text-[24px] text-emerald-500 mb-4 font-semibold"
       >
         {{ headline }}
       </p>
@@ -67,7 +67,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
       </h1>
       <p
         v-if="description"
-        class="text-[32px] text-[#E4E4E7] leading-tight w-[700px]"
+        class="text-[32px] text-neutral-300 leading-tight w-[700px]"
       >
         {{ description }}
       </p>
