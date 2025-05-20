@@ -37,17 +37,16 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
 ::
 
 ::u-page-section
+#title
+Shipped with many features
+
 #features
-  :::u-page-card
+  :::u-page-feature
   ---
-  spotlight: true
-  class: group col-span-2 lg:col-span-1
+  icon: i-simple-icons-nuxt
   target: _blank
   to: https://nuxt.com
   ---
-    ::::floating-nuxt
-    ::::
-  
   #title
   Built with [Nuxt 3]{.text-primary}
   
@@ -55,22 +54,12 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
   :::
 
-  :::u-page-card
+  :::u-page-feature
   ---
-  spotlight: true
-  class: col-span-2
+  icon: i-simple-icons-nuxt
   target: _blank
-  to: https://ui.nuxt.com/pro
+  to: https://ui.nuxt.com/
   ---
-    ::::u-color-mode-image
-    ---
-    alt: Beautiful visual powered by UI Pro
-    class: w-full h-80 object-cover rounded-lg
-    dark: /landing/dark/templates-ui-pro.webp
-    light: /landing/light/templates-ui-pro.webp
-    ---
-    ::::
-  
   #title
   Powered by [Nuxt UI Pro]{.text-primary}
   
@@ -78,59 +67,12 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI Pro to give you the best docs writing experience with zero boilerplate, just focus on your content.
   :::
 
-  :::u-page-card
+  :::u-page-feature
   ---
-  spotlight: true
-  class: col-span-2
+  icon: i-simple-icons-nuxt
   target: _blank
+  to: https://content.nuxt.com
   ---
-    ::::tabs
-      :::::tabs-item{.mt-5 icon="i-lucide-eye" label="Preview"}
-        ::::::div{.flex.flex-col.gap-4}
-          :::::::note{.my-0}
-          Here's some additional information for you.
-          :::::::
-        
-          :::::::tip{.my-0}
-          Here's a helpful suggestion.
-          :::::::
-        
-          :::::::warning{.my-0}
-          Be careful with this action as it might have unexpected results.
-          :::::::
-        
-          :::::::caution{.my-0}
-          This action cannot be undone.
-          :::::::
-        ::::::
-      :::::
-    
-      :::::tabs-item
-      ---
-      class: mt-5 mb-2 text-xs overflow-x-auto
-      icon: i-lucide-code
-      label: Code
-      ---
-      ```mdc
-      ::note
-      Here's some additional information.
-      ::
-      
-      ::tip
-      Here's a helpful suggestion.
-      ::
-      
-      ::warning
-      Be careful with this action as it might have unexpected results.
-      ::
-      
-      ::caution
-      This action cannot be undone.
-      ::
-      ```
-      ::::
-    ::::
-  
   #title
   Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
   
@@ -138,29 +80,12 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
   :::
 
-  :::u-page-card
+  :::u-page-feature
   ---
-  spotlight: true
-  class: col-span-2 md:col-span-1
+  icon: i-simple-icons-nuxt
   target: _blank
+  to: https://nuxt.com/docs/guide/directory-structure/app-config
   ---
-    ::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
-    ```ts [app.config.ts]
-    export default defineAppConfig({
-      ui: {
-        colors: {
-          primary: 'green',
-          secondary: 'sky',
-        },
-      },
-      socials: {
-        x: 'https://x.com/nuxt_js',
-        nuxt: 'https://nuxt.com'
-      }
-    })
-    ```
-    ::::
-  
   #title
   Customize with [Nuxt App Config]{.text-primary}
   
@@ -168,48 +93,12 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
   :::
 
-  :::u-page-card
+  :::u-page-feature
   ---
-  spotlight: true
-  class: col-span-2 md:col-span-1 min-h-[450px]
+  icon: i-simple-icons-nuxt
   target: _blank
+  to: https://content.nuxt.com/studio
   ---
-    ::::color-mode-switch
-    ::::
-  
-  #title
-  [Nuxt Color]{.text-primary} mode
-  
-  #description
-  Built-in dark mode provided, no configuration required.
-  :::
-
-  :::u-page-card
-  ---
-  spotlight: true
-  class: col-span-2
-  target: _blank
-  ---
-    ::::command-search
-    ::::
-  
-  #title
-  Built-in navigation and [full-text search]{.text-primary}
-  
-  #description
-  Only focus on ordering your content, Docus handles the search modal and auto-generates the side navigation for you.
-  :::
-
-  :::u-page-card
-  ---
-  spotlight: true
-  class: col-span-2
-  target: _blank
-  ---
-    ::::browser-frame
-    :video{.rounded-md controls loop playsinline src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
-    ::::
-  
   #title
   Collaborate on [Nuxt Studio]{.text-primary}
   
@@ -217,28 +106,16 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   Write and manage your content visually, with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
   :::
 
-  :::u-page-card
+  :::u-page-feature
   ---
-  spotlight: true
-  class: col-span-2 lg:col-span-1
+  icon: i-simple-icons-nuxt
   target: _blank
-  to: https://image.nuxt.com/
+  to: https://ui.nuxt.com/components/content-search
   ---
-    ::::div{.flex-1.flex.items-center.justify-center}
-      :::::u-color-mode-image
-      ---
-      alt: Nuxt Image visual
-      class: w-[30%] lg:w-[70%] my-12 lg:my-0
-      dark: /landing/dark/nuxt-image.svg
-      light: /landing/light/nuxt-image.svg
-      ---
-      :::::
-    ::::
-  
   #title
-  [Nuxt Image]{.text-primary} optimization
+  Built-in navigation and [full-text search]{.text-primary}
   
   #description
-  Docus automatically converts Markdown images to use `<NuxtImg>` .
+  Only focus on ordering your content, Docus handles the search modal and auto-generates the side navigation for you.
   :::
 ::

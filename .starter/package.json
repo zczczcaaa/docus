@@ -1,5 +1,9 @@
 {
   "name": "docus-starter",
+  "scripts": {
+    "dev": "docus dev",
+    "build": "docus build"
+  },
   "devDependencies": {
     "@larbish/docus": "latest"
   }
