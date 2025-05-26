@@ -25,4 +25,7 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
+  icon: {
+    provider: 'iconify',
+  },
 })
