@@ -32,13 +32,14 @@ export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
   global.__DOCS_DIR__ = resolve(dir, 'content')
 
   const gitInfo = await getLocalGitInfo(dir) || getGitEnv()
+  const url = inferSiteURL()
 
   // Prepare loadNuxt overrides
   return {
     compatibilityDate: '2025-04-24',
     extends: [appDir],
     modulesDir: [resolve(pkgDir, 'node_modules'), resolve(appDir, 'node_modules')],
-    modules: [fixLayers],
+    modules: ['nuxt-llms', fixLayers],
     appConfig: {
       header: {
         title: meta.name || '',
@@ -56,8 +57,13 @@ export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
       toc: {},
     },
     site: {
-      url: inferSiteURL(),
+      url,
       name: meta.name || '',
+    },
+    llms: {
+      domain: url,
+      title: meta.name || '',
+      description: meta.description || '',
     },
   } as NuxtConfig
 }

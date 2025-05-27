@@ -42,6 +42,7 @@
     "git-url-parse": "^16.1.0",
     "nuxi": "^3.25.1",
     "nuxt": "^3.17.3",
+    "nuxt-llms": "^0.1.2",
     "nuxt-og-image": "^5.1.4",
     "pkg-types": "^2.1.0",
     "tailwindcss": "^4.1.7",
