@@ -96,24 +96,8 @@ const editLink = computed(() => {
         :title="appConfig.toc?.title || 'Table of Contents'"
         :links="page.body?.toc?.links"
       >
-        <template
-          v-if="appConfig.toc?.bottom?.links?.length"
-          #bottom
-        >
-          <div
-            class="hidden lg:block space-y-6"
-            :class="{ '!mt-6': page.body?.toc?.links?.length }"
-          >
-            <USeparator
-              v-if="page.body?.toc?.links?.length"
-              type="dashed"
-            />
-
-            <UPageLinks
-              :title="appConfig.toc?.bottom?.title || 'Links'"
-              :links="appConfig.toc?.bottom?.links"
-            />
-          </div>
+        <template #bottom>
+          <DocsAsideRightBottom />
         </template>
       </UContentToc>
     </template>

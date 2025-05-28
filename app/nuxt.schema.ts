@@ -135,19 +135,12 @@ export default defineNuxtSchema({
       description: 'TOC configuration.',
       icon: 'i-lucide-list',
       fields: {
-        links: field({
-          type: 'array',
-          title: 'Links',
-          description: 'Array of link object displayed in bottom toc.',
-          icon: 'i-lucide-link',
-          default: [],
-        }),
-        edit: field({
+        title: field({
           type: 'string',
-          title: 'Edit Page Link',
-          description: 'URL of your repository content folder.',
-          icon: 'i-heroicons-pencil-square',
-          default: '',
+          title: 'Title',
+          description: 'Title of the table of contents.',
+          icon: 'i-lucide-list',
+          default: 'On this page',
         }),
       },
     }),

@@ -23,10 +23,7 @@ const links = computed(() => appConfig.github?.url
     to="/"
     :title="appConfig.header?.title || appConfig.seo?.title"
   >
-    <UContentSearchButton
-      :collapsed="false"
-      class="w-full"
-    />
+    <AppHeaderCenter />
 
     <template #title>
       <AppHeaderLogo class="h-6 w-auto shrink-0" />
