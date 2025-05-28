@@ -7,6 +7,6 @@
     "dev": "docus dev"
   },
   "devDependencies": {
-    "@larbish/docus": "@larbish/docus@1.2.0-20250527-200327-3f060d8"
+    "@larbish/docus": "@larbish/docus@1.1.6-20250528-095325-c2ae985"
   }
 }
