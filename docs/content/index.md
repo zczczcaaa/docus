@@ -192,7 +192,12 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   class: col-span-2
   target: _blank
   ---
-    ::::command-search
+    ::::u-color-mode-image
+    ---
+    class: rounded-lg
+    dark: /landing/dark/command-menu.png
+    light: /landing/light/command-menu.png
+    ---
     ::::
   
   #title
