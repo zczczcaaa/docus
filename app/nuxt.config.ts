@@ -13,7 +13,10 @@ export default defineNuxtConfig({
   devtools: {
     enabled: dev,
   },
-  css: ['../assets/css/main.css'],
+  css: ['../app/assets/css/main.css'],
+  future: {
+    compatibilityVersion: 4,
+  },
   nitro: {
     prerender: {
       routes: ['/'],

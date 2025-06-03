@@ -4,9 +4,12 @@ export default defineNuxtConfig({
       titleTemplate: '%s - Docus',
     },
   },
-  css: ['./assets/css/main.css'],
+  css: ['../app/assets/css/main.css'],
   site: {
     url: 'https://docus-v2.vercel.app',
     name: 'Docus',
+  },
+  future: {
+    compatibilityVersion: 4,
   },
 })
