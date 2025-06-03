@@ -40,12 +40,14 @@
     "citty": "^0.1.6",
     "dotenv": "^16.5.0",
     "git-url-parse": "^16.1.0",
+    "minimark": "^0.2.0",
     "nuxi": "^3.25.1",
     "nuxt": "^3.17.3",
     "nuxt-llms": "^0.1.2",
     "nuxt-og-image": "^5.1.4",
     "pkg-types": "^2.1.0",
     "tailwindcss": "^4.1.7",
+    "ufo": "^1.6.1",
     "unctx": "^2.4.1"
   },
   "devDependencies": {

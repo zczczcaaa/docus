@@ -46,10 +46,17 @@ const editLink = computed(() => {
   <UPage v-if="page">
     <UPageHeader
       :title="page.title"
-      :description="page.description"
       :links="page.links"
-      :headline="headline"
-    />
+    >
+      <template #headline>
+        <div class="w-full justify-between flex">
+          <div>
+            {{ headline }}
+          </div>
+          <DocsHeaderRight />
+        </div>
+      </template>
+    </UPageHeader>
 
     <UPageBody>
       <ContentRenderer
