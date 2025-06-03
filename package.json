@@ -33,7 +33,7 @@
     "@iconify-json/lucide": "^1.2.44",
     "@iconify-json/simple-icons": "^1.2.35",
     "@iconify-json/vscode-icons": "^1.2.21",
-    "@nuxt/content": "^3.5.1",
+    "@nuxt/content": "https://pkg.pr.new/@nuxt/content@231ef50",
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui-pro": "^3.1.2",
     "c12": "^3.0.4",
