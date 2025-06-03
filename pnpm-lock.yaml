@@ -97,8 +97,8 @@ importers:
   docs:
     devDependencies:
       '@larbish/docus':
-        specifier: 1.1.6-20250528-095325-c2ae985
-        version: 1.1.6-20250528-095325-c2ae985(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.15.19)(@unhead/vue@2.0.8(vue@3.5.13(typescript@5.8.3)))(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(jwt-decode@4.0.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.2)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(unstorage@1.16.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(ioredis@5.6.1))(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(yaml@2.7.1)(zod@3.24.4)
+        specifier: 1.1.6-20250603-101320-2b24404
+        version: 1.1.6-20250603-101320-2b24404(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.15.19)(@unhead/vue@2.0.8(vue@3.5.13(typescript@5.8.3)))(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(jwt-decode@4.0.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.2)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(unstorage@1.16.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(ioredis@5.6.1))(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(yaml@2.7.1)(zod@3.24.4)
 
 packages:
 
@@ -605,8 +605,8 @@ packages:
   '@kwsites/promise-deferred@1.1.1':
     resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
 
-  '@larbish/docus@1.1.6-20250528-095325-c2ae985':
-    resolution: {integrity: sha512-Td1godJdieJEfXUy/+HaQULF9d6mi9mjXXMrSPTXzACUotJqpdCX2C+3t9oHmyyvShLMD4kaShnjOhqM1A2F4Q==}
+  '@larbish/docus@1.1.6-20250603-101320-2b24404':
+    resolution: {integrity: sha512-9ZOl0pz4X/wuDYh1cISK/B4cWEKV2XSqOXyUgLk6uQT6kFxSuMyurlYMszqMXVXgTIoXW9+k8mLg1bBZ/O9qOg==}
     hasBin: true
 
   '@mapbox/node-pre-gyp@1.0.11':
@@ -6576,7 +6576,7 @@ snapshots:
 
   '@kwsites/promise-deferred@1.1.1': {}
 
-  '@larbish/docus@1.1.6-20250528-095325-c2ae985(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.15.19)(@unhead/vue@2.0.8(vue@3.5.13(typescript@5.8.3)))(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(jwt-decode@4.0.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.2)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(unstorage@1.16.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(ioredis@5.6.1))(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(yaml@2.7.1)(zod@3.24.4)':
+  '@larbish/docus@1.1.6-20250603-101320-2b24404(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.15.19)(@unhead/vue@2.0.8(vue@3.5.13(typescript@5.8.3)))(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(jwt-decode@4.0.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.2)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(unstorage@1.16.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(ioredis@5.6.1))(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(yaml@2.7.1)(zod@3.24.4)':
     dependencies:
       '@iconify-json/lucide': 1.2.44
       '@iconify-json/simple-icons': 1.2.35
@@ -6588,12 +6588,14 @@ snapshots:
       citty: 0.1.6
       dotenv: 16.5.0
       git-url-parse: 16.1.0
+      minimark: 0.2.0
       nuxi: 3.25.1
       nuxt: 3.17.3(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.15.19)(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.2)(terser@5.39.0)(tsx@4.19.4)(typescript@5.8.3)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(yaml@2.7.1)
       nuxt-llms: 0.1.2(magicast@0.3.5)
       nuxt-og-image: 5.1.4(@unhead/vue@2.0.8(vue@3.5.13(typescript@5.8.3)))(magicast@0.3.5)(unstorage@1.16.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(ioredis@5.6.1))(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
       pkg-types: 2.1.0
       tailwindcss: 4.1.7
+      ufo: 1.6.1
       unctx: 2.4.1
     transitivePeerDependencies:
       - '@azure/app-configuration'
