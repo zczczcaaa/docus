@@ -4,7 +4,9 @@
     "dev": "docus dev",
     "build": "docus build"
   },
-  "devDependencies": {
-    "@larbish/docus": "latest"
+  "dependencies": {
+    "@larbish/docus": "latest",
+    "better-sqlite3": "^11.10.0",
+    "nuxt": "^3.17.3"
   }
 }
