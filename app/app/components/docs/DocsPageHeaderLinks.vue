@@ -6,9 +6,11 @@
       color="neutral"
       variant="outline"
       :loading="copyStatus === 'copying'"
+      size="sm"
       @click="copyPage"
     />
     <UDropdownMenu
+      size="sm"
       :items="items"
       :content="{
         align: 'end',
