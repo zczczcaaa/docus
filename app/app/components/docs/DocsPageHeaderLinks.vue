@@ -71,13 +71,20 @@ const items = [
   },
 ]
 
-const copyPage = async () => {
+async function copyPage() {
   copyStatus.value = 'copying'
   const markdown = await $fetch<string>(`${window.location.origin}/raw${route.path}.md`)
-  await navigator.clipboard.writeText(markdown)
+  copyToClipboard(markdown)
   copyStatus.value = 'copied'
   setTimeout(() => {
     copyStatus.value = 'idle'
   }, 2000)
+}
+
+function copyToClipboard(text: string) {
+  // Fix for iOS Safari: https://stackoverflow.com/questions/62327358/javascript-clipboard-api-safari-ios-notallowederror-message
+  setTimeout(async () => {
+    await navigator.clipboard.writeText(text)
+  }, 0)
 }
 </script>
