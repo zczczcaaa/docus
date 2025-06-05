@@ -74,7 +74,7 @@ const editLink = computed(() => {
             icon="i-lucide-pen"
             :ui="{ leadingIcon: 'size-4' }"
           >
-            Edit this page on GitHub
+            Edit this page
           </UButton>
           or
           <UButton
