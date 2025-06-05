@@ -1,14 +1,14 @@
 <template>
   <UButtonGroup>
     <UButton
-      label="Copy Page"
+      label="Copy page"
       :icon="copyStatus === 'copied' ? 'i-lucide-copy-check' : 'i-lucide-copy'"
       color="neutral"
       variant="outline"
       :loading="copyStatus === 'copying'"
       size="xs"
       :ui="{
-        leadingIcon: copyStatus === 'copied' ? 'text-primary' : 'text-neutral',
+        leadingIcon: [copyStatus === 'copied' ? 'text-primary' : 'text-neutral', 'size-3.5'],
       }"
       @click="copyPage"
     />
@@ -26,6 +26,7 @@
     >
       <UButton
         icon="i-lucide-chevron-down"
+        size="sm"
         color="neutral"
         variant="outline"
       />
@@ -39,7 +40,7 @@ const copyStatus = ref<'idle' | 'copying' | 'copied'>('idle')
 
 const items = [
   {
-    label: 'Copy Markdown Link',
+    label: 'Copy Markdown link',
     icon: 'i-lucide-link',
     onSelect() {
       navigator.clipboard.writeText(`${window.location.origin}/raw${route.path}.md`)

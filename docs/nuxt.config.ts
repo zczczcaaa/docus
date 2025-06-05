@@ -12,4 +12,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  llms: {
+    domain: 'https://docus-v2.vercel.app',
+  },
 })

@@ -49,6 +49,9 @@ const editLink = computed(() => {
       :description="page.description"
       :links="page.links"
       :headline="headline"
+      :ui="{
+        wrapper: 'flex-row items-center flex-wrap justify-between',
+      }"
     >
       <template #links>
         <DocsPageHeaderLinks />
