@@ -1,5 +1,5 @@
 {
-  "name": "@nuxt-ui-pro/docus-docs",
+  "name": "docus-docs",
   "description": "Official documentation for Docus, also used as playground.",
   "type": "module",
   "scripts": {
@@ -7,6 +7,6 @@
     "dev": "docus dev"
   },
   "devDependencies": {
-    "@larbish/docus": "1.1.6-20250605-185531-4761858"
+    "@larbish/docus": "link:../"
   }
 }
