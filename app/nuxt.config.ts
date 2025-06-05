@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt/config'
-
 // Flag enabled when developing docs theme
 const dev = !!process.env.NUXT_DOCS_DEV
 

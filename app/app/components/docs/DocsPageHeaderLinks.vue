@@ -1,12 +1,15 @@
 <template>
   <UButtonGroup>
     <UButton
-      :label="`${copyStatus === 'copied' ? 'Copied' : 'Copy Page'}`"
-      :icon="`i-lucide-${copyStatus === 'copied' ? 'check' : 'copy'}`"
+      label="Copy Page"
+      :icon="copyStatus === 'copied' ? 'i-lucide-copy-check' : 'i-lucide-copy'"
       color="neutral"
       variant="outline"
       :loading="copyStatus === 'copying'"
-      size="sm"
+      size="xs"
+      :ui="{
+        leadingIcon: copyStatus === 'copied' ? 'text-primary' : 'text-neutral',
+      }"
       @click="copyPage"
     />
     <UDropdownMenu
