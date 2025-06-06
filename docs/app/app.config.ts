@@ -24,4 +24,23 @@ export default defineAppConfig({
       }],
     },
   },
+  uiPro: {
+    pageHero: {
+      slots: {
+        title: 'font-semibold sm:text-6xl',
+        container: '!pb-0',
+      },
+    },
+    pageSection: {
+      slots: {
+        features: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+      },
+    },
+    pageCard: {
+      slots: {
+        container: 'lg:flex min-w-0',
+        wrapper: 'flex-none',
+      },
+    },
+  },
 })
