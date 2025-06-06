@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro',
     '@nuxt/content',
     '@nuxt/image',
+    '@nuxtjs/robots',
     'nuxt-og-image',
   ],
   devtools: {
