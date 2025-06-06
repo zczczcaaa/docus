@@ -1,7 +1,4 @@
 export default defineAppConfig({
-  header: {
-    title: 'Docus',
-  },
   socials: {
     x: 'https://x.com/nuxt_js',
     discord: 'https://discord.com/invite/ps2h6QT',

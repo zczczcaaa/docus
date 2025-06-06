@@ -43,7 +43,6 @@
     "git-url-parse": "^16.1.0",
     "minimark": "^0.2.0",
     "nuxi": "^3.25.1",
-    "nuxt": "^3.17.3",
     "nuxt-llms": "^0.1.2",
     "nuxt-og-image": "^5.1.4",
     "pkg-types": "^2.1.0",
@@ -61,6 +60,10 @@
     "tsup": "^8.5.0",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "nuxt": "3.x",
+    "better-sqlite3": "11.x"
   },
   "packageManager": "pnpm@10.11.0"
 }

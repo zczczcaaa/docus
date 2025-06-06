@@ -81,6 +81,27 @@ export default defineNuxtSchema({
         }),
       },
     }),
+    seo: group({
+      title: 'SEO',
+      description: 'SEO configuration.',
+      icon: 'i-lucide-search',
+      fields: {
+        title: field({
+          type: 'string',
+          title: 'Title',
+          description: 'Title to display in the header.',
+          icon: 'i-lucide-type',
+          default: '',
+        }),
+        description: field({
+          type: 'string',
+          title: 'Description',
+          description: 'Description to display in the header.',
+          icon: 'i-lucide-type',
+          default: '',
+        }),
+      },
+    }),
     header: group({
       title: 'Header',
       description: 'Header configuration.',
@@ -185,6 +206,7 @@ export default defineNuxtSchema({
 declare module '@nuxt/schema' {
   interface AppConfig {
     seo: {
+      titleTemplate: string
       title: string
       description: string
     }

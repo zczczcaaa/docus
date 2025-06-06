@@ -51,6 +51,7 @@ export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
         branch: getGitBranch(),
       },
       seo: {
+        titleTemplate: `%s - ${meta.name}`,
         title: meta.name || '',
         description: meta.description || '',
       },

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
+const site = useSiteConfig()
 
 const links = computed(() => appConfig.github?.url
   ? [
@@ -17,7 +18,7 @@ const links = computed(() => appConfig.github?.url
   <UHeader
     :ui="{ center: 'flex-1' }"
     to="/"
-    :title="appConfig.header?.title || appConfig.seo?.title"
+    :title="appConfig.header?.title || site.name"
   >
     <AppHeaderCenter />
 
