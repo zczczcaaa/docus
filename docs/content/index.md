@@ -198,6 +198,9 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
       dark: /landing/dark/command-menu.png
       light: /landing/light/command-menu.png
       alt: Built-in navigation and full-text search
+      width: 859
+      height: 554
+      format: webp
       ---
       ::::
     
