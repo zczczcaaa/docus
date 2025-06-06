@@ -22,4 +22,10 @@ export default createConfigForNuxt({
   languageOptions: {
     parser: parserTs,
   },
-})
+}).append(
+  {
+    rules: {
+      'vue/multi-word-component-names': 'off',
+    },
+  },
+)

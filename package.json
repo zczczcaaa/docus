@@ -26,8 +26,9 @@
     "dev:prepare": "nuxi prepare app && nuxi prepare docs",
     "build": "tsup-node ./cli/main.ts --format esm",
     "docus": "tsx ./cli/main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "test": "echo \"Error: no test specified\"",
+    "lint": "eslint .",
+    "release": "npm run lint && npm run test && npm run build && release-it"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.44",
@@ -53,18 +54,20 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^1.4.1",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@types/node": "^22.15.19",
     "@typescript-eslint/parser": "^8.32.1",
     "changelogen": "^0.6.1",
     "eslint": "^9.27.0",
+    "release-it": "^19.0.3",
     "tsup": "^8.5.0",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "nuxt": "3.x",
-    "better-sqlite3": "11.x"
+    "better-sqlite3": "11.x",
+    "nuxt": "3.x"
   },
   "packageManager": "pnpm@10.11.0"
 }
