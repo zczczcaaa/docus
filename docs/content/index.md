@@ -70,6 +70,8 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
       class: w-full h-80 object-cover rounded-lg
       dark: /landing/dark/templates-ui-pro.webp
       light: /landing/light/templates-ui-pro.webp
+      width: 859
+      height: 320
       ---
       ::::
     
@@ -201,6 +203,7 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
       width: 859
       height: 554
       format: webp
+      loading: lazy
       ---
       ::::
     
