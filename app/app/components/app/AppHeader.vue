@@ -42,6 +42,14 @@ const links = computed(() => appConfig.github?.url
       </template>
     </template>
 
+    <template #toggle="{ open, toggle }">
+      <IconMenuToggle
+        :open="open"
+        class="lg:hidden"
+        @click="toggle"
+      />
+    </template>
+
     <template #body>
       <AppHeaderBody />
     </template>

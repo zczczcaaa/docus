@@ -42,6 +42,7 @@
     "dotenv": "^16.5.0",
     "git-url-parse": "^16.1.0",
     "minimark": "^0.2.0",
+    "motion-v": "^1.2.0",
     "nuxi": "^3.25.1",
     "nuxt-llms": "^0.1.2",
     "nuxt-og-image": "^5.1.4",
