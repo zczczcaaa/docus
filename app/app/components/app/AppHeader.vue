@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import type { ContentNavigationItem } from '@nuxt/content'
-
-const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
-
 const appConfig = useAppConfig()
 
 const links = computed(() => appConfig.github?.url
@@ -46,11 +42,7 @@ const links = computed(() => appConfig.github?.url
     </template>
 
     <template #body>
-      <UContentNavigation
-        highlight
-        variant="link"
-        :navigation="navigation"
-      />
+      <AppHeaderBody />
     </template>
   </UHeader>
 </template>
