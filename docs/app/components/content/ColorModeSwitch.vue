@@ -5,6 +5,7 @@
         v-model="isLight"
         unchecked-icon="i-lucide-moon"
         checked-icon="i-lucide-sun"
+        aria-label="Toggle color mode"
         size="xl"
         color="neutral"
         :ui="{

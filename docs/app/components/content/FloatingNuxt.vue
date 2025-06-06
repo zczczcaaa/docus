@@ -3,6 +3,7 @@
     <NuxtImg
       src="/landing/nuxt-logo-3D.svg"
       class="h-42 floating-logo"
+      alt="Nuxt 3D Logo"
     />
   </div>
 </template>
