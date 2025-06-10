@@ -31,10 +31,10 @@
     "release": "npm run lint && npm run test && npm run build && release-it"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.44",
-    "@iconify-json/simple-icons": "^1.2.35",
-    "@iconify-json/vscode-icons": "^1.2.21",
-    "@nuxt/content": "https://pkg.pr.new/@nuxt/content@231ef50",
+    "@iconify-json/lucide": "^1.2.47",
+    "@iconify-json/simple-icons": "^1.2.38",
+    "@iconify-json/vscode-icons": "^1.2.22",
+    "@nuxt/content": "https://pkg.pr.new/@nuxt/content@d98bf49",
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui-pro": "^3.1.3",
     "@nuxtjs/robots": "^5.2.10",
@@ -43,23 +43,23 @@
     "dotenv": "^16.5.0",
     "git-url-parse": "^16.1.0",
     "minimark": "^0.2.0",
-    "motion-v": "^1.2.0",
+    "motion-v": "^1.2.1",
     "nuxi": "^3.25.1",
-    "nuxt-llms": "^0.1.2",
-    "nuxt-og-image": "^5.1.4",
+    "nuxt-llms": "^0.1.3",
+    "nuxt-og-image": "^5.1.6",
     "pkg-types": "^2.1.0",
-    "tailwindcss": "^4.1.7",
+    "tailwindcss": "^4.1.8",
     "ufo": "^1.6.1",
     "unctx": "^2.4.1"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^1.4.1",
     "@release-it/conventional-changelog": "^10.0.1",
-    "@stylistic/eslint-plugin": "^4.2.0",
-    "@types/node": "^22.15.19",
-    "@typescript-eslint/parser": "^8.32.1",
+    "@stylistic/eslint-plugin": "^4.4.1",
+    "@types/node": "^24.0.0",
+    "@typescript-eslint/parser": "^8.34.0",
     "changelogen": "^0.6.1",
-    "eslint": "^9.27.0",
+    "eslint": "^9.28.0",
     "release-it": "^19.0.3",
     "tsup": "^8.5.0",
     "tsx": "^4.19.4",
@@ -69,5 +69,5 @@
     "better-sqlite3": "11.x",
     "nuxt": "3.x"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.12.1"
 }
