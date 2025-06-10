@@ -111,7 +111,7 @@ importers:
 
   docs:
     devDependencies:
-      '@larbish/docus':
+      docus:
         specifier: link:../
         version: link:..
 
