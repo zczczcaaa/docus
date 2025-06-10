@@ -2,17 +2,14 @@
 
 Documentation Theme and CLI to write beautiful docs with Markdown.
 
-Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. Docus brings together the best of the Nuxt ecosystem.
-
-Powered by:
+Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. Docus brings together the best of the Nuxt ecosystem:
 - [Nuxt 3](https://nuxt.com)
 - [Nuxt Content](https://content.nuxt.com/)
 - [Nuxt UI](https://ui.nuxt.com/)
 - [Nuxt Image](https://image.nuxt.com/)
 - [Nuxt LLMs](https://github.com/nuxtlabs/nuxt-llms)
 - [UnJS ecosystem](https://unjs.io/)
-
-Editable with [Nuxt Studio](https://content.nuxt.com/studio) ✏
+- [Nuxt Studio](https://content.nuxt.com/studio) 
 
 ## Contribution
 
