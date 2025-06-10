@@ -23,7 +23,7 @@ export function createCLI(opts: CLIOptions) {
       const dir = resolve(args.dir as string)
 
       const { runCommand } = await import('nuxi')
-      await runCommand('init', [dir, '-t', 'gh:nuxt-themes/docus/.starter#feat/docus-v2', dir])
+      await runCommand('init', [dir, '-t', 'gh:nuxtlabs/docus/.starter', dir])
     },
   })
 
