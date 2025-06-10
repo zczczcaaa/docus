@@ -35,5 +35,5 @@ jobs:
       - name: Release Nightly
         run: pnpm changelogen --bump --canary --publish --publishTag nightly
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_LARBISH }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_DOCUS }}
           NPM_CONFIG_PROVENANCE: true

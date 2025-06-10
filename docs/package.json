@@ -7,6 +7,6 @@
     "dev": "docus dev"
   },
   "devDependencies": {
-    "@larbish/docus": "link:../"
+    "docus": "link:../"
   }
 }
