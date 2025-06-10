@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.0-alpha.1](https://github.com/nuxtlabs/docus/compare/v2.0.0-alpha.0...v2.0.0-alpha.1) (2025-06-10)
+
+### Bug Fixes
+
+* **cli:** init command ([cfa6290](https://github.com/nuxtlabs/docus/commit/cfa6290f5aa38da852dad57780a277c502df3daf))
+
 ## [2.0.0-alpha.0](https://github.com/nuxtlabs/docus/compare/v2.0.0...v2.0.0-alpha.0) (2025-06-10)
 
 ### Features
