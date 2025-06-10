@@ -1,12 +1,12 @@
 {
-  "name": "@larbish/docus",
+  "name": "docus",
   "description": "Minimal Documentation theme and CLI for shared usage across Nuxt modules",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nuxt-themes/docus"
+    "url": "https://github.com/nuxtlabs/docus"
   },
   "private": false,
-  "version": "2.0.0",
+  "version": "1.0.0",
   "keywords": [],
   "license": "MIT",
   "bin": {
