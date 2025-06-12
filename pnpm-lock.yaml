@@ -18,8 +18,8 @@ importers:
         specifier: ^1.2.22
         version: 1.2.22
       '@nuxt/content':
-        specifier: https://pkg.pr.new/@nuxt/content@d98bf49
-        version: https://pkg.pr.new/@nuxt/content@d98bf49(better-sqlite3@11.10.0)(magicast@0.3.5)
+        specifier: https://pkg.pr.new/@nuxt/content@d5ac591
+        version: https://pkg.pr.new/@nuxt/content@d5ac591(better-sqlite3@11.10.0)(magicast@0.3.5)
       '@nuxt/image':
         specifier: ^1.10.0
         version: 1.10.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(ioredis@5.6.1)(magicast@0.3.5)
@@ -28,7 +28,7 @@ importers:
         version: 3.17.5(magicast@0.3.5)
       '@nuxt/ui-pro':
         specifier: ^3.1.3
-        version: 3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.57)
+        version: 3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.63)
       '@nuxtjs/robots':
         specifier: ^5.2.10
         version: 5.2.10(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3))
@@ -839,13 +839,13 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
-  '@nuxt/content@https://pkg.pr.new/@nuxt/content@d98bf49':
-    resolution: {tarball: https://pkg.pr.new/@nuxt/content@d98bf49}
+  '@nuxt/content@https://pkg.pr.new/@nuxt/content@d5ac591':
+    resolution: {tarball: https://pkg.pr.new/@nuxt/content@d5ac591}
     version: 3.5.1
     peerDependencies:
       '@electric-sql/pglite': '*'
       '@libsql/client': '*'
-      better-sqlite3: 11.x
+      better-sqlite3: 11.10.0
       sqlite3: '*'
     peerDependenciesMeta:
       '@electric-sql/pglite':
@@ -1517,9 +1517,6 @@ packages:
 
   '@shikijs/langs@3.6.0':
     resolution: {integrity: sha512-IdZkQJaLBu1LCYCwkr30hNuSDfllOT8RWYVZK1tD2J03DkiagYKRxj/pDSl8Didml3xxuyzUjgtioInwEQM/TA==}
-
-  '@shikijs/themes@3.4.0':
-    resolution: {integrity: sha512-YPP4PKNFcFGLxItpbU0ZW1Osyuk8AyZ24YEFaq04CFsuCbcqydMvMUTi40V2dkc0qs1U2uZFrnU6s5zI6IH+uA==}
 
   '@shikijs/themes@3.6.0':
     resolution: {integrity: sha512-Fq2j4nWr1DF4drvmhqKq8x5vVQ27VncF8XZMBuHuQMZvUSS3NBgpqfwz/FoGe36+W6PvniZ1yDlg2d4kmYDU6w==}
@@ -6776,36 +6773,36 @@ packages:
   zod@3.24.4:
     resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
 
-  zod@3.25.57:
-    resolution: {integrity: sha512-6tgzLuwVST5oLUxXTmBqoinKMd3JeesgbgseXeFasKKj8Q1FCZrHnbqJOyiEvr4cVAlbug+CgIsmJ8cl/pU5FA==}
+  zod@3.25.63:
+    resolution: {integrity: sha512-3ttCkqhtpncYXfP0f6dsyabbYV/nEUW+Xlu89jiXbTBifUfjaSqXOG6JnQPLtqt87n7KAmnMqcjay6c0Wq0Vbw==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
 
-  '@ai-sdk/provider-utils@2.2.8(zod@3.25.57)':
+  '@ai-sdk/provider-utils@2.2.8(zod@3.25.63)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
       nanoid: 3.3.11
       secure-json-parse: 2.7.0
-      zod: 3.25.57
+      zod: 3.25.63
 
   '@ai-sdk/provider@1.1.3':
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/ui-utils@1.2.11(zod@3.25.57)':
+  '@ai-sdk/ui-utils@1.2.11(zod@3.25.63)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
-      '@ai-sdk/provider-utils': 2.2.8(zod@3.25.57)
-      zod: 3.25.57
-      zod-to-json-schema: 3.24.5(zod@3.25.57)
+      '@ai-sdk/provider-utils': 2.2.8(zod@3.25.63)
+      zod: 3.25.63
+      zod-to-json-schema: 3.24.5(zod@3.25.63)
 
-  '@ai-sdk/vue@1.2.12(vue@3.5.13(typescript@5.8.3))(zod@3.25.57)':
+  '@ai-sdk/vue@1.2.12(vue@3.5.13(typescript@5.8.3))(zod@3.25.63)':
     dependencies:
-      '@ai-sdk/provider-utils': 2.2.8(zod@3.25.57)
-      '@ai-sdk/ui-utils': 1.2.11(zod@3.25.57)
+      '@ai-sdk/provider-utils': 2.2.8(zod@3.25.63)
+      '@ai-sdk/ui-utils': 1.2.11(zod@3.25.63)
       swrv: 1.1.0(vue@3.5.13(typescript@5.8.3))
     optionalDependencies:
       vue: 3.5.13(typescript@5.8.3)
@@ -7618,7 +7615,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/content@https://pkg.pr.new/@nuxt/content@d98bf49(better-sqlite3@11.10.0)(magicast@0.3.5)':
+  '@nuxt/content@https://pkg.pr.new/@nuxt/content@d5ac591(better-sqlite3@11.10.0)(magicast@0.3.5)':
     dependencies:
       '@nuxt/kit': 3.17.5(magicast@0.3.5)
       '@nuxtjs/mdc': 0.17.0(magicast@0.3.5)
@@ -7663,8 +7660,8 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       unist-util-visit: 5.0.0
       ws: 8.18.2
-      zod: 3.25.57
-      zod-to-json-schema: 3.24.5(zod@3.25.57)
+      zod: 3.25.63
+      zod-to-json-schema: 3.24.5(zod@3.25.63)
     optionalDependencies:
       better-sqlite3: 11.10.0
     transitivePeerDependencies:
@@ -7983,12 +7980,12 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/ui-pro@3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.57)':
+  '@nuxt/ui-pro@3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.63)':
     dependencies:
-      '@ai-sdk/vue': 1.2.12(vue@3.5.13(typescript@5.8.3))(zod@3.25.57)
+      '@ai-sdk/vue': 1.2.12(vue@3.5.13(typescript@5.8.3))(zod@3.25.63)
       '@nuxt/kit': 3.17.5(magicast@0.3.5)
       '@nuxt/schema': 3.17.5
-      '@nuxt/ui': 3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.57)
+      '@nuxt/ui': 3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.63)
       '@standard-schema/spec': 1.0.0
       '@vueuse/core': 13.2.0(vue@3.5.13(typescript@5.8.3))
       consola: 3.4.2
@@ -8007,7 +8004,7 @@ snapshots:
       unplugin-vue-components: 28.7.0(@babel/parser@7.27.2)(@nuxt/kit@3.17.5(magicast@0.3.5))(vue@3.5.13(typescript@5.8.3))
     optionalDependencies:
       valibot: 1.0.0(typescript@5.8.3)
-      zod: 3.25.57
+      zod: 3.25.63
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -8048,7 +8045,7 @@ snapshots:
       - vue
       - vue-router
 
-  '@nuxt/ui@3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.57)':
+  '@nuxt/ui@3.1.3(@babel/parser@7.27.2)(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(embla-carousel@8.6.0)(ioredis@5.6.1)(jwt-decode@4.0.0)(magicast@0.3.5)(typescript@5.8.3)(valibot@1.0.0(typescript@5.8.3))(vite@6.3.5(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0)(tsx@4.19.4)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.25.63)':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.13(typescript@5.8.3))
       '@internationalized/date': 3.8.1
@@ -8096,7 +8093,7 @@ snapshots:
     optionalDependencies:
       valibot: 1.0.0(typescript@5.8.3)
       vue-router: 4.5.1(vue@3.5.13(typescript@5.8.3))
-      zod: 3.25.57
+      zod: 3.25.63
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -8209,7 +8206,7 @@ snapshots:
     dependencies:
       '@nuxt/kit': 3.17.5(magicast@0.3.5)
       '@shikijs/langs': 3.6.0
-      '@shikijs/themes': 3.4.0
+      '@shikijs/themes': 3.6.0
       '@shikijs/transformers': 3.4.0
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
@@ -8681,10 +8678,6 @@ snapshots:
   '@shikijs/langs@3.6.0':
     dependencies:
       '@shikijs/types': 3.6.0
-
-  '@shikijs/themes@3.4.0':
-    dependencies:
-      '@shikijs/types': 3.4.0
 
   '@shikijs/themes@3.6.0':
     dependencies:
@@ -14805,12 +14798,12 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.7.0
 
-  zod-to-json-schema@3.24.5(zod@3.25.57):
+  zod-to-json-schema@3.24.5(zod@3.25.63):
     dependencies:
-      zod: 3.25.57
+      zod: 3.25.63
 
   zod@3.24.4: {}
 
-  zod@3.25.57: {}
+  zod@3.25.63: {}
 
   zwitch@2.0.4: {}
