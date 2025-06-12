@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       extendViteConfig((config) => {
         config.optimizeDeps ||= {}
         config.optimizeDeps.include ||= []
-        config.optimizeDeps.include.push('brace-expansion', '@nuxt/content > slugify')
+        config.optimizeDeps.include.push('@nuxt/content > slugify')
         config.optimizeDeps.include = config.optimizeDeps.include
           .map(id => id.replace(/^@nuxt\/content > /, 'docus > @nuxt/content > '))
       })
