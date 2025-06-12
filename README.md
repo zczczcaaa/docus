@@ -28,4 +28,4 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
 
 Published under the [MIT](https://github.com/unjs/undocs/blob/main/LICENSE) license.
 
-Docus v2 has been entirely rewritten from scratch and is inspired and copied from [undocs](https://github.com/unjs/undocs) made by [@pi0](https://github.com/pi0) 💚
+Docus v3 has been entirely rewritten from scratch and is inspired and copied from [undocs](https://github.com/unjs/undocs) made by [@pi0](https://github.com/pi0) 💚
