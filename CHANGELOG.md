@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.0-alpha.0](https://github.com/nuxtlabs/docus/compare/v2.0.0-alpha.1...v3.0.0-alpha.0) (2025-06-12)
+
+### Bug Fixes
+
+* **docs:** use docus instead of @larbish/docus ([0dee9ec](https://github.com/nuxtlabs/docus/commit/0dee9ec484f4f097c68f2236cb2f927dcbd1db30))
+
 ## [2.0.0-alpha.1](https://github.com/nuxtlabs/docus/compare/v2.0.0-alpha.0...v2.0.0-alpha.1) (2025-06-10)
 
 ### Bug Fixes
