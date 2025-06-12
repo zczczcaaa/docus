@@ -1,8 +1,7 @@
-name: Publish Docus v2 (WIP Nightly)
-on:
+name: Publish Docus Nightly
   push:
     branches:
-      - feat/docus-v2
+      - main
 jobs:
   nightly:
     strategy:
