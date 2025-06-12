@@ -18,8 +18,8 @@ importers:
         specifier: ^1.2.22
         version: 1.2.22
       '@nuxt/content':
-        specifier: https://pkg.pr.new/@nuxt/content@d5ac591
-        version: https://pkg.pr.new/@nuxt/content@d5ac591(better-sqlite3@11.10.0)(magicast@0.3.5)
+        specifier: ^3.6.0
+        version: 3.6.0(better-sqlite3@11.10.0)(magicast@0.3.5)
       '@nuxt/image':
         specifier: ^1.10.0
         version: 1.10.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.10.0))(ioredis@5.6.1)(magicast@0.3.5)
@@ -839,9 +839,8 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
-  '@nuxt/content@https://pkg.pr.new/@nuxt/content@d5ac591':
-    resolution: {tarball: https://pkg.pr.new/@nuxt/content@d5ac591}
-    version: 3.5.1
+  '@nuxt/content@3.6.0':
+    resolution: {integrity: sha512-iqkcWf8M00fq7ZqF2qaHgcoKzRVOTMUp7dLkPCBrARmAKvV4kHdYyKjcf94kiNeKzIeqa73l3c1P8YMno/GgRQ==}
     peerDependencies:
       '@electric-sql/pglite': '*'
       '@libsql/client': '*'
@@ -7615,7 +7614,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/content@https://pkg.pr.new/@nuxt/content@d5ac591(better-sqlite3@11.10.0)(magicast@0.3.5)':
+  '@nuxt/content@3.6.0(better-sqlite3@11.10.0)(magicast@0.3.5)':
     dependencies:
       '@nuxt/kit': 3.17.5(magicast@0.3.5)
       '@nuxtjs/mdc': 0.17.0(magicast@0.3.5)
