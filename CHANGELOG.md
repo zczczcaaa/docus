@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.0-alpha.1](https://github.com/nuxtlabs/docus/compare/v3.0.0-alpha.0...v3.0.0-alpha.1) (2025-06-12)
+
+### Bug Fixes
+
+* **deps:** refine optimizeDeps of `@nuxt/content` ([#1080](https://github.com/nuxtlabs/docus/issues/1080)) ([ba0f6ef](https://github.com/nuxtlabs/docus/commit/ba0f6effa28b25135719746da17991453ffd678d))
+
 ## [3.0.0-alpha.0](https://github.com/nuxtlabs/docus/compare/v2.0.0-alpha.1...v3.0.0-alpha.0) (2025-06-12)
 
 ### Bug Fixes
