@@ -1,3 +1,5 @@
+[![docus](https://docus-puce.vercel.app/__og-image__/static/og.png)](https://docus.dev)
+
 # Docus
 
 Documentation Theme and CLI to write beautiful docs with Markdown.
