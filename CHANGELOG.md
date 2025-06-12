@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.0-alpha.2](https://github.com/nuxtlabs/docus/compare/v3.0.0-alpha.1...v3.0.0-alpha.2) (2025-06-12)
+
+### Bug Fixes
+
+* **ci:** nightly ([26b92a7](https://github.com/nuxtlabs/docus/commit/26b92a71a2abd1e0216f6d7433edfde696c25264))
+* **deps:** add brace-expansion as optimized deps ([32a5589](https://github.com/nuxtlabs/docus/commit/32a5589d0abaec0a4566778fa154e1eee28c014a))
+* **deps:** remove brace-expansion optimization ([355ac39](https://github.com/nuxtlabs/docus/commit/355ac39d60674aec4e99234a6e73502db00ce4a8))
+
 ## [3.0.0-alpha.1](https://github.com/nuxtlabs/docus/compare/v3.0.0-alpha.0...v3.0.0-alpha.1) (2025-06-12)
 
 ### Bug Fixes
