@@ -1,4 +1,5 @@
 name: Publish Docus Nightly
+on:
   push:
     branches:
       - main
