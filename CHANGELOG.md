@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.0](https://github.com/nuxtlabs/docus/compare/v3.0.0-alpha.3...v3.0.0) (2025-06-13)
+
+### Features
+
+* **llms:** enable full ([65374af](https://github.com/nuxtlabs/docus/commit/65374af2bc44c42cb35fa66055bd65d092dcd32e))
+
 ## [3.0.0-alpha.3](https://github.com/nuxtlabs/docus/compare/v3.0.0-alpha.2...v3.0.0-alpha.3) (2025-06-12)
 
 ## [3.0.0-alpha.2](https://github.com/nuxtlabs/docus/compare/v3.0.0-alpha.1...v3.0.0-alpha.2) (2025-06-12)
