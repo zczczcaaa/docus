@@ -44,7 +44,7 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   to: https://content.nuxt.com/blog/docus-v3
   variant: outline
   ---
-  Read the release blog post
+  Docus, the comeback →
   :::
 ::
 
