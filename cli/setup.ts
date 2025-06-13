@@ -65,6 +65,10 @@ export async function getNuxtConfig(dir: string, _opts: DocsOptions = {}) {
       domain: url,
       title: meta.name || '',
       description: meta.description || '',
+      full: {
+        title: meta.name || '',
+        description: meta.description || '',
+      },
     },
     future: {
       compatibilityVersion: 4,
