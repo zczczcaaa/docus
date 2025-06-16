@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/robots',
     'nuxt-og-image',
+    'nuxt-llms',
     () => {
       // Update @nuxt/content optimizeDeps options
       extendViteConfig((config) => {

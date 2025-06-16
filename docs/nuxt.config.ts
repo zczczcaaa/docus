@@ -6,4 +6,13 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  llms: {
+    domain: 'https://docus.dev',
+    title: 'Docus',
+    description: 'Write beautiful docs with Markdown.',
+    full: {
+      title: 'Docus',
+      description: 'Write beautiful docs with Markdown.',
+    },
+  },
 })
