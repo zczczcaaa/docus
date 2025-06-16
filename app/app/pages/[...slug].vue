@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ContentNavigationItem } from '@nuxt/content'
+import { kebabCase } from 'scule'
 import { findPageHeadline } from '#ui-pro/utils/content'
 
 definePageMeta({
@@ -10,16 +11,18 @@ const route = useRoute()
 const appConfig = useAppConfig()
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
-const { data: page } = await useAsyncData(route.path, () => queryCollection('docs').path(route.path).first())
+const [{ data: page }, { data: surround }] = await Promise.all([
+  useAsyncData(kebabCase(route.path), () => queryCollection('docs').path(route.path).first()),
+  useAsyncData(`${kebabCase(route.path)}-surround`, () => {
+    return queryCollectionItemSurroundings('docs', route.path, {
+      fields: ['description'],
+    })
+  }),
+])
+
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
-
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('docs', route.path, {
-    fields: ['description'],
-  })
-})
 
 const title = page.value.seo?.title || page.value.title
 const description = page.value.seo?.description || page.value.description
