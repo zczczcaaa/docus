@@ -1,26 +1,48 @@
 import { defineNuxtModule } from 'nuxt/kit'
 import { defu } from 'defu'
 import { inferSiteURL, getPackageJsonMetadata } from '../../cli/utils'
+import { getGitBranch, getGitEnv, getLocalGitInfo } from '../../cli/git'
 
 export default defineNuxtModule({
   meta: {
     name: 'default-configs',
   },
   async setup(_options, nuxt) {
+    const dir = nuxt.options.rootDir
     const url = inferSiteURL()
-    const meta = await getPackageJsonMetadata(nuxt.options.rootDir)
+    const meta = await getPackageJsonMetadata(dir)
+    const gitInfo = await getLocalGitInfo(dir) || getGitEnv()
+    const siteName = nuxt.options?.site?.name || meta.name || gitInfo?.name || ''
 
     // @ts-expect-error llms is not defined in the schema
     nuxt.options.llms = defu(nuxt.options.llms, {
       domain: url,
-      title: meta.name || '',
+      title: siteName,
       description: meta.description || '',
     })
 
     nuxt.options.site = defu(nuxt.options.site, {
       url,
-      name: meta.name || '',
+      name: siteName,
       debug: false,
+    })
+
+    nuxt.options.appConfig = defu(nuxt.options.appConfig, {
+      header: {
+        title: siteName,
+      },
+      github: {
+        owner: gitInfo?.owner,
+        name: gitInfo?.name,
+        url: gitInfo?.url,
+        branch: getGitBranch(),
+      },
+      seo: {
+        titleTemplate: `%s - ${siteName}`,
+        title: siteName,
+        description: meta.description || '',
+      },
+      toc: {},
     })
   },
 })
