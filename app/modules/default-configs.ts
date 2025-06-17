@@ -19,6 +19,10 @@ export default defineNuxtModule({
       domain: url,
       title: siteName,
       description: meta.description || '',
+      full: {
+        title: siteName,
+        description: meta.description || '',
+      },
     })
 
     nuxt.options.site = defu(nuxt.options.site, {
