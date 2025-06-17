@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.0.1](https://github.com/nuxtlabs/docus/compare/v3.0.0...v3.0.1) (2025-06-17)
+
+### Bug Fixes
+
+* **configs:** handle llms and site default configs in a module ([c642df9](https://github.com/nuxtlabs/docus/commit/c642df95c0a3a8b98eddaa33f00b5b1187eeaba8))
+* improve async data key for SEO ([2de5ffe](https://github.com/nuxtlabs/docus/commit/2de5ffe22ccfc9fb46c802d0fbc77f4a764f78a5))
+* **llms:** missing deps to enable full ([6d354ce](https://github.com/nuxtlabs/docus/commit/6d354ceafa7792880f50487d2ad392172df10d87))
+* **setup:** define default app config in module ([b250a1b](https://github.com/nuxtlabs/docus/commit/b250a1b677c6cf1bf68794615c86599864ce9fd5))
+
 ## [3.0.0](https://github.com/nuxtlabs/docus/compare/v3.0.0-alpha.3...v3.0.0) (2025-06-13)
 
 ### Features
