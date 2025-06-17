@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.2](https://github.com/nuxtlabs/docus/compare/v3.0.1...v3.0.2) (2025-06-17)
+
+### Features
+
+* **llms:** enable full by default ([677078f](https://github.com/nuxtlabs/docus/commit/677078f0d1e432d7b25e876374e36eeb2796d5f2))
+
+### Bug Fixes
+
+* **setup:** docs layer ([d407155](https://github.com/nuxtlabs/docus/commit/d40715593adecf5e8421e100e897687a28a56e39))
+* **starter:** prerender issues ([2facbea](https://github.com/nuxtlabs/docus/commit/2facbeaa3c8c9287c2048c754602063912fe5a49))
+
 ## [3.0.1](https://github.com/nuxtlabs/docus/compare/v3.0.0...v3.0.1) (2025-06-17)
 
 ### Bug Fixes
