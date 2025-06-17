@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "docus": "link:../"
+  },
+  "dependencies": {
+    "@nuxtjs/plausible": "^1.2.0"
   }
 }
