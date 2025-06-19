@@ -2,7 +2,9 @@
 const { seo } = useAppConfig()
 const site = useSiteConfig()
 
-const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'))
+const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'), {
+  transform: data => data.find(item => item.path === '/docs')?.children || data || [],
+})
 const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('docs'), {
   server: false,
 })
