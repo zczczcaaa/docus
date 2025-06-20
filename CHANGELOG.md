@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.0.3](https://github.com/nuxtlabs/docus/compare/v3.0.2...v3.0.3) (2025-06-20)
+
+### Features
+
+* **nav:** handle nav for docs folder ([65a477a](https://github.com/nuxtlabs/docus/commit/65a477a0974ced0cae7aed6d5fd498ec4e7e0687))
+
+### Bug Fixes
+
+* **landing:** conditionally add prose ([1931668](https://github.com/nuxtlabs/docus/commit/19316680c2c2035d7d72b4628d2caa901b3a01a6))
+* **landing:** put back prose ([73edf2a](https://github.com/nuxtlabs/docus/commit/73edf2a417802b5a366af17d17961f4e9a900564))
+* **prerender:** add mardown raw content ([e35b7aa](https://github.com/nuxtlabs/docus/commit/e35b7aaab954f69b7b8edd67d92a37ba6678c9d4))
+
 ## [3.0.2](https://github.com/nuxtlabs/docus/compare/v3.0.1...v3.0.2) (2025-06-17)
 
 ### Features
