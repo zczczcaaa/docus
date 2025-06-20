@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ContentNavigationItem } from '@nuxt/content'
 import { kebabCase } from 'scule'
+import { addPrerenderPath } from '../utils/prerender'
 import { findPageHeadline } from '#ui-pro/utils/content'
 
 definePageMeta({
@@ -23,6 +24,9 @@ const [{ data: page }, { data: surround }] = await Promise.all([
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
+
+// Add the page path to the prerender list
+addPrerenderPath(`/raw${route.path}.md`)
 
 const title = page.value.seo?.title || page.value.title
 const description = page.value.seo?.description || page.value.description

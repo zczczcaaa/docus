@@ -43,7 +43,7 @@ const items = [
     label: 'Copy Markdown link',
     icon: 'i-lucide-link',
     onSelect() {
-      navigator.clipboard.writeText(`${window.location.origin}/raw${route.path}.md`)
+      copyToClipboard(`${window.location.origin}/raw${route.path}.md`)
     },
   },
   {
