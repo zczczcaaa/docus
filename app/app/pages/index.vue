@@ -32,6 +32,5 @@ else {
   <ContentRenderer
     v-if="page"
     :value="page"
-    :prose="false"
   />
 </template>
