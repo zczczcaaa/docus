@@ -34,6 +34,7 @@ export default defineNuxtConfig({
       routes: ['/'],
       crawlLinks: true,
       failOnError: false,
+      autoSubfolderIndex: false,
     },
   },
   icon: {
