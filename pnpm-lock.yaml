@@ -44,6 +44,9 @@ importers:
       citty:
         specifier: ^0.1.6
         version: 0.1.6
+      defu:
+        specifier: ^6.1.4
+        version: 6.1.4
       dotenv:
         specifier: ^16.5.0
         version: 16.5.0
@@ -14095,7 +14098,7 @@ snapshots:
   terser@5.39.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.14.1
+      acorn: 8.15.0
       commander: 2.20.3
       source-map-support: 0.5.21
 

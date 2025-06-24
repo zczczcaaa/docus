@@ -42,6 +42,7 @@
     "@nuxtjs/robots": "^5.2.11",
     "c12": "^3.0.4",
     "citty": "^0.1.6",
+    "defu": "^6.1.4",
     "dotenv": "^16.5.0",
     "git-url-parse": "^16.1.0",
     "minimark": "^0.2.0",
