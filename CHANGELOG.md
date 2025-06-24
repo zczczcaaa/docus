@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.4](https://github.com/nuxtlabs/docus/compare/v3.0.3...v3.0.4) (2025-06-24)
+
+### Bug Fixes
+
+* **prerender:** redirect issue with static deployment ([5f8fbb3](https://github.com/nuxtlabs/docus/commit/5f8fbb32c5cba8479b2562495d0fb7c49291c6de))
+
 ## [3.0.3](https://github.com/nuxtlabs/docus/compare/v3.0.2...v3.0.3) (2025-06-20)
 
 ### Features
