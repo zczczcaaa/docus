@@ -64,13 +64,19 @@ const editLink = computed(() => {
     <UPageHeader
       :title="page.title"
       :description="page.description"
-      :links="page.links"
       :headline="headline"
       :ui="{
         wrapper: 'flex-row items-center flex-wrap justify-between',
       }"
     >
       <template #links>
+        <UButton
+          v-for="(link, index) in page.links"
+          :key="index"
+          size="sm"
+          v-bind="link"
+        />
+
         <DocsPageHeaderLinks />
       </template>
     </UPageHeader>
