@@ -26,6 +26,15 @@ export default defineNuxtConfig({
     enabled: dev,
   },
   css: ['../app/assets/css/main.css'],
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['bash', 'diff', 'json', 'js', 'ts', 'html', 'css', 'vue', 'shell', 'mdc', 'md', 'yaml'],
+        },
+      },
+    },
+  },
   future: {
     compatibilityVersion: 4,
   },
