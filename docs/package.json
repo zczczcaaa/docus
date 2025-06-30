@@ -7,7 +7,7 @@
     "dev": "docus dev"
   },
   "devDependencies": {
-    "docus": "link:../"
+    "docus": "workspace:*"
   },
   "dependencies": {
     "@nuxtjs/plausible": "^1.2.0"
