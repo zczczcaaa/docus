@@ -117,6 +117,7 @@ const editLink = computed(() => {
       #right
     >
       <UContentToc
+        highlight
         :title="appConfig.toc?.title || 'Table of Contents'"
         :links="page.body?.toc?.links"
       >
