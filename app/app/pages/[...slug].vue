@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ContentNavigationItem } from '@nuxt/content'
 import { kebabCase } from 'scule'
-import { addPrerenderPath } from '../utils/prerender'
+import type { ContentNavigationItem } from '@nuxt/content'
 import { findPageHeadline } from '@nuxt/content/utils'
+import { addPrerenderPath } from '../utils/prerender'
 
 definePageMeta({
   layout: 'docs',
