@@ -1,17 +1,16 @@
 <template>
-  <UButtonGroup>
+  <UButtonGroup size="sm">
     <UButton
       label="Copy page"
-      :icon="copyStatus === 'copied' ? 'i-lucide-copy-check' : 'i-lucide-copy'"
+      :icon="copied ? 'i-lucide-copy-check' : 'i-lucide-copy'"
       color="neutral"
       variant="outline"
-      :loading="copyStatus === 'copying'"
-      size="xs"
       :ui="{
-        leadingIcon: [copyStatus === 'copied' ? 'text-primary' : 'text-neutral', 'size-3.5'],
+        leadingIcon: [copied ? 'text-primary' : 'text-neutral', 'size-3.5'],
       }"
-      @click="copyPage"
+      @click="copy(markdownLink)"
     />
+
     <UDropdownMenu
       size="sm"
       :items="items"
@@ -26,7 +25,6 @@
     >
       <UButton
         icon="i-lucide-chevron-down"
-        size="sm"
         color="neutral"
         variant="outline"
       />
@@ -35,9 +33,11 @@
 </template>
 
 <script setup lang="ts">
+import { useClipboard } from '@vueuse/core'
+
 const route = useRoute()
 const toast = useToast()
-const copyStatus = ref<'idle' | 'copying' | 'copied'>('idle')
+const { copy, copied } = useClipboard()
 
 const markdownLink = computed(() => `${window?.location?.origin}/raw${route.path}.md`)
 
@@ -46,7 +46,8 @@ const items = [
     label: 'Copy Markdown link',
     icon: 'i-lucide-link',
     onSelect() {
-      copyToClipboard(markdownLink.value)
+      copy(markdownLink.value)
+
       toast.add({
         title: 'Markdown link copied to clipboard',
         icon: 'i-lucide-check-circle',
@@ -73,21 +74,4 @@ const items = [
     to: `https://claude.ai/new?q=${encodeURIComponent(`Read ${markdownLink.value} so I can ask questions about it.`)}`,
   },
 ]
-
-async function copyPage() {
-  copyStatus.value = 'copying'
-  const markdown = await $fetch<string>(markdownLink.value)
-  copyToClipboard(markdown)
-  copyStatus.value = 'copied'
-  setTimeout(() => {
-    copyStatus.value = 'idle'
-  }, 2000)
-}
-
-function copyToClipboard(text: string) {
-  // Fix for iOS Safari: https://stackoverflow.com/questions/62327358/javascript-clipboard-api-safari-ios-notallowederror-message
-  setTimeout(async () => {
-    await navigator.clipboard.writeText(text)
-  }, 0)
-}
 </script>
