@@ -19,6 +19,9 @@ export default defineAppConfig({
           },
         },
       },
+      defaultVariants: {
+        variant: 'link',
+      },
     },
     pageLinks: {
       slots: {

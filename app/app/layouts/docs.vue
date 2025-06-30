@@ -13,7 +13,6 @@ const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
           <UContentNavigation
             highlight
-            variant="link"
             :navigation="navigation"
           />
         </UPageAside>
