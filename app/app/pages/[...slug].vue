@@ -44,7 +44,18 @@ defineOgImageComponent('Docs', {
 })
 
 const editLink = computed(() => {
-  return appConfig.github && `${appConfig.github.url}/edit/${appConfig.github.branch}/content/${page.value?.stem}.${page.value?.extension}`
+  if (!appConfig.github) {
+    return
+  }
+
+  return [
+    appConfig.github.url,
+    'edit',
+    appConfig.github.branch,
+    appConfig.github.rootDir,
+    'content',
+    `${page.value?.stem}.${page.value?.extension}`,
+  ].filter(Boolean).join('/')
 })
 </script>
 

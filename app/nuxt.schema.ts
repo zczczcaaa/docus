@@ -250,6 +250,7 @@ declare module '@nuxt/schema' {
       name: string
       url: string
       branch: string
+      rootDir?: string
     }
   }
 }

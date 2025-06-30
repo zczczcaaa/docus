@@ -4,6 +4,9 @@ export default defineAppConfig({
     discord: 'https://discord.com/invite/ps2h6QT',
     nuxt: 'https://nuxt.com',
   },
+  github: {
+    rootDir: 'docs',
+  },
   toc: {
     bottom: {
       title: 'Community',
