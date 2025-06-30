@@ -1,37 +1,3 @@
-<template>
-  <UButtonGroup size="sm">
-    <UButton
-      label="Copy page"
-      :icon="copied ? 'i-lucide-copy-check' : 'i-lucide-copy'"
-      color="neutral"
-      variant="outline"
-      :ui="{
-        leadingIcon: [copied ? 'text-primary' : 'text-neutral', 'size-3.5'],
-      }"
-      @click="copy(markdownLink)"
-    />
-
-    <UDropdownMenu
-      size="sm"
-      :items="items"
-      :content="{
-        align: 'end',
-        side: 'bottom',
-        sideOffset: 8,
-      }"
-      :ui="{
-        content: 'w-48',
-      }"
-    >
-      <UButton
-        icon="i-lucide-chevron-down"
-        color="neutral"
-        variant="outline"
-      />
-    </UDropdownMenu>
-  </UButtonGroup>
-</template>
-
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
 
@@ -75,3 +41,37 @@ const items = [
   },
 ]
 </script>
+
+<template>
+  <UButtonGroup size="sm">
+    <UButton
+      label="Copy page"
+      :icon="copied ? 'i-lucide-copy-check' : 'i-lucide-copy'"
+      color="neutral"
+      variant="outline"
+      :ui="{
+        leadingIcon: [copied ? 'text-primary' : 'text-neutral', 'size-3.5'],
+      }"
+      @click="copy(markdownLink)"
+    />
+
+    <UDropdownMenu
+      size="sm"
+      :items="items"
+      :content="{
+        align: 'end',
+        side: 'bottom',
+        sideOffset: 8,
+      }"
+      :ui="{
+        content: 'w-48',
+      }"
+    >
+      <UButton
+        icon="i-lucide-chevron-down"
+        color="neutral"
+        variant="outline"
+      />
+    </UDropdownMenu>
+  </UButtonGroup>
+</template>

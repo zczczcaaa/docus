@@ -1,3 +1,16 @@
+<script setup>
+const colorMode = useColorMode()
+
+const isLight = computed({
+  get() {
+    return colorMode.value === 'light'
+  },
+  set(_isLight) {
+    colorMode.preference = _isLight ? 'light' : 'dark'
+  },
+})
+</script>
+
 <template>
   <ClientOnly>
     <div class="flex-1 flex items-center justify-center">
@@ -18,16 +31,3 @@
     </div>
   </ClientOnly>
 </template>
-
-<script setup>
-const colorMode = useColorMode()
-
-const isLight = computed({
-  get() {
-    return colorMode.value === 'light'
-  },
-  set(_isLight) {
-    colorMode.preference = _isLight ? 'light' : 'dark'
-  },
-})
-</script>

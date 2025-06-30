@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const appConfig = useAppConfig()
+</script>
+
 <template>
   <div
     v-if="appConfig.toc?.bottom?.links?.length"
@@ -11,7 +15,3 @@
     />
   </div>
 </template>
-
-<script setup lang="ts">
-const appConfig = useAppConfig()
-</script>

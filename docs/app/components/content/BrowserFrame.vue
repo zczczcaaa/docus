@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineProps<{
+  title?: string
+}>()
+</script>
+
 <template>
   <div class="w-fit rounded-xl border border-muted bg-accented shadow-md overflow-hidden px-2 pb-2">
     <div class="flex justify-between items-center px-2 py-2 bg-accented border-accented border-b">
@@ -13,9 +19,3 @@
     <slot mdc-unwrap="p" />
   </div>
 </template>
-
-<script setup lang="ts">
-defineProps<{
-  title?: string
-}>()
-</script>

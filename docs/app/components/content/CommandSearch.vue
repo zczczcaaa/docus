@@ -1,3 +1,11 @@
+<script setup lang="ts">
+const appConfig = useAppConfig()
+
+const src = computed(() => {
+  return `https://ui.nuxt.com/examples/content-search-example?primary=${appConfig.ui.colors?.primary}&neutral=${appConfig.ui.colors?.neutral}`
+})
+</script>
+
 <template>
   <ClientOnly>
     <iframe
@@ -6,11 +14,3 @@
     />
   </ClientOnly>
 </template>
-
-<script setup lang="ts">
-const appConfig = useAppConfig()
-
-const src = computed(() => {
-  return `https://ui.nuxt.com/examples/content-search-example?primary=${appConfig.ui.colors.primary}&neutral=${appConfig.ui.colors.neutral}`
-})
-</script>
