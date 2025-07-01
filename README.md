@@ -15,6 +15,7 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
 - [Nuxt UI](https://ui.nuxt.com/)
 - [Nuxt Image](https://image.nuxt.com/)
 - [Nuxt LLMs](https://github.com/nuxtlabs/nuxt-llms)
+- [Nuxt SEO](https://nuxtseo.com/)
 - [UnJS ecosystem](https://unjs.io/)
 - [Nuxt Studio](https://content.nuxt.com/studio) 
 
