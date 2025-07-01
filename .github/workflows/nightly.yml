@@ -30,6 +30,8 @@ jobs:
         run: pnpm install
       - name: Prepare
         run: pnpm dev:prepare
+      - name: Lint
+        run: pnpm lint
       - name: Build
         run: pnpm build
       - name: Release Nightly
