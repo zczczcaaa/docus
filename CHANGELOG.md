@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.5](https://github.com/nuxtlabs/docus/compare/v3.0.4...v3.0.5) (2025-07-01)
+
+### Features
+
+* **app:** add `bash` & `diff` highlight langs ([55e0fa0](https://github.com/nuxtlabs/docus/commit/55e0fa0408e5d0656fa36cb49554668dbc288082))
+* **app:** handle `github.rootDir` app config ([0698787](https://github.com/nuxtlabs/docus/commit/06987870962d6c3b604f35126c10018388930c37))
+
+### Bug Fixes
+
+* **app:** add `highlight` on content toc ([a511b50](https://github.com/nuxtlabs/docus/commit/a511b508cd2140f86ba7e045244cf59b68f84c68))
+* **app:** allow content navigation variant override ([ccc1340](https://github.com/nuxtlabs/docus/commit/ccc1340faa0da10ac8e17d909739b987b337fcd4))
+* **app:** display page links in header ([9acc755](https://github.com/nuxtlabs/docus/commit/9acc75565f1f92013371319a2506edbba7dd415c))
+* **app:** import from `@nuxt/kit` ([d8dbee4](https://github.com/nuxtlabs/docus/commit/d8dbee4c804754b94ff3abc9e0d0225f5112688a))
+* **app:** improve app config type ([246c16a](https://github.com/nuxtlabs/docus/commit/246c16a984e1e837c19bdd22c439bb6fb5bbf813))
+* **app:** use `useClipboard` to copy page ([a8cd48b](https://github.com/nuxtlabs/docus/commit/a8cd48b063679b1c58142842ef857abf15fc8630))
+
 ## [3.0.4](https://github.com/nuxtlabs/docus/compare/v3.0.3...v3.0.4) (2025-06-24)
 
 ### Bug Fixes
