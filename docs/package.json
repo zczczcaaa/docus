@@ -6,10 +6,10 @@
     "build": "docus build",
     "dev": "docus dev"
   },
-  "devDependencies": {
-    "docus": "workspace:*"
-  },
   "dependencies": {
     "@nuxtjs/plausible": "^1.2.0"
+  },
+  "devDependencies": {
+    "docus": "workspace:*"
   }
 }
