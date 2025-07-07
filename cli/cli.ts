@@ -46,6 +46,21 @@ export function createCLI(opts: CLIOptions) {
     },
   })
 
+  const prepare = defineCommand({
+    meta: {
+      name: 'prepare',
+      description: 'Prepare docs for development or production',
+    },
+    args: { ...sharedArgs },
+    async setup({ args }) {
+      const dir = resolve(args.dir as string)
+      const nuxtConfig = await getNuxtConfig(dir, opts.setup)
+
+      const { runCommand } = await import('nuxi')
+      await runCommand('prepare', [dir], { overrides: nuxtConfig })
+    },
+  })
+
   const build = defineCommand({
     meta: {
       name: 'build',
@@ -69,6 +84,7 @@ export function createCLI(opts: CLIOptions) {
     subCommands: {
       init,
       dev,
+      prepare,
       build,
     },
   })

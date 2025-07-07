@@ -23,7 +23,7 @@
     "dev": "npm run docs:dev",
     "docs:dev": "NUXT_DOCS_DEV=1 npm run docus dev docs",
     "docs:build": "npm run docus build docs",
-    "dev:prepare": "nuxi prepare app && nuxi prepare docs",
+    "dev:prepare": "nuxi prepare app && npm run docus prepare docs",
     "build": "tsup-node ./cli/main.ts --format esm",
     "docus": "tsx ./cli/main.ts",
     "test": "echo \"Error: no test specified\"",
