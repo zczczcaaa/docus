@@ -1,5 +1,6 @@
 import { resolve } from 'node:path'
-import { type ArgsDef, defineCommand, runMain } from 'citty'
+import { defineCommand, runMain } from 'citty'
+import type { ArgsDef } from 'citty'
 import { getNuxtConfig } from './setup'
 import type { CLIOptions } from './types'
 
