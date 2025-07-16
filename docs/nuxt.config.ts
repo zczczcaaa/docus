@@ -4,9 +4,6 @@ export default defineNuxtConfig({
   site: {
     name: 'Docus',
   },
-  future: {
-    compatibilityVersion: 4,
-  },
   llms: {
     domain: 'https://docus.dev',
     title: 'Docus',
