@@ -1,13 +1,12 @@
 {
   "name": "create-docus",
   "description": "CLI for creating Docus documentation projects",
+  "version": "4.0.0-beta.8",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nuxtlabs/docus.git"
   },
   "private": false,
-  "version": "4.0.0-beta.8",
-  "keywords": [],
   "license": "MIT",
   "bin": {
     "create-docus": "dist/main.mjs"

@@ -9,6 +9,7 @@
     "url": "git+https://github.com/nuxtlabs/docus.git"
   },
   "private": false,
+  "license": "MIT",
   "files": [
     "app",
     "content.config.ts",
