@@ -50,10 +50,13 @@ jobs:
         run: pnpm run typecheck
 
       - name: Publish Layer (docus)
-        run: pnpx pkg-pr-new publish ./layer --compact --no-template --pnpm
+        run: pnpx pkg-pr-new publish --compact --no-template --pnpm
+        working-directory: layer
 
       - name: Build CLI
-        run: cd cli && pnpm run build
+        run: pnpm run build
+        working-directory: cli
 
       - name: Publish CLI (create-docus)
-        run: pnpx pkg-pr-new publish ./cli --compact --no-template --pnpm
+        run: pnpx pkg-pr-new publish --compact --no-template --pnpm
+        working-directory: cli
