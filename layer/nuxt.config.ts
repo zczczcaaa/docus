@@ -1,7 +1,6 @@
-import { extendViteConfig } from '@nuxt/kit'
+import { extendViteConfig, createResolver } from '@nuxt/kit'
 
-// Flag enabled when developing docs theme
-const dev = !!process.env.NUXT_DOCS_DEV
+const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   modules: [
@@ -23,9 +22,9 @@ export default defineNuxtConfig({
     },
   ],
   devtools: {
-    enabled: dev,
+    enabled: true,
   },
-  css: ['../app/assets/css/main.css'],
+  css: [resolve('./app/assets/css/main.css')],
   content: {
     build: {
       markdown: {
@@ -35,6 +34,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  compatibilityDate: '2025-07-22',
   nitro: {
     prerender: {
       routes: ['/'],

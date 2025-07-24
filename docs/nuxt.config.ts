@@ -1,9 +1,10 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/plausible'],
-  css: ['../app/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
   site: {
     name: 'Docus',
   },
+  compatibilityDate: '2025-07-18',
   llms: {
     domain: 'https://docus.dev',
     title: 'Docus',

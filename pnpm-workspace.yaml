@@ -1,6 +1,8 @@
 packages:
   - ./
+  - cli
   - docs
+  - layer
 
 ignoredBuiltDependencies:
   - '@parcel/watcher'
