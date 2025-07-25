@@ -41,10 +41,10 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   :::u-button
   ---
   size: sm
-  to: https://content.nuxt.com/blog/docus-v3
+  to: /en/getting-started/migration
   variant: outline
   ---
-  Docus, the comeback →
+  Docus v4 →
   :::
 ::
 
