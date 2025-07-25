@@ -14,6 +14,7 @@ This is the official Nuxt layer for [Docus](https://docus.dev), providing a comp
 - ✨ **Beautiful Design** - Clean, modern documentation theme
 - 📱 **Responsive** - Mobile-first responsive design
 - 🌙 **Dark Mode** - Built-in dark/light mode support
+- 🌍 **Internationalization** - Native i18n support with automatic routing and language switching
 - 🔍 **Search** - Full-text search functionality
 - 📝 **Markdown Enhanced** - Extended markdown with custom components
 - 🎨 **Customizable** - Easy theming and customization
@@ -46,6 +47,13 @@ npm run dev
 
 This creates a complete documentation project pre-configured with `docus`.
 
+For multi-language documentation, use the i18n template:
+
+```bash
+# Create a new i18n documentation project
+npx create docus my-docs -t i18n
+```
+
 ### Option 2: Manual Setup
 
 #### Option 2a: Nuxt Config (recommended)
@@ -55,6 +63,21 @@ Add the layer to your `nuxt.config.ts`:
 ```typescript
 export default defineNuxtConfig({
   extends: ['docus']
+})
+```
+
+For internationalization, also add the `@nuxtjs/i18n` module:
+
+```typescript
+export default defineNuxtConfig({
+  modules: ['@nuxtjs/i18n'],
+  i18n: {
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', name: 'English' },
+      { code: 'fr', name: 'Français' },
+    ],
+  }
 })
 ```
 

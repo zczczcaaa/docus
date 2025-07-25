@@ -14,6 +14,9 @@ Create a new documentation project in seconds:
 # Create a new project
 npx create docus my-docs
 
+# Or create with i18n template for multi-language docs
+npx create docus my-docs -t i18n
+
 # Navigate to your project
 cd my-docs
 
@@ -30,6 +33,7 @@ The CLI scaffolds a complete documentation project with:
 - ✨ **Beautiful Design** - Clean, modern documentation theme
 - 📱 **Responsive** - Mobile-first responsive design  
 - 🌙 **Dark Mode** - Built-in dark/light mode support
+- 🌍 **Internationalization** - Native i18n support for multi-language docs
 - 🔍 **Search** - Full-text search functionality
 - 📝 **Markdown Enhanced** - Extended markdown with custom components
 - 🎨 **Customizable** - Easy theming and brand customization
@@ -66,6 +70,31 @@ my-docs/
 └── server/              # Server-side code (add your own server-side code)
 ```
 
+### `/content` folder structure
+
+**Single language structure:**
+```
+content/
+├── index.md
+├── getting-started.md
+└── guide/
+    ├── introduction.md
+    └── configuration.md
+```
+
+**Multi-language structure (with i18n):**
+```
+content/
+├── en/
+│   ├── index.md
+│   └── guide/
+│       └── introduction.md
+└── fr/
+    ├── index.md
+    └── guide/
+        └── introduction.md
+```
+
 ## ⚡ Built with
 
 Your project comes pre-configured with the best of the Nuxt ecosystem:
@@ -76,6 +105,7 @@ Your project comes pre-configured with the best of the Nuxt ecosystem:
 - [Nuxt Image](https://image.nuxt.com/) - Optimized images
 - [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS
 - [Docus Layer](https://www.npmjs.com/package/docus) - Documentation theme
+- [Nuxt i18n](https://i18n.nuxt.com/) - Internationalization
 
 ## 📖 Documentation
 
