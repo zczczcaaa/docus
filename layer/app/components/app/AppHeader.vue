@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { useDocusI18n } from '../../composables/useDocusI18n'
+
 const appConfig = useAppConfig()
 const site = useSiteConfig()
+
+const { localePath, isEnabled } = useDocusI18n()
 
 const links = computed(() => appConfig.github?.url
   ? [
@@ -17,7 +21,7 @@ const links = computed(() => appConfig.github?.url
 <template>
   <UHeader
     :ui="{ center: 'flex-1' }"
-    to="/"
+    :to="localePath('/')"
     :title="appConfig.header?.title || site.name"
   >
     <AppHeaderCenter />
@@ -29,9 +33,30 @@ const links = computed(() => appConfig.github?.url
     <template #right>
       <AppHeaderCTA />
 
+      <template v-if="isEnabled">
+        <ClientOnly>
+          <LanguageSelect />
+
+          <template #fallback>
+            <div class="h-8 w-8 animate-pulse bg-neutral-200 dark:bg-neutral-800 rounded-md" />
+          </template>
+        </ClientOnly>
+
+        <USeparator
+          orientation="vertical"
+          class="h-8"
+        />
+      </template>
+
       <UContentSearchButton class="lg:hidden" />
 
-      <UColorModeButton />
+      <ClientOnly>
+        <UColorModeButton />
+
+        <template #fallback>
+          <div class="h-8 w-8 animate-pulse bg-neutral-200 dark:bg-neutral-800 rounded-md" />
+        </template>
+      </ClientOnly>
 
       <template v-if="links?.length">
         <UButton

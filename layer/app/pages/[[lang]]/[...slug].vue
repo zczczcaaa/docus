@@ -1,21 +1,24 @@
 <script setup lang="ts">
 import { kebabCase } from 'scule'
-import type { ContentNavigationItem } from '@nuxt/content'
+import type { ContentNavigationItem, Collections, DocsCollectionItem } from '@nuxt/content'
 import { findPageHeadline } from '@nuxt/content/utils'
-import { addPrerenderPath } from '../utils/prerender'
+import { addPrerenderPath } from '../../utils/prerender'
 
 definePageMeta({
   layout: 'docs',
 })
 
 const route = useRoute()
+const { locale, isEnabled, t } = useDocusI18n()
 const appConfig = useAppConfig()
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
+const collectionName = computed(() => isEnabled.value ? `docs_${locale.value}` : 'docs')
+
 const [{ data: page }, { data: surround }] = await Promise.all([
-  useAsyncData(kebabCase(route.path), () => queryCollection('docs').path(route.path).first()),
+  useAsyncData(kebabCase(route.path), () => queryCollection(collectionName.value as keyof Collections).path(route.path).first()),
   useAsyncData(`${kebabCase(route.path)}-surround`, () => {
-    return queryCollectionItemSurroundings('docs', route.path, {
+    return queryCollectionItemSurroundings(collectionName.value as keyof Collections, route.path, {
       fields: ['description'],
     })
   }),
@@ -71,7 +74,7 @@ const editLink = computed(() => {
     >
       <template #links>
         <UButton
-          v-for="(link, index) in page.links"
+          v-for="(link, index) in (page as DocsCollectionItem).links"
           :key="index"
           size="sm"
           v-bind="link"
@@ -100,9 +103,9 @@ const editLink = computed(() => {
             icon="i-lucide-pen"
             :ui="{ leadingIcon: 'size-4' }"
           >
-            Edit this page
+            {{ t('docs.edit') }}
           </UButton>
-          or
+          <span>{{ t('common.or') }}</span>
           <UButton
             variant="link"
             color="neutral"
@@ -111,7 +114,7 @@ const editLink = computed(() => {
             icon="i-lucide-alert-circle"
             :ui="{ leadingIcon: 'size-4' }"
           >
-            Report an issue
+            {{ t('docs.report') }}
           </UButton>
         </div>
       </USeparator>
@@ -124,7 +127,7 @@ const editLink = computed(() => {
     >
       <UContentToc
         highlight
-        :title="appConfig.toc?.title || 'Table of Contents'"
+        :title="appConfig.toc?.title || t('docs.toc')"
         :links="page.body?.toc?.links"
       >
         <template #bottom>

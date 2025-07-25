@@ -106,8 +106,8 @@ This is a monorepo containing:
 
 - [**`/cli`**](https://github.com/nuxtlabs/docus/tree/main/cli) - CLI tool (`create-docus`)
 - [**`/layer`**](https://github.com/nuxtlabs/docus/tree/main/layer) - Docus Nuxt layer (`docus`)
-- [**`/docs`**](https://github.com/nuxtlabs/docus/tree/main/docs) - Documentation and examples
-- [**`/.starters`**](https://github.com/nuxtlabs/docus/tree/main/.starters) - Starters project (`i18n` version coming soon)
+- [**`/docs`**](https://github.com/nuxtlabs/docus/tree/main/docs) - Official documentation
+- [**`/.starters`**](https://github.com/nuxtlabs/docus/tree/main/.starters) - Starters project
 
 ## 📄 License
 

@@ -1,5 +1,12 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryCollection('landing').path('/').first())
+import type { Collections } from '@nuxt/content'
+
+const route = useRoute()
+const { locale, isEnabled } = useDocusI18n()
+
+const collectionName = computed(() => isEnabled.value ? `landing_${locale.value}` : 'landing')
+
+const { data: page } = await useAsyncData(collectionName.value, () => queryCollection(collectionName.value as keyof Collections).path(route.path).first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }

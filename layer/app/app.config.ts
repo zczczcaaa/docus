@@ -29,7 +29,4 @@ export default defineAppConfig({
       },
     },
   },
-  toc: {
-    title: 'On this page',
-  },
 })
