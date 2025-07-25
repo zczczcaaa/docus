@@ -18,7 +18,7 @@ Docus intègre le meilleur de l'écosystème Nuxt.
   ---
   color: neutral
   size: xl
-  to: /getting-started/installation
+  to: /fr/getting-started/installation
   trailing-icon: i-lucide-arrow-right
   ---
   Commencer
