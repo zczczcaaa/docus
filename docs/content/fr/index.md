@@ -1,9 +1,7 @@
 ---
 seo:
-  title: Rédigez une documentation magnifique avec Markdown
-  description: Publiez rapidement une documentation flexible et optimisée pour le
-    SEO avec un design magnifique prêt à l'emploi. Docus réunit le meilleur de
-    l'écosystème Nuxt. Propulsé par Nuxt UI Pro.
+  title: Rédigez votre documentation en Markdown
+  description: Publiez instantanément une documentation élégante, optimisée pour le SEO, avec design déjà pensé. Docus intègre le meilleur de l'écosystème Nuxt.
 ---
 
 ::u-page-hero
