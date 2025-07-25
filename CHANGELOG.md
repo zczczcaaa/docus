@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.0.1](https://github.com/nuxtlabs/docus/compare/v4.0.0...v4.0.1) (2025-07-25)
+
+### Bug Fixes
+
+* **git:** hide fatal error when fetching branch ([cbdd880](https://github.com/nuxtlabs/docus/commit/cbdd880c9884fbb60e459e93406e8268e0bec3f4))
+
 ## [4.0.0](https://github.com/nuxtlabs/docus/compare/v3.0.5...v4.0.0) (2025-07-25)
 
 ### Features
