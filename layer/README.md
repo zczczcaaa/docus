@@ -36,7 +36,7 @@ The easiest way to get started is using the Docus CLI, which automatically sets 
 
 ```bash
 # Create a new documentation project
-npx create docus my-docs
+npx create-docus my-docs
 
 # Navigate to your project
 cd my-docs
@@ -51,7 +51,7 @@ For multi-language documentation, use the i18n template:
 
 ```bash
 # Create a new i18n documentation project
-npx create docus my-docs -t i18n
+npx create-docus my-docs -t i18n
 ```
 
 ### Option 2: Manual Setup
