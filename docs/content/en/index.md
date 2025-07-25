@@ -13,7 +13,7 @@ Write beautiful docs with Markdown
 #description
 Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
 
-Docus brings the best of the Nuxt ecosystem into one CLI.
+Docus brings the best of the Nuxt ecosystem.
 
 #links
   :::u-button
@@ -38,12 +38,7 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   :::
 
 #headline
-  :::u-button
-  ---
-  size: sm
-  to: /en/getting-started/migration
-  variant: outline
-  ---
+  :::u-button{size="sm" to="/en/getting-started/migration" variant="outline"}
   Docus v4 →
   :::
 ::
