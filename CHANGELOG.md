@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.0.2](https://github.com/nuxtlabs/docus/compare/v4.0.1...v4.0.2) (2025-07-25)
+
+### Bug Fixes
+
+* **deps:** rollback to i18n v9 for redirection issue ([2ef0181](https://github.com/nuxtlabs/docus/commit/2ef018140c47a7ac3ce0ae3acd12f8ae9a2d5ccf))
+
 ## [4.0.1](https://github.com/nuxtlabs/docus/compare/v4.0.0...v4.0.1) (2025-07-25)
 
 ### Bug Fixes
