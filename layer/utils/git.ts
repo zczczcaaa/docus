@@ -23,7 +23,7 @@ export function getGitBranch() {
     return envName
   }
   try {
-    const branch = execSync('git rev-parse --abbrev-ref HEAD').toString().trim()
+    const branch = execSync('git rev-parse --abbrev-ref HEAD', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim()
     if (branch && branch !== 'HEAD') {
       return branch
     }
