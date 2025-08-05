@@ -11,7 +11,7 @@ Créez votre documentation en Markdown
 #description
 Publiez instantanément une documentation élégante, optimisée pour le SEO, avec design déjà pensé.
 
-Docus intègre le meilleur de l'écosystème Nuxt.
+Docus rassemble le meilleur de l'écosystème Nuxt en une seule CLI.
 
 #links
   :::u-button
@@ -22,7 +22,10 @@ Docus intègre le meilleur de l'écosystème Nuxt.
   trailing-icon: i-lucide-arrow-right
   ---
   Commencer
-@ -29,93 +31,234 @@ Docus rassemble le meilleur de l'écosystème Nuxt en une seule CLI.
+  :::
+
+  :::u-button
+  ---
   color: neutral
   icon: simple-icons-github
   size: xl
@@ -34,6 +37,10 @@ Docus intègre le meilleur de l'écosystème Nuxt.
 ::
 
 ::u-page-section
+#title
+Livré avec de nombreuses fonctionnalités
+
+#features
   :::u-page-feature
   ---
   icon: i-simple-icons-nuxt
