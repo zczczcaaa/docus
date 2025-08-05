@@ -9,8 +9,5 @@ export default defineNuxtConfig({
       code: 'fr',
       name: 'Français',
     }],
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
   },
 })
