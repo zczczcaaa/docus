@@ -5,6 +5,7 @@ const { resolve } = createResolver(import.meta.url)
 export default defineNuxtConfig({
   modules: [
     resolve('./modules/default-configs'),
+    resolve('./modules/routing'),
     '@nuxt/ui-pro',
     '@nuxt/content',
     '@nuxt/image',
