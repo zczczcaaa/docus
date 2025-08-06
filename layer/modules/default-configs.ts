@@ -1,4 +1,4 @@
-import { defineNuxtModule } from '@nuxt/kit'
+import { createResolver, defineNuxtModule } from '@nuxt/kit'
 import { defu } from 'defu'
 import { inferSiteURL, getPackageJsonMetadata } from '../utils/meta'
 import { getGitBranch, getGitEnv, getLocalGitInfo } from '../utils/git'
@@ -60,6 +60,29 @@ export default defineNuxtModule({
         ...nuxt.options.i18n,
         strategy: 'prefix',
       }
+
+      nuxt.hook('i18n:registerModule', (register) => {
+        const { resolve } = createResolver(import.meta.url)
+
+        const locales = nuxt.options.i18n?.locales?.map((locale) => {
+          return typeof locale === 'string'
+            ? {
+                code: locale,
+                name: locale,
+                file: `${locale}.json`,
+              }
+            : {
+                code: locale.code,
+                name: locale.name || locale.code,
+                file: `${locale.code}.json`,
+              }
+        })
+
+        register({
+          langDir: resolve('../i18n/locales'),
+          locales,
+        })
+      })
     }
   },
 })

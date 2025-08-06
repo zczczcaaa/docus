@@ -1,4 +1,4 @@
-import { extendViteConfig, createResolver } from '@nuxt/kit'
+import { extendViteConfig, createResolver, useNuxt } from '@nuxt/kit'
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -42,6 +42,25 @@ export default defineNuxtConfig({
       crawlLinks: true,
       failOnError: false,
       autoSubfolderIndex: false,
+    },
+  },
+  hooks: {
+    'nitro:config'(nitroConfig) {
+      const nuxt = useNuxt()
+
+      const i18nOptions = nuxt.options.i18n
+
+      const routes: string[] = []
+      if (!i18nOptions) {
+        routes.push('/')
+      }
+      else {
+        routes.push(...(i18nOptions.locales?.map(locale => typeof locale === 'string' ? `/${locale}` : `/${locale.code}`) || []))
+      }
+
+      nitroConfig.prerender = nitroConfig.prerender || {}
+      nitroConfig.prerender.routes = nitroConfig.prerender.routes || []
+      nitroConfig.prerender.routes.push(...(routes || []))
     },
   },
   icon: {
