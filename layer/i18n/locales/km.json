@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "ឬ"
+  },
+  "docs": {
+    "copy": {
+      "page": "ចម្លងទំព័រ",
+      "link": "ចម្លងទំព័រ Markdown",
+      "view": "មើលជា Markdown",
+      "gpt": "បើកនៅ ChatGPT",
+      "claude": "បើកនៅ Claude"
+    },
+    "links": "សហគមន៍",
+    "toc": "នៅលើទំព័រនេះ",
+    "report": "រាយការណ៍បញ្ហា",
+    "edit": "កែសម្រួលទំព័រនេះ"
+  }
+}

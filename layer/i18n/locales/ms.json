@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "atau"
+  },
+  "docs": {
+    "copy": {
+      "page": "Salin halaman",
+      "link": "Salin halaman Markdown",
+      "view": "Lihat sebagai Markdown",
+      "gpt": "Buka di ChatGPT",
+      "claude": "Buka di Claude"
+    },
+    "links": "Komuniti",
+    "toc": "Dalam halaman ini",
+    "report": "Laporkan masalah",
+    "edit": "Edit halaman ini"
+  }
+}

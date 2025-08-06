@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "oder"
+  },
+  "docs": {
+    "copy": {
+      "page": "Säit kopéieren",
+      "link": "Markdown Säit kopéieren",
+      "view": "Als Markdown kucken",
+      "gpt": "An ChatGPT opmaachen",
+      "claude": "An Claude opmaachen"
+    },
+    "links": "Gemeinschaft",
+    "toc": "Op dëser Säit",
+    "report": "Problem mellen",
+    "edit": "Dës Säit änneren"
+  }
+}

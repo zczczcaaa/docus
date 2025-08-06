@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "eller"
+  },
+  "docs": {
+    "copy": {
+      "page": "Kopiera sida",
+      "link": "Kopiera Markdown-sida",
+      "view": "Visa som Markdown",
+      "gpt": "Öppna i ChatGPT",
+      "claude": "Öppna i Claude"
+    },
+    "links": "Gemenskap",
+    "toc": "På denna sida",
+    "report": "Rapportera ett problem",
+    "edit": "Redigera denna sida"
+  }
+}

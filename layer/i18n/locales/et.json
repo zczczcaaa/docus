@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "või"
+  },
+  "docs": {
+    "copy": {
+      "page": "Kopeeri lehekülg",
+      "link": "Kopeeri Markdown lehekülg",
+      "view": "Vaata Markdownina",
+      "gpt": "Ava ChatGPT-s",
+      "claude": "Ava Claude'is"
+    },
+    "links": "Kogukond",
+    "toc": "Sellel lehel",
+    "report": "Teata probleemist",
+    "edit": "Muuda seda lehekülge"
+  }
+}

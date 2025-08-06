@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "ali"
+  },
+  "docs": {
+    "copy": {
+      "page": "Kopiraj stran",
+      "link": "Kopiraj Markdown stran",
+      "view": "Prikaži kot Markdown",
+      "gpt": "Odpri v ChatGPT",
+      "claude": "Odpri v Claude"
+    },
+    "links": "Skupnost",
+    "toc": "Na tej strani",
+    "report": "Prijavi težavo",
+    "edit": "Uredi to stran"
+  }
+}

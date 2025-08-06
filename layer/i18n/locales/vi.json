@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "hoặc"
+  },
+  "docs": {
+    "copy": {
+      "page": "Sao chép trang",
+      "link": "Sao chép trang Markdown",
+      "view": "Xem dưới dạng Markdown",
+      "gpt": "Mở trong ChatGPT",
+      "claude": "Mở trong Claude"
+    },
+    "links": "Cộng đồng",
+    "toc": "Trên trang này",
+    "report": "Báo cáo sự cố",
+    "edit": "Chỉnh sửa trang này"
+  }
+}

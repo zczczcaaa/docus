@@ -1,0 +1,18 @@
+{
+  "common": {
+    "or": "o"
+  },
+  "docs": {
+    "copy": {
+      "page": "Copiar pàgina",
+      "link": "Copiar pàgina Markdown",
+      "view": "Veure com a Markdown",
+      "gpt": "Obrir a ChatGPT",
+      "claude": "Obrir a Claude"
+    },
+    "links": "Comunitat",
+    "toc": "En aquesta pàgina",
+    "report": "Informar d'un problema",
+    "edit": "Editar aquesta pàgina"
+  }
+}
