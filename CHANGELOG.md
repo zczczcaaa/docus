@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.0.3](https://github.com/nuxtlabs/docus/compare/v4.0.2...v4.0.3) (2025-08-06)
+
+### Features
+
+* **i18n:** add docus locales for new countries ([638589c](https://github.com/nuxtlabs/docus/commit/638589c5e0aa9e2febea0ea7ab32ce59d3b7544f))
+
+### Bug Fixes
+
+* **i18n:** update to v10 by handling redirect on root ([5444fe9](https://github.com/nuxtlabs/docus/commit/5444fe90bb39d1b83c3ad15ecdc267e47f85c5e1))
+* **prerendering:** remove root route ([c4fb378](https://github.com/nuxtlabs/docus/commit/c4fb3788eef46728e7e72e4b4442a169175405ce))
+* **prerendering:** use i18n:registerModule hook ([6fc0277](https://github.com/nuxtlabs/docus/commit/6fc027721ab64b26d83afa9a5ebac0b16b643553))
+* **prerendering:** wrong links ([090b86f](https://github.com/nuxtlabs/docus/commit/090b86fe823dcef294ce79f4f0f125883019e409))
+* **prerender:** wrong links ([fd30ac0](https://github.com/nuxtlabs/docus/commit/fd30ac07724e1ff5ea194fda1d5f8d0cee384e38))
+* **routing:** handle unique root level content ([d97a793](https://github.com/nuxtlabs/docus/commit/d97a793d5059b1099d251dd8ab73876eb3897891))
+* **starters:** fr landing page ([1bba5a0](https://github.com/nuxtlabs/docus/commit/1bba5a0545f389cf0dfc7aea2ce59165a4436cf1))
+* **template:** ensure composable is available ([a68e88c](https://github.com/nuxtlabs/docus/commit/a68e88c5fe9e39cddab8bd3ea4662461208ac412))
+
 ## [4.0.2](https://github.com/nuxtlabs/docus/compare/v4.0.1...v4.0.2) (2025-07-25)
 
 ### Bug Fixes
