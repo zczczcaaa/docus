@@ -4,8 +4,9 @@ const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   modules: [
-    resolve('./modules/default-configs'),
+    resolve('./modules/config'),
     resolve('./modules/routing'),
+    resolve('./modules/css'),
     '@nuxt/ui-pro',
     '@nuxt/content',
     '@nuxt/image',
@@ -26,7 +27,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  css: [resolve('./app/assets/css/main.css')],
   content: {
     build: {
       markdown: {

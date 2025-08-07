@@ -5,7 +5,7 @@ import { getGitBranch, getGitEnv, getLocalGitInfo } from '../utils/git'
 
 export default defineNuxtModule({
   meta: {
-    name: 'default-configs',
+    name: 'config',
   },
   async setup(_options, nuxt) {
     const dir = nuxt.options.rootDir
