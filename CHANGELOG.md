@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.0.4](https://github.com/nuxtlabs/docus/compare/v4.0.3...v4.0.4) (2025-08-07)
+
+### Bug Fixes
+
+* **css:** ensure tailwind whitelisting without overriding ([5b3f6d2](https://github.com/nuxtlabs/docus/commit/5b3f6d2b6671077bd7017ea2d0f198c8484fe562))
+
 ## [4.0.3](https://github.com/nuxtlabs/docus/compare/v4.0.2...v4.0.3) (2025-08-06)
 
 ### Features
