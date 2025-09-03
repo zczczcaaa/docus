@@ -13,11 +13,11 @@ export interface GitInfo {
 
 export function getGitBranch() {
   const envName
-      = process.env.CF_PAGES_BRANCH
-        || process.env.CI_COMMIT_BRANCH
-        || process.env.VERCEL_GIT_COMMIT_REF
-        || process.env.BRANCH
-        || process.env.GITHUB_REF_NAME
+    = process.env.CF_PAGES_BRANCH
+      || process.env.CI_COMMIT_BRANCH
+      || process.env.VERCEL_GIT_COMMIT_REF
+      || process.env.BRANCH
+      || process.env.GITHUB_REF_NAME
 
   if (envName && envName !== 'HEAD') {
     return envName
