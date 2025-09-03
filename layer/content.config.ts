@@ -8,6 +8,7 @@ const cwd = joinURL(options.rootDir, 'content')
 const locales = options.i18n?.locales
 
 const createDocsSchema = () => z.object({
+  layout: z.string().optional(),
   links: z.array(z.object({
     label: z.string(),
     icon: z.string(),
