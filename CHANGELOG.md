@@ -1,5 +1,25 @@
 # Changelog
 
+## [4.1.0](https://github.com/nuxtlabs/docus/compare/v4.0.4...v4.1.0) (2025-09-04)
+
+### Features
+
+* **app:** handle files search and translations on error page ([7081457](https://github.com/nuxtlabs/docus/commit/7081457dc6e2278bba15a984f95220355813b806))
+* **customization:** `AppFooterLeft` and `AppFooterRight` components ([7815063](https://github.com/nuxtlabs/docus/commit/7815063edf4a496ed250dfa114752333af4b3ce3))
+* **customization:** DocsAsideLeftBody component ([55c408d](https://github.com/nuxtlabs/docus/commit/55c408d4b2360ce55baa6d9565634c515269b611))
+* **i18n:** do not register locales if related content is missing ([#1170](https://github.com/nuxtlabs/docus/issues/1170)) ([9150d2e](https://github.com/nuxtlabs/docus/commit/9150d2e4b23f94d45cc711897e2c9cbce5b69c77))
+* **page:** enable dynamic layout from frontmatter ([3143007](https://github.com/nuxtlabs/docus/commit/3143007ab65c5810d1afd54bf73e76378b8dce71))
+
+### Bug Fixes
+
+* **ci:** lint ([57c6fe1](https://github.com/nuxtlabs/docus/commit/57c6fe16f5a114d8101c69af16b09efe469aefdb))
+* **layer:** resolve tailwind + ui pro css paths ([#1161](https://github.com/nuxtlabs/docus/issues/1161)) ([35ae390](https://github.com/nuxtlabs/docus/commit/35ae390e9ddd55a649dddfa6b6894bd0208b7960))
+* **routing:** remove useDocusI18n manual import ([e0c1406](https://github.com/nuxtlabs/docus/commit/e0c14067314ae12c74b071690968bc23e6e4aff1))
+
+### Reverts
+
+* Revert "chore(deps): upgrade" ([32f1d0f](https://github.com/nuxtlabs/docus/commit/32f1d0f789bfbd9fe0c8c92b0d2558571ad7d1ba))
+
 ## [4.0.4](https://github.com/nuxtlabs/docus/compare/v4.0.3...v4.0.4) (2025-08-07)
 
 ### Bug Fixes
