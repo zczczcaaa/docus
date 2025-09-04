@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.1.1](https://github.com/nuxtlabs/docus/compare/v4.1.0...v4.1.1) (2025-09-04)
+
+### Features
+
+* **header:** add option to copy logo on right-click ([#1172](https://github.com/nuxtlabs/docus/issues/1172)) ([8d954a8](https://github.com/nuxtlabs/docus/commit/8d954a8c458e257ffcc861ac59e131ff3927b82a))
+
+### Bug Fixes
+
+* **app:** disable locale redirection check for non i18n ([9b8c571](https://github.com/nuxtlabs/docus/commit/9b8c57116610b9dcf4995c0a2c0b40f6e6eea90a))
+* **imports:** manually add useDocusI18n ([a4fa212](https://github.com/nuxtlabs/docus/commit/a4fa212cfac219e54a3b2106860c41782cf864b9))
+
 ## [4.1.0](https://github.com/nuxtlabs/docus/compare/v4.0.4...v4.1.0) (2025-09-04)
 
 ### Features
