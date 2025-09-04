@@ -1,5 +1,7 @@
 import { createResolver, defineNuxtModule } from '@nuxt/kit'
 import { defu } from 'defu'
+import { existsSync } from 'node:fs'
+import { join } from 'node:path'
 import { inferSiteURL, getPackageJsonMetadata } from '../utils/meta'
 import { getGitBranch, getGitEnv, getLocalGitInfo } from '../utils/git'
 
@@ -55,16 +57,46 @@ export default defineNuxtModule({
     ** I18N
     */
     if (nuxt.options.i18n && nuxt.options.i18n.locales) {
+      const { resolve } = createResolver(import.meta.url)
+
+      // Filter locales to only include existing ones
+      const filteredLocales = nuxt.options.i18n.locales.filter((locale) => {
+        const localeCode = typeof locale === 'string' ? locale : locale.code
+
+        // Check for JSON locale file
+        const localeFilePath = resolve('../i18n/locales', `${localeCode}.json`)
+        const hasLocaleFile = existsSync(localeFilePath)
+
+        // Check for content folder
+        const contentPath = join(nuxt.options.rootDir, 'content', localeCode)
+        const hasContentFolder = existsSync(contentPath)
+
+        if (!hasLocaleFile) {
+          console.warn(`[Docus] Locale file not found: ${localeCode}.json - skipping locale "${localeCode}"`)
+        }
+
+        if (!hasContentFolder) {
+          console.warn(`[Docus] Content folder not found: content/${localeCode}/ - skipping locale "${localeCode}"`)
+        }
+
+        return hasLocaleFile && hasContentFolder
+      })
+
       // Override strategy to prefix
       nuxt.options.i18n = {
         ...nuxt.options.i18n,
         strategy: 'prefix',
       }
 
-      nuxt.hook('i18n:registerModule', (register) => {
-        const { resolve } = createResolver(import.meta.url)
+      // Expose filtered locales
+      nuxt.options.runtimeConfig.public.docus = {
+        filteredLocales,
+      }
 
-        const locales = nuxt.options.i18n?.locales?.map((locale) => {
+      nuxt.hook('i18n:registerModule', (register) => {
+        const langDir = resolve('../i18n/locales')
+
+        const locales = filteredLocales?.map((locale) => {
           return typeof locale === 'string'
             ? {
                 code: locale,
@@ -79,7 +111,7 @@ export default defineNuxtModule({
         })
 
         register({
-          langDir: resolve('../i18n/locales'),
+          langDir,
           locales,
         })
       })
