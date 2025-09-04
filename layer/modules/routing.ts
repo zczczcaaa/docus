@@ -1,4 +1,4 @@
-import { defineNuxtModule, extendPages, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, extendPages, createResolver, addImports } from '@nuxt/kit'
 
 export default defineNuxtModule({
   meta: {
@@ -9,10 +9,10 @@ export default defineNuxtModule({
 
     const isI18nEnabled = !!(nuxt.options.i18n && nuxt.options.i18n.locales)
 
-    // addImports({
-    //   name: 'useDocusI18n',
-    //   from: resolve('../app/composables/useDocusI18n'),
-    // })
+    addImports({
+      name: 'useDocusI18n',
+      from: resolve('../app/composables/useDocusI18n'),
+    })
 
     extendPages((pages) => {
       const landingTemplate = resolve('../app/templates/landing.vue')
