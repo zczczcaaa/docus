@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.1.2](https://github.com/nuxtlabs/docus/compare/v4.1.1...v4.1.2) (2025-09-04)
+
+### Features
+
+* **imports:** only add useDocusI18n if not already imported ([d3dd4ed](https://github.com/nuxtlabs/docus/commit/d3dd4ed17484c3f25b4c39df812d3177ceb7a974))
+
 ## [4.1.1](https://github.com/nuxtlabs/docus/compare/v4.1.0...v4.1.1) (2025-09-04)
 
 ### Features
