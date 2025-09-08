@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.1.3](https://github.com/nuxt-content/docus/compare/v4.1.2...v4.1.3) (2025-09-08)
+
+### Bug Fixes
+
+* **landing:** remove prose forced to false by default ([#1176](https://github.com/nuxt-content/docus/issues/1176)) ([9b15ece](https://github.com/nuxt-content/docus/commit/9b15ece2b87813de51d6fffb06995a2f7370d847))
+
 ## [4.1.2](https://github.com/nuxt-content/docus/compare/v4.1.1...v4.1.2) (2025-09-04)
 
 ### Features
