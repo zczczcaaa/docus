@@ -6,7 +6,7 @@
   "main": "./nuxt.config.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nuxtlabs/docus.git"
+    "url": "git+https://github.com/nuxt-content/docus.git"
   },
   "private": false,
   "license": "MIT",
