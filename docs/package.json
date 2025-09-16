@@ -7,17 +7,17 @@
     "dev": "nuxt dev"
   },
   "dependencies": {
-    "@nuxt/ui-pro": "^3.3.0",
-    "@nuxtjs/i18n": "^10.0.3",
-    "@nuxtjs/mdc": "^0.17.2",
-    "@nuxtjs/plausible": "^1.2.0",
+    "@nuxt/ui-pro": "^3.3.4",
+    "@nuxtjs/i18n": "^10.1.0",
+    "@nuxtjs/mdc": "^0.17.4",
+    "@nuxtjs/plausible": "^2.0.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "docus": "workspace:*",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.13",
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "nuxt": "4.1.0"
+    "nuxt": "4.1.2"
   }
 }
