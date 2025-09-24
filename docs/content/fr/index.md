@@ -1,7 +1,9 @@
 ---
 seo:
   title: Rédigez votre documentation en Markdown
-  description: Publiez instantanément une documentation élégante, optimisée pour le SEO, avec design déjà pensé. Docus intègre le meilleur de l'écosystème Nuxt.
+  description: Publiez instantanément une documentation élégante, optimisée pour
+    le SEO, avec design déjà pensé. Docus intègre le meilleur de l'écosystème
+    Nuxt.
 ---
 
 ::u-page-hero
@@ -9,8 +11,7 @@ seo:
 Créez votre documentation en Markdown
 
 #description
-Publiez instantanément une documentation élégante, optimisée pour le SEO, avec design déjà pensé. :br
-Docus intègre le meilleur de l’écosystème Nuxt.
+Publiez instantanément une documentation élégante, optimisée pour le SEO, avec design déjà pensé. :br Docus intègre le meilleur de l’écosystème Nuxt.
 
 #links
   :::u-button
@@ -35,8 +36,13 @@ Docus intègre le meilleur de l’écosystème Nuxt.
   :::
 
 #headline
-  :::u-button{size="sm" to="/fr/getting-started/migration" variant="outline"}
-  Docus v4 →
+  :::u-button
+  ---
+  size: sm
+  to: https://github.com/nuxt-content/docus/releases/tag/v5.0.0
+  variant: outline
+  ---
+  Docus v5 →
   :::
 ::
 

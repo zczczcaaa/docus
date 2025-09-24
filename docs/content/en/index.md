@@ -11,8 +11,7 @@ seo:
 Write beautiful docs with Markdown
 
 #description
-Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. :br
-Docus brings the best of the Nuxt ecosystem.
+Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. :br Docus brings the best of the Nuxt ecosystem.
 
 #links
   :::u-button
@@ -37,8 +36,13 @@ Docus brings the best of the Nuxt ecosystem.
   :::
 
 #headline
-  :::u-button{size="sm" to="/en/getting-started/migration" variant="outline"}
-  Docus v4 →
+  :::u-button
+  ---
+  size: sm
+  to: https://github.com/nuxt-content/docus/releases/tag/v5.0.0
+  variant: outline
+  ---
+  Docus v5 →
   :::
 ::
 
