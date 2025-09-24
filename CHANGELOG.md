@@ -1,5 +1,15 @@
 # Changelog
 
+## [5.0.0](https://github.com/nuxt-content/docus/compare/v4.2.0...v5.0.0) (2025-09-24)
+
+### ⚠ BREAKING CHANGES
+
+* **ui:** use Nuxt UI v4 (#1173)
+
+### Features
+
+* **ui:** use Nuxt UI v4 ([#1173](https://github.com/nuxt-content/docus/issues/1173)) ([a9ac1a2](https://github.com/nuxt-content/docus/commit/a9ac1a266e045a14bab1252f6e6ae0b59ad56773))
+
 ## [4.2.0](https://github.com/nuxt-content/docus/compare/v4.1.4...v4.2.0) (2025-09-19)
 
 ### Features
