@@ -1,5 +1,7 @@
 # Changelog
 
+## [5.1.0](https://github.com/nuxt-content/docus/compare/v5.0.1...v5.1.0) (2025-09-29)
+
 ## [5.0.1](https://github.com/nuxt-content/docus/compare/v5.0.0...v5.0.1) (2025-09-29)
 
 ### Features
