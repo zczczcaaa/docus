@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.1](https://github.com/nuxt-content/docus/compare/v5.0.0...v5.0.1) (2025-09-29)
+
+### Features
+
+* **layout:** handle deeply nested content ([#1190](https://github.com/nuxt-content/docus/issues/1190)) ([4d7fe16](https://github.com/nuxt-content/docus/commit/4d7fe1646996eef1dc11de18769f426fa560159b))
+
+### Bug Fixes
+
+* **types:** annotate github app config type to allow false ([#1188](https://github.com/nuxt-content/docus/issues/1188)) ([7f7a2c7](https://github.com/nuxt-content/docus/commit/7f7a2c7f81f2cf824852ab32dc1e36923bd188db))
+* **typescript:** handle github config set to false ([#1189](https://github.com/nuxt-content/docus/issues/1189)) ([9f797a6](https://github.com/nuxt-content/docus/commit/9f797a6f7bf7b3acc3dd20cd8e7017eb80dd4e30))
+
 ## [5.0.0](https://github.com/nuxt-content/docus/compare/v4.2.0...v5.0.0) (2025-09-24)
 
 ### ⚠ BREAKING CHANGES
