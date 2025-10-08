@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.2.0](https://github.com/nuxt-content/docus/compare/v5.1.0...v5.2.0) (2025-10-08)
+
+### Features
+
+* **layouts:** separate layouts for performance and expose page metas ([#1194](https://github.com/nuxt-content/docus/issues/1194)) ([bac9aa0](https://github.com/nuxt-content/docus/commit/bac9aa052ca654ab6f83b88bd822b10d4806b3d9))
+
 ## [5.1.0](https://github.com/nuxt-content/docus/compare/v5.0.1...v5.1.0) (2025-09-29)
 
 ## [5.0.1](https://github.com/nuxt-content/docus/compare/v5.0.0...v5.0.1) (2025-09-29)
