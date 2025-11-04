@@ -100,8 +100,8 @@ importers:
         specifier: workspace:*
         version: link:../layer
       nuxt-studio:
-        specifier: https://pkg.pr.new/nuxt-content/studio/nuxt-studio@d10548e
-        version: https://pkg.pr.new/nuxt-content/studio/nuxt-studio@d10548e(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.1)(magicast@0.3.5)(vue@3.5.22(typescript@5.9.3))
+        specifier: v1.0.0-alpha.0
+        version: 1.0.0-alpha.0(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.1)(magicast@0.3.5)(vue@3.5.22(typescript@5.9.3))
       tailwindcss:
         specifier: ^4.1.14
         version: 4.1.14
@@ -1133,8 +1133,8 @@ packages:
   '@nuxtjs/mdc@0.18.0':
     resolution: {integrity: sha512-/rWEOiLpD6oNx2FC/UsYxLn1pP31pvRmaX5y8GurBOogATKDWd3jlfKCGgshLnsWM6dCKgNkF0mCZQCMZMfpIQ==}
 
-  '@nuxtjs/mdc@0.18.1':
-    resolution: {integrity: sha512-0ZYO4PGZoHjRsn1tbQwUfpqG7uWs58EDiclAmajEf7mdGKvv2hgUsWCpGFGlWGChfcEJ35lqyi/tX7Sopr+sKw==}
+  '@nuxtjs/mdc@0.18.2':
+    resolution: {integrity: sha512-pdeWd2/oOPriPVa1F6QNoK4fZCp/b4sxEVoouXJJCETCBIFSNS4OOtdRTY1ATLM1Gr+6ZvNyNPABvaaUEGC4Lw==}
 
   '@nuxtjs/plausible@2.0.1':
     resolution: {integrity: sha512-Edr7oFIeZ9Og2lS21NhC3MRgcR7X9H1Hyjve8EsM2CycJGBlCcGKHs0+vi4KpbCVi33VlTXUUYNRPtGyeUX6Fw==}
@@ -5097,9 +5097,8 @@ packages:
     peerDependencies:
       h3: ^1
 
-  nuxt-studio@https://pkg.pr.new/nuxt-content/studio/nuxt-studio@d10548e:
-    resolution: {tarball: https://pkg.pr.new/nuxt-content/studio/nuxt-studio@d10548e}
-    version: 0.0.1
+  nuxt-studio@1.0.0-alpha.0:
+    resolution: {integrity: sha512-ydZRDcQkdgXbYCB4BYSAuvS7TPnoVUHkjwOlbxtsisTPuYw3FRn/cHC2YVQ0yd4jU7KFbVHJgApVGxkXAXh5gw==}
 
   nuxt@4.1.3:
     resolution: {integrity: sha512-FPl+4HNIOTRYWQXtsZe5KJAr/eddFesuXABvcSTnFLYckIfnxcistwmbtPlkJhkW6vr/Jdhef5QqqYYkBsowGg==}
@@ -5732,8 +5731,8 @@ packages:
   remark-mdc@3.7.0:
     resolution: {integrity: sha512-6XmnEYc4u3lgBf79M6I73nmKhwJCXn5J53BkzIplqjUK/29GubdpYBCF+oH2WQFvNy/70wuf365xwOSUxt397g==}
 
-  remark-mdc@3.8.0:
-    resolution: {integrity: sha512-jOdR4WA4znxyFH642wG4Y9aeDTqQUV0JV1clajgWHUm8sXHclV4s+O41TfT0hgQFlA6WaRPa29dsa/FYxEROAA==}
+  remark-mdc@3.8.1:
+    resolution: {integrity: sha512-TGFY61OhgziAITAomenbw4THQvEHC7MxZI1kO1YL/VuWQTHZ0RG20G6GGATIFeGnq65IUe7dngiQVcVIeFdB/g==}
 
   remark-parse@11.0.0:
     resolution: {integrity: sha512-FCxlKLNGknS5ba/1lmpYijMUzX2esxW5xQqjWxw2eHFfS2MSdaHVINFmhjo+qN1WhZhNimq0dZATN9pH0IDrpA==}
@@ -8443,7 +8442,7 @@ snapshots:
       - magicast
       - supports-color
 
-  '@nuxtjs/mdc@0.18.1(magicast@0.3.5)':
+  '@nuxtjs/mdc@0.18.2(magicast@0.3.5)':
     dependencies:
       '@nuxt/kit': 4.2.0(magicast@0.3.5)
       '@shikijs/core': 3.14.0
@@ -8476,7 +8475,7 @@ snapshots:
       rehype-sort-attributes: 5.0.1
       remark-emoji: 5.0.2
       remark-gfm: 4.0.1
-      remark-mdc: 3.8.0
+      remark-mdc: 3.8.1
       remark-parse: 11.0.0
       remark-rehype: 11.1.2
       remark-stringify: 11.0.0
@@ -12632,10 +12631,10 @@ snapshots:
       - magicast
       - vue
 
-  nuxt-studio@https://pkg.pr.new/nuxt-content/studio/nuxt-studio@d10548e(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.1)(magicast@0.3.5)(vue@3.5.22(typescript@5.9.3)):
+  nuxt-studio@1.0.0-alpha.0(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.1)(magicast@0.3.5)(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@iconify-json/lucide': 1.2.72
-      '@nuxtjs/mdc': 0.18.1(magicast@0.3.5)
+      '@nuxtjs/mdc': 0.18.2(magicast@0.3.5)
       '@vueuse/core': 13.9.0(vue@3.5.22(typescript@5.9.3))
       defu: 6.1.4
       destr: 2.0.5
@@ -13601,7 +13600,7 @@ snapshots:
       stringify-entities: 4.0.4
       unified: 11.0.5
       unist-util-visit: 5.0.0
-      unist-util-visit-parents: 6.0.1
+      unist-util-visit-parents: 6.0.2
       yaml: 2.8.1
     transitivePeerDependencies:
       - supports-color
@@ -13629,7 +13628,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-mdc@3.8.0:
+  remark-mdc@3.8.1:
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
