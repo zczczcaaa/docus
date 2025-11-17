@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.2.3](https://github.com/nuxt-content/docus/compare/v5.2.2...v5.2.3) (2025-11-17)
+
+### Bug Fixes
+
+* **cli:** rollback nuxi ([6441c2d](https://github.com/nuxt-content/docus/commit/6441c2dfea95b6ceac24af722276b67371e88662))
+
 ## [5.2.2](https://github.com/nuxt-content/docus/compare/v5.2.1...v5.2.2) (2025-11-17)
 
 ### Features
