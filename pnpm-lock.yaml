@@ -100,8 +100,8 @@ importers:
         specifier: workspace:*
         version: link:../layer
       nuxt-studio:
-        specifier: https://pkg.pr.new/nuxt-content/studio/nuxt-studio@bdd5e1d
-        version: https://pkg.pr.new/nuxt-content/studio/nuxt-studio@bdd5e1d(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.2)(magicast@0.3.5)(vue@3.5.24(typescript@5.9.3))
+        specifier: 1.0.0-alpha.2
+        version: 1.0.0-alpha.2(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.2)(magicast@0.3.5)(vue@3.5.24(typescript@5.9.3))
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
@@ -996,9 +996,6 @@ packages:
 
   '@iarna/toml@3.0.0':
     resolution: {integrity: sha512-td6ZUkz2oS3VeleBcN+m//Q6HlCFCPrnI0FZhrt/h4XqLEdOyYp2u21nd8MdsR+WJy5r9PTDaHTDDfhf4H4l6Q==}
-
-  '@iconify-json/lucide@1.2.72':
-    resolution: {integrity: sha512-kq/ZDUtCdBfjGxIMaUI+Ctt3dC/0sHmrUyTU1i04+8ehlo3/PUGKqrJd4C9J/kQl1jfcHpaUPqGUFvgZ9orhQg==}
 
   '@iconify-json/lucide@1.2.73':
     resolution: {integrity: sha512-++HFkqDNu4jqG5+vYT+OcVj9OiuPCw9wQuh8G5QWQnBRSJ9eKwSStiU8ORgOoK07xJsm/0VIHySMniXUUXP9Gw==}
@@ -6060,9 +6057,8 @@ packages:
     peerDependencies:
       h3: ^1
 
-  nuxt-studio@https://pkg.pr.new/nuxt-content/studio/nuxt-studio@bdd5e1d:
-    resolution: {tarball: https://pkg.pr.new/nuxt-content/studio/nuxt-studio@bdd5e1d}
-    version: 1.0.0-alpha.1
+  nuxt-studio@1.0.0-alpha.2:
+    resolution: {integrity: sha512-Kc6iONSLrYK7CXRkditNNurcPiadcb1AmnSdBczQ0ZcPuiHjCKBKA3l7clRBTDhotujbmCwMq6j9iPohgcO9lQ==}
 
   nuxt@4.1.3:
     resolution: {integrity: sha512-FPl+4HNIOTRYWQXtsZe5KJAr/eddFesuXABvcSTnFLYckIfnxcistwmbtPlkJhkW6vr/Jdhef5QqqYYkBsowGg==}
@@ -8787,10 +8783,6 @@ snapshots:
   '@hutson/parse-repository-url@5.0.0': {}
 
   '@iarna/toml@3.0.0': {}
-
-  '@iconify-json/lucide@1.2.72':
-    dependencies:
-      '@iconify/types': 2.0.0
 
   '@iconify-json/lucide@1.2.73':
     dependencies:
@@ -15413,9 +15405,9 @@ snapshots:
       - magicast
       - vue
 
-  nuxt-studio@https://pkg.pr.new/nuxt-content/studio/nuxt-studio@bdd5e1d(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.2)(magicast@0.3.5)(vue@3.5.24(typescript@5.9.3)):
+  nuxt-studio@1.0.0-alpha.2(db0@0.3.4(better-sqlite3@12.4.1))(idb-keyval@6.2.2)(ioredis@5.8.2)(magicast@0.3.5)(vue@3.5.24(typescript@5.9.3)):
     dependencies:
-      '@iconify-json/lucide': 1.2.72
+      '@iconify-json/lucide': 1.2.73
       '@nuxtjs/mdc': 0.18.3(magicast@0.3.5)
       '@vueuse/core': 13.9.0(vue@3.5.24(typescript@5.9.3))
       defu: 6.1.4
@@ -17734,7 +17726,7 @@ snapshots:
       h3: 1.15.4
       lru-cache: 10.4.3
       node-fetch-native: 1.6.7
-      ofetch: 1.4.1
+      ofetch: 1.5.1
       ufo: 1.6.1
     optionalDependencies:
       db0: 0.3.4(better-sqlite3@12.4.1)
@@ -17749,7 +17741,7 @@ snapshots:
       h3: 1.15.4
       lru-cache: 10.4.3
       node-fetch-native: 1.6.7
-      ofetch: 1.4.1
+      ofetch: 1.5.1
       ufo: 1.6.1
     optionalDependencies:
       db0: 0.3.4(better-sqlite3@12.4.1)
