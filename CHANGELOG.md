@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.3.1](///compare/v5.3.0...v5.3.1) (2025-11-26)
+
+### Bug Fixes
+
+* **i18n:** do not redirect to locale if 18n not enabled 9b31392
+
 ## [5.3.0](///compare/v5.2.3...v5.3.0) (2025-11-26)
 
 ### Features
