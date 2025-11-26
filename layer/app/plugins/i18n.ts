@@ -26,6 +26,8 @@ export default defineNuxtPlugin(async () => {
 
     nuxtApp.provide('locale', locale)
     nuxtApp.provide('localeMessages', resolvedMessages)
+
+    return
   }
 
   addRouteMiddleware((to: RouteLocationNormalized) => {
