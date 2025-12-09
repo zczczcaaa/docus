@@ -1,5 +1,15 @@
 # Changelog
 
+## [5.4.0](///compare/v5.3.1...v5.4.0) (2025-12-09)
+
+### Features
+
+* **ai:** add mcp server ([#1203](undefined/undefined/undefined/issues/1203)) ec3b468
+
+### Bug Fixes
+
+* **links:** handle app.baseURL in Markdown generated link ([#1221](undefined/undefined/undefined/issues/1221)) 16f5e35
+
 ## [5.3.1](///compare/v5.3.0...v5.3.1) (2025-11-26)
 
 ### Bug Fixes
