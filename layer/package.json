@@ -28,7 +28,7 @@
     "@nuxt/content": "^3.9.0",
     "@nuxt/image": "^2.0.0",
     "@nuxt/kit": "^4.2.2",
-    "@nuxt/ui": "^4.2.1",
+    "@nuxt/ui": "^4.3.0",
     "@nuxtjs/i18n": "^10.2.1",
     "@nuxtjs/mcp-toolkit": "^0.5.2",
     "@nuxtjs/mdc": "^0.19.1",
