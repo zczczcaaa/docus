@@ -1,9 +1,7 @@
 ---
 seo:
   title: Rédigez votre documentation en Markdown
-  description: Publiez instantanément une documentation élégante, optimisée pour
-    le SEO, avec design déjà pensé. Docus intègre le meilleur de l'écosystème
-    Nuxt.
+  description: Publiez instantanément une documentation élégante, optimisée pour le SEO, avec design déjà pensé. Docus intègre le meilleur de l'écosystème Nuxt.
 ---
 
 ::u-page-hero
@@ -55,8 +53,7 @@ Publiez instantanément une documentation élégante, optimisée pour le SEO, av
     target: _blank
     to: https://nuxt.com
     ---
-      :::::floating-nuxt
-      :::::
+    :floating-nuxt
 
     #title
     Construit avec [Nuxt]{.text-primary}
@@ -186,8 +183,7 @@ Publiez instantanément une documentation élégante, optimisée pour le SEO, av
     class: col-span-2 md:col-span-1 min-h-[450px]
     target: _blank
     ---
-      :::::color-mode-switch
-      :::::
+    :color-mode-switch
 
     #title
     [Nuxt Color]{.text-primary}
@@ -276,14 +272,14 @@ Publiez instantanément une documentation élégante, optimisée pour le SEO, av
       height: 195
       width: 403
       alt: Illustration de l'internationalisation
-      class: w-full h-auto rounded-lg
+      class: w-full my-12 lg:my-0
       dark: /landing/dark/i18n.svg
       light: /landing/light/i18n.svg
       ---
       :::::
 
     #title
-    Support d'[internationalisation]{.text-primary}
+    Support d' [internationalisation]{.text-primary}
 
     #description
     Support i18n intégré avec routage automatique et gestion de contenu. Créez une documentation multilingue sans effort.
@@ -308,7 +304,7 @@ Publiez instantanément une documentation élégante, optimisée pour le SEO, av
       :::::
 
     #title
-    Prêt pour l'[IA]{.text-primary} avec MCP natif
+    Prêt pour l' [IA]{.text-primary} avec MCP natif
 
     #description
     Serveur Model Context Protocol intégré qui connecte votre documentation aux outils IA comme Cursor, VS Code et Claude. Génération automatique des fichiers `llms.txt` et `llms-full.txt` pour une intégration LLM transparente.

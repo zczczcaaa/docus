@@ -1,9 +1,7 @@
 ---
 seo:
   title: Write beautiful docs with Markdown
-  description: Ship fast, flexible, and SEO-optimized documentation with beautiful
-    design out of the box. Docus brings together the best of the Nuxt ecosystem.
-    Powered by Nuxt UI.
+  description: Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. Docus brings together the best of the Nuxt ecosystem. Powered by Nuxt UI.
 ---
 
 ::u-page-hero
@@ -55,8 +53,7 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
     target: _blank
     to: https://nuxt.com
     ---
-      :::::floating-nuxt
-      :::::
+    :floating-nuxt
 
     #title
     Built with [Nuxt]{.text-primary}
@@ -186,8 +183,7 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
     class: col-span-2 md:col-span-1 min-h-[450px]
     target: _blank
     ---
-      :::::color-mode-switch
-      :::::
+    :color-mode-switch
 
     #title
     [Nuxt Color]{.text-primary} mode
@@ -276,7 +272,7 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
       height: 195
       width: 403
       alt: Internationalization illustration
-      class: w-full h-auto rounded-lg
+      class: w-full my-12 lg:my-0
       dark: /landing/dark/i18n.svg
       light: /landing/light/i18n.svg
       ---
