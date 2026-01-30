@@ -44,6 +44,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  mdc: {
+    highlight: {
+      shikiEngine: 'javascript',
+    },
+  },
   experimental: {
     asyncContext: true,
   },
