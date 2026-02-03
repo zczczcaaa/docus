@@ -149,32 +149,15 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
 
     ::::u-page-card
     ---
-    spotlight: true
     class: col-span-2 md:col-span-1
-    target: _blank
     ---
-      :::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
-      ```ts [app.config.ts]
-      export default defineAppConfig({
-      ui: {
-      colors: {
-      primary: 'green',
-      secondary: 'sky',
-      },
-      },
-      socials: {
-      x: 'https://x.com/nuxt_js',
-      nuxt: 'https://nuxt.com'
-      }
-      })
-      ```
-      :::::
+    :assistant-demo
 
     #title
-    Customize with [Nuxt App Config](https://nuxt.com/docs/4.x/getting-started/configuration#app-configuration)
+    Built-in [Assistant]{.text-primary}
 
     #description
-    Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
+    Let visitors ask questions about your documentation in natural language. The assistant searches your content and provides accurate answers with source citations.
     ::::
 
     ::::u-page-card
@@ -312,15 +295,31 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
 
     ::::u-page-card
     ---
+    spotlight: true
     class: col-span-2
+    target: _blank
     ---
-    :assistant-demo
+    #default
+    ```ts [app.config.ts]
+    export default defineAppConfig({
+              ui: {
+                colors: {
+                  primary: 'green',
+                  secondary: 'sky',
+                },
+              },
+              socials: {
+                x: 'https://x.com/nuxt_js',
+                nuxt: 'https://nuxt.com'
+              }
+    })
+    ```
 
     #title
-    Built-in [Assistant]{.text-primary}
+    Customize with [Nuxt App Config](https://nuxt.com/docs/4.x/getting-started/configuration#app-configuration)
 
     #description
-    Let visitors ask questions about your documentation in natural language. The assistant searches your content and provides accurate answers with source citations.
+    Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
     ::::
 
     ::::u-page-card

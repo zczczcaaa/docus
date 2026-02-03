@@ -149,32 +149,15 @@ Publiez instantanément une documentation élégante, optimisée pour le SEO, av
 
     ::::u-page-card
     ---
-    spotlight: true
     class: col-span-2 md:col-span-1
-    target: _blank
     ---
-      :::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
-      ```ts [app.config.ts]
-      export default defineAppConfig({
-      ui: {
-      colors: {
-      primary: 'green',
-      secondary: 'sky',
-      },
-      },
-      socials: {
-      x: 'https://x.com/nuxt_js',
-      nuxt: 'https://nuxt.com'
-      }
-      })
-      ```
-      :::::
+    :assistant-demo
 
     #title
-    Personnalisation avec [Nuxt App Config](https://nuxt.com/docs/4.x/getting-started/configuration#app-configuration)
+    [Assistant]{.text-primary} intégré
 
     #description
-    Mettez à jour les couleurs, les liens sociaux, les logos ou même le style de vos composants globalement via le `app.config.ts`, sans modification directe du code.
+    Permettez à vos visiteurs de poser des questions sur votre documentation en langage naturel. L'assistant recherche votre contenu et fournit des réponses précises avec les sources citées.
     ::::
 
     ::::u-page-card
@@ -312,15 +295,31 @@ Publiez instantanément une documentation élégante, optimisée pour le SEO, av
 
     ::::u-page-card
     ---
+    spotlight: true
     class: col-span-2
+    target: _blank
     ---
-    :assistant-demo
+    #default
+    ```ts [app.config.ts]
+    export default defineAppConfig({
+              ui: {
+                colors: {
+                  primary: 'green',
+                  secondary: 'sky',
+                },
+              },
+              socials: {
+                x: 'https://x.com/nuxt_js',
+                nuxt: 'https://nuxt.com'
+              }
+    })
+    ```
 
     #title
-    [Assistant]{.text-primary} intégré
+    Personnalisation avec [Nuxt App Config](https://nuxt.com/docs/4.x/getting-started/configuration#app-configuration)
 
     #description
-    Permettez à vos visiteurs de poser des questions sur votre documentation en langage naturel. L'assistant recherche votre contenu et fournit des réponses précises avec les sources citées.
+    Mettez à jour les couleurs, les liens sociaux, les logos ou même le style de vos composants globalement via le `app.config.ts`, sans modification directe du code.
     ::::
 
     ::::u-page-card
