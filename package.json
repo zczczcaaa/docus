@@ -18,7 +18,8 @@
     "verify": "pnpm run dev:prepare && pnpm run lint && pnpm run typecheck && pnpm run docs:build",
     "layer:release": "release-it --config .release-it.layer.json && cd layer && npm publish",
     "cli:release": "release-it --config .release-it.cli.json && cd cli && npm publish",
-    "release": "pnpm run layer:release && pnpm run cli:release && release-it"
+    "release": "pnpm run layer:release && pnpm run cli:release && release-it",
+    "clean": "rm -rf .nuxt .output node_modules cli/node_modules docs/.nuxt docs/.data docs/node_modules layer/node_modules layer/.data analyze cli/dist docs/.nuxt docs/.output layer/.nuxt pnpm-lock.yaml .pnpm-store"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.12.1",
