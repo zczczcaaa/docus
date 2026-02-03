@@ -1,5 +1,5 @@
 import { streamText, convertToModelMessages, createUIMessageStream, createUIMessageStreamResponse } from 'ai'
-import type { UIMessageStreamWriter, ToolCallPart } from 'ai'
+import type { UIMessageStreamWriter, ToolCallPart, ToolSet } from 'ai'
 import { createMCPClient } from '@ai-sdk/mcp'
 
 const MAX_STEPS = 10
@@ -81,7 +81,7 @@ export default defineEventHandler(async (event) => {
         stopWhen: stopWhenResponseComplete,
         system: getSystemPrompt(siteName),
         messages: modelMessages,
-        tools: mcpTools,
+        tools: mcpTools as ToolSet,
         onStepFinish: ({ toolCalls }: { toolCalls: ToolCallPart[] }) => {
           if (toolCalls.length === 0) return
           writer.write({

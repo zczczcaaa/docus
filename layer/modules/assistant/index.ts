@@ -67,7 +67,7 @@ export default defineNuxtModule<AssistantModuleOptions>({
     )
 
     if (!hasApiKey) {
-      log.warn('Module disabled: no AI_GATEWAY_API_KEY found')
+      log.warn('[Docus] AI assistant not enabled: no AI_GATEWAY_API_KEY found')
       return
     }
 

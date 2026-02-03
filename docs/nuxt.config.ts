@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2025-07-18',
+  vite: {
+    build: {
+      sourcemap: false,
+    },
+  },
   i18n: {
     defaultLocale: 'en',
     locales: [{
