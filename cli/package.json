@@ -20,19 +20,19 @@
     "dev": "tsx ./main.ts"
   },
   "dependencies": {
-    "@nuxt/cli": "3.31.3",
-    "@nuxt/kit": "^4.2.2",
+    "@nuxt/cli": "3.32.0",
+    "@nuxt/kit": "^4.3.0",
     "c12": "^3.3.3",
-    "citty": "^0.1.6",
+    "citty": "^0.2.0",
     "defu": "^6.1.4",
     "scule": "^1.3.0",
-    "ufo": "^1.6.1",
+    "ufo": "^1.6.3",
     "unctx": "^2.5.0"
   },
   "devDependencies": {
-    "@types/node": "^25.0.3",
+    "@types/node": "^25.2.0",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0"
   },
-  "packageManager": "pnpm@10.26.1"
+  "packageManager": "pnpm@10.28.2"
 }
