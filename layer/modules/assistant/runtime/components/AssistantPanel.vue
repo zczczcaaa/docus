@@ -300,7 +300,7 @@ onMounted(() => {
 
   <aside
     v-if="!isMobile"
-    class="fixed top-0 z-50 h-dvh overflow-hidden border-l border-default bg-default/95 backdrop-blur-xl transition-[right,width] duration-200 ease-linear will-change-[right,width]"
+    class="left-auto! fixed top-0 z-50 h-dvh overflow-hidden border-l border-default bg-default/95 backdrop-blur-xl transition-[right,width] duration-200 ease-linear will-change-[right,width]"
     :style="{
       width: `${panelWidth}px`,
       right: isOpen ? '0' : `-${panelWidth}px`,
