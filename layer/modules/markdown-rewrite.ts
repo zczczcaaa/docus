@@ -1,6 +1,8 @@
-import { defineNuxtModule } from '@nuxt/kit'
+import { defineNuxtModule, logger } from '@nuxt/kit'
 import { resolve } from 'node:path'
 import { readFile, writeFile } from 'node:fs/promises'
+
+const log = logger.withTag('Docus')
 
 export default defineNuxtModule({
   meta: {
@@ -23,7 +25,7 @@ export default defineNuxtModule({
           llmsTxt = await readFile(llmsTxtPath, 'utf-8')
         }
         catch {
-          console.warn('[Docus] llms.txt not found, skipping markdown redirect routes')
+          log.warn('llms.txt not found, skipping markdown redirect routes')
           return
         }
 
@@ -121,7 +123,7 @@ export default defineNuxtModule({
         vcConfig.routes.unshift(...routes)
 
         await writeFile(vcJSON, JSON.stringify(vcConfig, null, 2), 'utf8')
-        console.log(`[Docus] Successfully wrote ${routes.length} routes to ${vcJSON} (serve markdown content to AI agents)`)
+        log.info(`Successfully wrote ${routes.length} routes to ${vcJSON} (serve markdown content to AI agents)`)
       })
     })
   },

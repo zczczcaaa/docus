@@ -1,9 +1,11 @@
-import { createResolver, defineNuxtModule } from '@nuxt/kit'
+import { createResolver, defineNuxtModule, logger } from '@nuxt/kit'
 import { defu } from 'defu'
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { inferSiteURL, getPackageJsonMetadata } from '../utils/meta'
 import { getGitBranch, getGitEnv, getLocalGitInfo } from '../utils/git'
+
+const log = logger.withTag('Docus')
 
 export default defineNuxtModule({
   meta: {
@@ -68,11 +70,11 @@ export default defineNuxtModule({
         const hasContentFolder = existsSync(contentPath)
 
         if (!hasLocaleFile) {
-          console.warn(`[Docus] Locale file not found: ${localeCode}.json - skipping locale "${localeCode}"`)
+          log.warn(`Locale file not found: ${localeCode}.json - skipping locale "${localeCode}"`)
         }
 
         if (!hasContentFolder) {
-          console.warn(`[Docus] Content folder not found: content/${localeCode}/ - skipping locale "${localeCode}"`)
+          log.warn(`Content folder not found: content/${localeCode}/ - skipping locale "${localeCode}"`)
         }
 
         return hasLocaleFile && hasContentFolder

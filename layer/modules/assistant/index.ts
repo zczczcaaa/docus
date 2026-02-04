@@ -20,7 +20,7 @@ export interface AssistantModuleOptions {
   model?: string
 }
 
-const log = logger.withTag('docus:assistant')
+const log = logger.withTag('Docus')
 
 export default defineNuxtModule<AssistantModuleOptions>({
   meta: {
