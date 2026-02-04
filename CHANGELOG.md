@@ -1,5 +1,29 @@
 # Changelog
 
+## [5.5.0](https://github.com/nuxt-content/docus/compare/v5.4.4...v5.5.0) (2026-02-04)
+
+### Features
+
+* add skills folder with first skill `/create-docs` ([#1257](https://github.com/nuxt-content/docus/issues/1257)) ([0b2d346](https://github.com/nuxt-content/docus/commit/0b2d346a953299e87091d2eb18260ba86cdc1f90))
+* **layer:** add `sitemap.xml` generation ([#1259](https://github.com/nuxt-content/docus/issues/1259)) ([45bffbc](https://github.com/nuxt-content/docus/commit/45bffbc536c087159b7942b2779190fa24d813ed))
+* **layer:** add ai assistant module ([#1241](https://github.com/nuxt-content/docus/issues/1241)) ([1ff2829](https://github.com/nuxt-content/docus/commit/1ff28292ca5164938cf049cfce94580444ddded2))
+* **llms:** add docs page redirection to raw markdown for agents ([#1264](https://github.com/nuxt-content/docus/issues/1264)) ([9ceafe6](https://github.com/nuxt-content/docus/commit/9ceafe6fe245b36e42f3e06936fe1c8636b6fc75))
+* **llms:** redirect homepage to `/llms.txt` ([#1263](https://github.com/nuxt-content/docus/issues/1263)) ([6fd8686](https://github.com/nuxt-content/docus/commit/6fd8686b7c6b4ef3ceaf11c1225d5b506cef18e6))
+
+### Bug Fixes
+
+* **.starters:** prerendering issues ([8fe3796](https://github.com/nuxt-content/docus/commit/8fe3796be15fdb45c216f6915fd3a7bbcb57d1cf))
+* **.starters:** prerendering issues ([edab8bf](https://github.com/nuxt-content/docus/commit/edab8bf78fc7761b863450b5d313df3de51e7cfa))
+* **.starters:** prerendering issues in i18n template ([251b962](https://github.com/nuxt-content/docus/commit/251b9629c8a439edffaf0705e7b6a7ad9e295a66))
+* **assitant:** do not trigger panel when opening Studio ([6199d95](https://github.com/nuxt-content/docus/commit/6199d950616dbbec5d81aaa64ae750d7cc67c975))
+* **build:** remove warnings ([845e4c8](https://github.com/nuxt-content/docus/commit/845e4c8d60d497b3117269171ce0a0e42a7ae73e))
+* **layer:** add `@vercel/oidc` to optimizeDeps ([#1262](https://github.com/nuxt-content/docus/issues/1262)) ([88885ae](https://github.com/nuxt-content/docus/commit/88885aea11d8361bfe07a7f6dea3cef4f31e7a80))
+* **layer:** enhance sitemap generation, exclude navigation files ([#1261](https://github.com/nuxt-content/docus/issues/1261)) ([cd2c62e](https://github.com/nuxt-content/docus/commit/cd2c62e404762673512854ec5836ca6ba103afd7))
+* **llms:** default domain ([d7ff04a](https://github.com/nuxt-content/docus/commit/d7ff04a6237a53140c54ce37ac4ece25bec2e340))
+* **llms:** infer vercel urls ([6d437cc](https://github.com/nuxt-content/docus/commit/6d437cc04d371033396fe7940b202727026e1c5c))
+* **locale:** lazy import ([#1266](https://github.com/nuxt-content/docus/issues/1266)) ([dd4a526](https://github.com/nuxt-content/docus/commit/dd4a5267deb8e2354ae150ba77b9d9030f8bd7e7))
+* **logs:** use nuxt logger ([e6be163](https://github.com/nuxt-content/docus/commit/e6be163139c16f6232574933d576dc9710957a81))
+
 ## [5.4.4](https://github.com/nuxt-content/docus/compare/v5.4.2...v5.4.4) (2026-01-19)
 
 ### Features
