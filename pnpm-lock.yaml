@@ -106,8 +106,8 @@ importers:
         specifier: 4.3.0
         version: 4.3.0(@parcel/watcher@2.5.6)(@types/node@25.2.0)(@vue/compiler-sfc@3.5.27)(better-sqlite3@12.6.2)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.0)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.4(typescript@5.9.3))(yaml@2.8.2)
       nuxt-studio:
-        specifier: https://pkg.pr.new/nuxt-content/nuxt-studio@8aba1f4
-        version: https://pkg.pr.new/nuxt-content/nuxt-studio@8aba1f4(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.1)(vue@3.5.27(typescript@5.9.3))
+        specifier: https://pkg.pr.new/nuxt-content/nuxt-studio@0ae35dc
+        version: https://pkg.pr.new/nuxt-content/nuxt-studio@0ae35dc(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.1)(vue@3.5.27(typescript@5.9.3))
       tailwindcss:
         specifier: ^4.1.18
         version: 4.1.18
@@ -6402,8 +6402,8 @@ packages:
   nuxt-site-config@3.2.19:
     resolution: {integrity: sha512-OUGfo8aJWbymheyb9S2u78ADX73C9qBf8u6BwEJiM82JBhvJTEduJBMlK8MWeh3x9NF+/YX4AYsY5hjfQE5jGA==}
 
-  nuxt-studio@https://pkg.pr.new/nuxt-content/nuxt-studio@8aba1f4:
-    resolution: {integrity: sha512-TKaIMfUl2nYtIxU9ilVgeuNcY0Ahgp80Qvj054kyDtxwGMQMJ4mvLBjL8whfrt/VcIauTNY0Bo340oNpuwLFxA==, tarball: https://pkg.pr.new/nuxt-content/nuxt-studio@8aba1f4}
+  nuxt-studio@https://pkg.pr.new/nuxt-content/nuxt-studio@0ae35dc:
+    resolution: {integrity: sha512-stlk2HF15tE2NbDzr2R96xe0rIvP+fZX3jqRPKgr5A5cGC53lBmk2RxjevotZyJT4RZMnVROwtRSPvvVSkBwbg==, tarball: https://pkg.pr.new/nuxt-content/nuxt-studio@0ae35dc}
     version: 1.2.0
 
   nuxt@4.2.2:
@@ -15242,7 +15242,7 @@ snapshots:
       - vite
       - vue
 
-  nuxt-studio@https://pkg.pr.new/nuxt-content/nuxt-studio@8aba1f4(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.1)(vue@3.5.27(typescript@5.9.3)):
+  nuxt-studio@https://pkg.pr.new/nuxt-content/nuxt-studio@0ae35dc(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.1)(vue@3.5.27(typescript@5.9.3)):
     dependencies:
       '@ai-sdk/gateway': 3.0.36(zod@4.3.6)
       '@ai-sdk/vue': 3.0.73(vue@3.5.27(typescript@5.9.3))(zod@4.3.6)
