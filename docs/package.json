@@ -17,7 +17,7 @@
     "ai": "6.0.69",
     "docus": "workspace:*",
     "nuxt": "4.3.0",
-    "nuxt-studio": "https://pkg.pr.new/nuxt-content/nuxt-studio@0ae35dc",
+    "nuxt-studio": "https://pkg.pr.new/nuxt-content/nuxt-studio@5f81a2a",
     "tailwindcss": "^4.1.18",
     "unist-util-visit": "^5.1.0"
   }
