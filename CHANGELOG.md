@@ -1,5 +1,22 @@
 # Changelog
 
+## [5.5.1](https://github.com/nuxt-content/docus/compare/v5.5.0...v5.5.1) (2026-02-13)
+
+### Features
+
+* **layer:** add more seo optimization ([#1267](https://github.com/nuxt-content/docus/issues/1267)) ([d283f9a](https://github.com/nuxt-content/docus/commit/d283f9aa8a0a00c488d9cf7965012042f7a7a75c))
+
+### Bug Fixes
+
+* **assistant:** improves assistant UI/UX and responsiveness ([#1268](https://github.com/nuxt-content/docus/issues/1268)) ([e9edf7b](https://github.com/nuxt-content/docus/commit/e9edf7b5fd5455c1f72c2615b0acc7d97bc5f428))
+* **docs:** do not show separator if github is disabled ([#1270](https://github.com/nuxt-content/docus/issues/1270)) ([bd2455c](https://github.com/nuxt-content/docus/commit/bd2455ca4e568a75b4f367b1241308c9b494cb2a))
+* **logs:** remove extra title ([7adad7c](https://github.com/nuxt-content/docus/commit/7adad7ced6e0538ff124e37b4958536da5386f83))
+* **theme:** don't use [@theme](https://github.com/theme) static for priority ([#1271](https://github.com/nuxt-content/docus/issues/1271)) ([ff8a045](https://github.com/nuxt-content/docus/commit/ff8a045eb1acb31e5242440e949bf6e75d0414ab))
+
+### Reverts
+
+* Revert "chore: make sure to use Nuxt 4.3.0 everywhere" ([f40ac5e](https://github.com/nuxt-content/docus/commit/f40ac5e8ffbeaead34bd62341304a1c5be8f9bab))
+
 ## [5.5.0](https://github.com/nuxt-content/docus/compare/v5.4.4...v5.5.0) (2026-02-04)
 
 ### Features
