@@ -11,9 +11,10 @@ export const flattenNavigation = (items?: ContentNavigationItem[]): ContentNavig
  */
 export function transformNavigation(
   data: ContentNavigationItem[],
+  isI18nEnabled: boolean,
   locale?: string,
 ): ContentNavigationItem[] {
-  if (locale) {
+  if (isI18nEnabled && locale) {
     // i18n: first strip locale level, then check for docs level
     const localeResult = data.find(item => item.path === `/${locale}`)?.children || data
     return localeResult.find(item => item.path === `/${locale}/docs`)?.children || localeResult

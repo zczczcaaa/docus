@@ -46,7 +46,7 @@ if (isEnabled.value) {
 }
 
 const { data: navigation } = await useAsyncData(() => `navigation_${collectionName.value}`, () => queryCollectionNavigation(collectionName.value as keyof PageCollections), {
-  transform: (data: ContentNavigationItem[]) => transformNavigation(data, locale.value),
+  transform: (data: ContentNavigationItem[]) => transformNavigation(data, isEnabled.value, locale.value),
   watch: [locale],
 })
 const { data: files } = useLazyAsyncData(`search_${collectionName.value}`, () => queryCollectionSearchSections(collectionName.value as keyof PageCollections), {
