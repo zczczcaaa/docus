@@ -2,13 +2,14 @@ import type { DefinedCollection } from '@nuxt/content'
 import { defineContentConfig, defineCollection, z } from '@nuxt/content'
 import { useNuxt } from '@nuxt/kit'
 import { joinURL } from 'ufo'
-import { landingPageExists } from './utils/landing'
+import { landingPageExists, docsFolderExists } from './utils/pages'
 
 const { options } = useNuxt()
 const cwd = joinURL(options.rootDir, 'content')
 const locales = options.i18n?.locales
 
 const hasLandingPage = landingPageExists(options.rootDir)
+const hasDocsFolder = docsFolderExists(options.rootDir)
 
 const createDocsSchema = () => z.object({
   links: z.array(z.object({
@@ -25,6 +26,7 @@ if (locales && Array.isArray(locales)) {
   collections = {}
   for (const locale of locales) {
     const code = (typeof locale === 'string' ? locale : locale.code).replace('-', '_')
+    const hasLocaleDocs = docsFolderExists(options.rootDir, code)
 
     if (!hasLandingPage) {
       collections[`landing_${code}`] = defineCollection({
@@ -40,8 +42,8 @@ if (locales && Array.isArray(locales)) {
       type: 'page',
       source: {
         cwd,
-        include: `${code}/**/*`,
-        prefix: `/${code}`,
+        include: hasLocaleDocs ? `${code}/docs/**` : `${code}/**/*`,
+        prefix: hasLocaleDocs ? `/${code}/docs` : `/${code}`,
         exclude: [`${code}/index.md`],
       },
       schema: createDocsSchema(),
@@ -54,7 +56,8 @@ else {
       type: 'page',
       source: {
         cwd,
-        include: '**',
+        include: hasDocsFolder ? 'docs/**' : '**',
+        prefix: hasDocsFolder ? '/docs' : undefined,
         exclude: ['index.md'],
       },
       schema: createDocsSchema(),
