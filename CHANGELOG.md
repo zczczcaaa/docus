@@ -1,5 +1,19 @@
 # Changelog
 
+## [5.6.0](https://github.com/nuxt-content/docus/compare/v5.5.1...v5.6.0) (2026-02-17)
+
+### Features
+
+* **landing:** make it optional ([#1274](https://github.com/nuxt-content/docus/issues/1274)) ([adf5c7f](https://github.com/nuxt-content/docus/commit/adf5c7f55160bc7f693ac41f11818711c1945162))
+* **layer:** handle docs prefix & folder ([#1275](https://github.com/nuxt-content/docus/issues/1275)) ([99c7850](https://github.com/nuxt-content/docus/commit/99c785081e4185023bd4f70e9a85b74c733f17ca))
+
+### Bug Fixes
+
+* **assistant:** stop floating input overlay from intercepting clicks ([#1277](https://github.com/nuxt-content/docus/issues/1277)) ([53628af](https://github.com/nuxt-content/docus/commit/53628af4d8d6ee5a5d8a1a35493de1344e719287))
+* **layer:** ensure i18n activation for nav transform ([7a48865](https://github.com/nuxt-content/docus/commit/7a488657381d7999d1e33b83e39c06b857887d91))
+* **layer:** reduce noisy dev warnings for optional AI assistant ([#1276](https://github.com/nuxt-content/docus/issues/1276)) ([2747a09](https://github.com/nuxt-content/docus/commit/2747a09f9a03fffa3d6b90c6cb399f985c58479d))
+* **layer:** use native sqlite connector ([33334ce](https://github.com/nuxt-content/docus/commit/33334ceaff61e67f90adec96350f9c3164441223))
+
 ## [5.5.1](https://github.com/nuxt-content/docus/compare/v5.5.0...v5.5.1) (2026-02-13)
 
 ### Features
