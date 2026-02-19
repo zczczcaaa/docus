@@ -1,5 +1,15 @@
 # Changelog
 
+## [5.6.1](https://github.com/nuxt-content/docus/compare/v5.6.0...v5.6.1) (2026-02-19)
+
+### Features
+
+* **layer:** improve right-click and logo handling ([#1281](https://github.com/nuxt-content/docus/issues/1281)) ([72205f9](https://github.com/nuxt-content/docus/commit/72205f9faf7ce702f7f329d05af8ba272129483d))
+
+### Bug Fixes
+
+* **layer:** root docs prefix ([#1283](https://github.com/nuxt-content/docus/issues/1283)) ([f9e999d](https://github.com/nuxt-content/docus/commit/f9e999d837f64a13018aa8a3bd1cbba5c15cb5f8))
+
 ## [5.6.0](https://github.com/nuxt-content/docus/compare/v5.5.1...v5.6.0) (2026-02-17)
 
 ### Features
