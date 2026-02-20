@@ -299,7 +299,6 @@ Publiez instantanément une documentation élégante, optimisée pour le SEO, av
     class: col-span-2
     target: _blank
     ---
-    #default
     ```ts [app.config.ts]
     export default defineAppConfig({
               ui: {

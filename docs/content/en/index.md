@@ -299,7 +299,6 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
     class: col-span-2
     target: _blank
     ---
-    #default
     ```ts [app.config.ts]
     export default defineAppConfig({
               ui: {
