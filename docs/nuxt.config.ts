@@ -45,7 +45,6 @@ export default defineNuxtConfig({
       provider: 'github',
       owner: 'nuxt-content',
       repo: 'docus',
-      branch: 'main',
       rootDir: 'docs',
     },
   },
