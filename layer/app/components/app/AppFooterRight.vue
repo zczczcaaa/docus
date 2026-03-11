@@ -2,9 +2,9 @@
 const appConfig = useAppConfig()
 
 interface FooterLink {
-  icon: string
-  to: string
-  target: '_blank'
+  'icon': string
+  'to': string
+  'target': '_blank'
   'aria-label': string
 }
 
@@ -15,18 +15,18 @@ const links = computed<FooterLink[]>(() => {
     }
 
     return [{
-      icon: `i-simple-icons-${key}`,
-      to: url,
-      target: '_blank' as const,
+      'icon': `i-simple-icons-${key}`,
+      'to': url,
+      'target': '_blank' as const,
       'aria-label': `${key} social link`,
     }]
   })
 
   const githubLink = appConfig.github && appConfig.github.url
     ? [{
-        icon: 'i-simple-icons-github',
-        to: appConfig.github.url,
-        target: '_blank' as const,
+        'icon': 'i-simple-icons-github',
+        'to': appConfig.github.url,
+        'target': '_blank' as const,
         'aria-label': 'GitHub repository',
       }]
     : []
