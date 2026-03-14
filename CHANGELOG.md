@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.8.1](https://github.com/nuxt-content/docus/compare/v5.8.0...v5.8.1) (2026-03-14)
+
+### Bug Fixes
+
+* **import:** relative path ([#1307](https://github.com/nuxt-content/docus/issues/1307)) ([99e5b5f](https://github.com/nuxt-content/docus/commit/99e5b5f2dba0e13be14b623d98ed0c0f0d760b6e))
+
 ## [5.8.0](https://github.com/nuxt-content/docus/compare/v5.7.0...v5.8.0) (2026-03-12)
 
 ### Features
