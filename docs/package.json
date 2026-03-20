@@ -9,7 +9,6 @@
   "dependencies": {
     "@nuxt/ui": "^4.5.1",
     "@nuxtjs/i18n": "^10.2.3",
-    "@nuxtjs/plausible": "^2.0.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "docus": "workspace:*",
