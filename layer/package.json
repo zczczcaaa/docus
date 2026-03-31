@@ -35,7 +35,7 @@
     "@nuxtjs/i18n": "^10.2.4",
     "@nuxtjs/mcp-toolkit": "^0.13.1",
     "@nuxtjs/mdc": "^0.21.0",
-    "@nuxtjs/robots": "^5.7.1",
+    "@nuxtjs/robots": "^6.0.6",
     "@shikijs/core": "^4.0.2",
     "@shikijs/engine-javascript": "^4.0.2",
     "@shikijs/langs": "^4.0.2",
