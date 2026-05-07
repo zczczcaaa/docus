@@ -43,11 +43,10 @@ export default defineNuxtModule({
 @source "../../app.config.ts";
 @source "${assistantDir.replace(/\\/g, '/')}/**/*";
 
-@layer base {
-  :root {
-    --ui-container: 90rem;
-  }
-}` + (userDocusPath ? `\n@import ${JSON.stringify(userDocusPath)};` : '')
+:root {
+  --ui-container: 90rem;
+}
+` + (userDocusPath ? `\n@import ${JSON.stringify(userDocusPath)};` : '')
       },
     })
 
