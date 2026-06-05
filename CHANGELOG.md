@@ -1,5 +1,23 @@
 # Changelog
 
+## [5.12.0](https://github.com/nuxt-content/docus/compare/v5.11.0...v5.12.0) (2026-06-05)
+
+### Features
+
+* **assistant:** use native `USidebar` from Nuxt UI ([#1284](https://github.com/nuxt-content/docus/issues/1284)) ([09e122c](https://github.com/nuxt-content/docus/commit/09e122ca380f050d9cfa2444333bcf28d0eee1f1))
+* **layer:** add d shortcut to toggle color mode ([#1377](https://github.com/nuxt-content/docus/issues/1377)) ([61c36d0](https://github.com/nuxt-content/docus/commit/61c36d03ae696c2fdf7c41919c355d1927912227))
+* **search:** add FTS5 full-text search option ([#1379](https://github.com/nuxt-content/docus/issues/1379)) ([2f5e374](https://github.com/nuxt-content/docus/commit/2f5e374ba72268d6d90acba34ea9468c47cd6f2c))
+
+### Bug Fixes
+
+* **assistant:** make floating input responsive ([#1369](https://github.com/nuxt-content/docus/issues/1369)) ([ef6dd5c](https://github.com/nuxt-content/docus/commit/ef6dd5cbdf56e488ee5dbc330b4085873d464dc6))
+* **assistant:** use native keydown for escape blur ([#1366](https://github.com/nuxt-content/docus/issues/1366)) ([7c2e85d](https://github.com/nuxt-content/docus/commit/7c2e85d11c22e2aacdf10dd537efede963a112eb))
+* **i18n:** unify AI naming for Polish locale ([#1375](https://github.com/nuxt-content/docus/issues/1375)) ([14dbb18](https://github.com/nuxt-content/docus/commit/14dbb1817605410b0ef196a3de45d92e4fe11983))
+* **landing:** mdc syntax ([#1383](https://github.com/nuxt-content/docus/issues/1383)) ([0eb1a36](https://github.com/nuxt-content/docus/commit/0eb1a36196de5ec6fbd2b42e9ff49db4c08c7911))
+* **layer:** sitemap key is located in meta key ([#1384](https://github.com/nuxt-content/docus/issues/1384)) ([671ba62](https://github.com/nuxt-content/docus/commit/671ba626961baf504633f01e8ea07643c0a4372c))
+* **mcp:** exclude `.navigation` paths from pages tools ([#1374](https://github.com/nuxt-content/docus/issues/1374)) ([3eb54da](https://github.com/nuxt-content/docus/commit/3eb54da4c35fc1d5c038dd677b40dfd51a6209ec))
+* **mcp:** use absolute url for deeplink ([#1378](https://github.com/nuxt-content/docus/issues/1378)) ([01e8778](https://github.com/nuxt-content/docus/commit/01e877840e0f77f5277e0f7a040c4c742180092a))
+
 ## [5.11.0](https://github.com/nuxt-content/docus/compare/v5.10.1...v5.11.0) (2026-05-07)
 
 ### Features
