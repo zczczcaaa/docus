@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Chat } from '@ai-sdk/vue'
-import { DefaultChatTransport, isToolUIPart, isTextUIPart, getToolName } from 'ai'
+import { DefaultChatTransport, isToolUIPart, isTextUIPart } from 'ai'
 import { isToolStreaming } from '@nuxt/ui/utils/ai'
 
 const config = useRuntimeConfig()
@@ -35,18 +35,6 @@ const chat = isEnabled.value
       },
     })
   : null
-
-function getToolText(part: Parameters<typeof getToolName>[0]) {
-  const toolName = getToolName(part)
-  const input = (part as { input?: Record<string, string> }).input
-  const verb = part.state === 'output-available' ? 'Searched' : 'Searching'
-  const readVerb = part.state === 'output-available' ? 'Read' : 'Reading'
-
-  return {
-    'list-pages': `${verb} pages`,
-    'get-page': `${readVerb} ${input?.path || '...'}`,
-  }[toolName] || `${verb} ${toolName}`
-}
 
 function handleSubmit() {
   if (!input.value.trim() || !chat) return
@@ -111,7 +99,7 @@ function resetChat() {
           <template #indicator>
             <UChatTool
               icon="i-lucide-brain"
-              text="Thinking..."
+              :text="t('assistant.loading.thinking')"
               streaming
             />
           </template>
@@ -128,8 +116,9 @@ function resetChat() {
 
               <UChatTool
                 v-else-if="isToolUIPart(part)"
-                :text="getToolText(part)"
-                :icon="getToolName(part) === 'get-page' ? 'i-lucide-file-text' : 'i-lucide-search'"
+                :text="getToolText(part, t)"
+                :suffix="getToolSuffix(part)"
+                :icon="getToolIcon(part)"
                 :streaming="isToolStreaming(part)"
               />
             </template>
