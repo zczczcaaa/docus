@@ -1,5 +1,15 @@
 # Changelog
 
+## [5.12.2](https://github.com/nuxt-content/docus/compare/v5.12.1...v5.12.2) (2026-06-17)
+
+### Features
+
+* **assistant:** refine tool display and streaming behavior ([#1390](https://github.com/nuxt-content/docus/issues/1390)) ([a2ac34c](https://github.com/nuxt-content/docus/commit/a2ac34cb1dadd4f7dd933e52edfb7f3b4787a889))
+
+### Bug Fixes
+
+* **layer:** scope UI variant defaults to docus components ([#1395](https://github.com/nuxt-content/docus/issues/1395)) ([82abeca](https://github.com/nuxt-content/docus/commit/82abecada127e2cf83c333832e81260d494240f0))
+
 ## [5.12.1](https://github.com/nuxt-content/docus/compare/v5.12.0...v5.12.1) (2026-06-08)
 
 ### Bug Fixes
