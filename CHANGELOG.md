@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.12.3](https://github.com/nuxt-content/docus/compare/v5.12.2...v5.12.3) (2026-06-25)
+
+### Bug Fixes
+
+* **assistant:** autofocus behaviour ([#1406](https://github.com/nuxt-content/docus/issues/1406)) ([aa42948](https://github.com/nuxt-content/docus/commit/aa4294801fb3042906adcf18d9841b75cbb33e8c))
+* **css:** resolve `app.config.ts` source to an absolute path ([#1404](https://github.com/nuxt-content/docus/issues/1404)) ([b2486f4](https://github.com/nuxt-content/docus/commit/b2486f4b3f7f759f8187796829f1a20594ca6374))
+
 ## [5.12.2](https://github.com/nuxt-content/docus/compare/v5.12.1...v5.12.2) (2026-06-17)
 
 ### Features
