@@ -1,3 +1,5 @@
+// Pulls in the AppConfig augmentation for consumers (module augmentations need an import)
+import type {} from './app/types'
 import type { AssistantModuleOptions } from './modules/assistant'
 
 export interface DocusNuxtConfig {
